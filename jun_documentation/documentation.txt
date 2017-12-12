@@ -1,2 +1,20 @@
 /* Documentation */
 
+Microservies:
+
+Batch Service (BatchDao,BatchLocation, BatchNamePattern,)
+
+Location Service (Location, Building, Room)
+
+Skill Service (Skill)
+
+Curriculum Service (Curriculum)
+
+Trainer Service (Trainer)
+
+User/Setting Service (Settings, Users)
+
+Unavailable Service (UnavailableDaoService)
+
+Certification Service (CertificationDao)
+
