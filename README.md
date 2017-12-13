@@ -5,5 +5,5 @@ Assignforce Microservice Refactor
 ### Test Driven Development
 Make sure that you are creating tests before you write any code.
 ### Look at projects tab, and assign yourself an issue from the project back-log
-## Make sure that you use Java naming convention
-## Add issues that you feel are missing
+Make sure that you use Java naming convention
+Add issues that you feel are missing
