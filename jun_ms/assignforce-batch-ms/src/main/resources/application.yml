@@ -3,9 +3,9 @@ spring:
         name: assignforce-batch-service
     #DATABASE CONFIG ISSUE: CANNOT USE ENVIRONMENT VARIABLE
     datasource:
-        url: jdbc:oracle:thin:@oct23javajunli.clwojcu9sv3n.us-east-2.rds.amazonaws.com:1521:ORCL
-        username: junli
-        password: cc554336233
+        url: jdbc:oracle:thin:@assignforce.chueiwozbnfz.us-east-1.rds.amazonaws.com:1521:ORCL
+        username: 
+        password: 
 #        url: ${DB_URL}
 #        username: ${DB_USER}
 #        password: ${DB_PASSWORD}
