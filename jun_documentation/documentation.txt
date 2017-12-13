@@ -8,13 +8,11 @@ Location Service (Location, Building, Room)
 
 Skill Service (Skill)
 
-Curriculum Service (Curriculum)
+Curriculum Service (Curriculumi)
 
-Trainer Service (Trainer)
+Trainer Service (Trainer, Certification)
 
 User/Setting Service (Settings, Users)
 
 Unavailable Service (UnavailableDaoService)
-
-Certification Service (CertificationDao)
 
