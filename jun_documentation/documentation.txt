@@ -16,3 +16,8 @@ User/Setting Service (Settings, Users)
 
 Unavailable Service (UnavailableDaoService)
 
+/*****************************************************/
+Branch junli will be my temp dev folder, all updates from other branches will be pulled to here
+
+I will be dedicated to ms-curriculum branch at this moment.
+
