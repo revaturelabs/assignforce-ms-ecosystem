@@ -1,0 +1,5 @@
+package com.revature.assignforceskillms.domain;
+
+public class Activatable {
+
+}

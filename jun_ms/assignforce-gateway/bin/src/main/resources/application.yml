@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: assignforce-edge-server
+management:
+  security:
+    enabled: false
+
+#Zuul with Eureka
+zuul:
+  prefix: /api
+  routes:
+    batches:
+      path: /batches/**
+      serviceId: assignforce-batches-service
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    instance:
+      lease-expiration-duration-in-seconds: 2
+      lease-renewal-interval-in-seconds: 1
