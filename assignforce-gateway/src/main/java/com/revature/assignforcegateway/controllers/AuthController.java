@@ -21,4 +21,16 @@ public class AuthController{
     public ResponseEntity<Principal> userInfo(Principal principal){
 	return new ResponseEntity<Principal>(principal, HttpStatus.OK);
     }
+    
+    @RequestMapping(value= "/login**")
+    public ResponseEntity login(Principal principal){
+	return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+
+    @RequestMapping(value= "/home", method = RequestMethod.GET)
+    public ResponseEntity home(Principal principal){
+	return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+   
+    
 }
