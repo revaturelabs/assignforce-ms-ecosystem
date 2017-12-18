@@ -27,7 +27,7 @@ security:
   oauth2:
     client:
       clientId: 3MVG9ahGHqp.k2_wb8eUMtoR38zX8fWod2YBcK5.4RRrWling4BGamz7JanMJTUGcXxI9qda4fQh3xU0Q9EBH
-      clientSecret: ${OAUTH_CLIENT_SECRET}
+      clientSecret: 627716562932653016
       accessTokenUri: https://revature--int1.cs17.my.salesforce.com/services/oauth2/token
       userAuthorizationUri: https://revature--int1.cs17.my.salesforce.com/services/oauth2/authorize?prompt=login
       tokenName: authorization_code
@@ -41,7 +41,7 @@ security:
       userInfoUri: https://revature--int1.cs17.my.salesforce.com/services/oauth2/userinfo
 #  ignored: /api/v2/google/**
 server:
-  port: 8443
+  port: 443
   ssl:
     keyStore: classpath:keystore.jks
     keyStorePassword: password

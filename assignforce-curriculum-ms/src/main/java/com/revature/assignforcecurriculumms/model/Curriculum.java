@@ -10,7 +10,7 @@ public class Curriculum implements Activatable{
 
 	private int currId;
 	private String name;
-	private List<CurriculumSkillJT> skills;
+	private List<Integer> skills;
 	private Boolean active;
 	private Boolean core;
 	
@@ -18,7 +18,7 @@ public class Curriculum implements Activatable{
 		//noarg constructor
 	}
 
-	public Curriculum(int currId, String name, List<CurriculumSkillJT> skills, boolean core) {
+	public Curriculum(int currId, String name, List<Integer> skills, boolean core) {
 		super();
 		this.currId = currId;
 		this.name = name;
@@ -46,10 +46,10 @@ public class Curriculum implements Activatable{
 	}
 
 
-	public List<CurriculumSkillJT> getSkills() {
+	public List<Integer> getSkills() {
 		return skills;
 	}
-	public void setSkills(List<CurriculumSkillJT> skills) {
+	public void setSkills(List<Integer> skills) {
 		this.skills = skills;
 	}
 
