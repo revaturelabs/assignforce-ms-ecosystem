@@ -4,8 +4,8 @@ spring:
     #DATABASE CONFIG ISSUE: CANNOT USE ENVIRONMENT VARIABLE
     datasource:
         url: jdbc:oracle:thin:@assignforce.chueiwozbnfz.us-east-1.rds.amazonaws.com:1521:ORCL
-        username: 
-        password: 
+        username: assignforce_dev
+        password: pVCwxTn3
 #        url: ${DB_URL}
 #        username: ${DB_USER}
 #        password: ${DB_PASSWORD}

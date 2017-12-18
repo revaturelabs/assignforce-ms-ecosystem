@@ -1,0 +1,1369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="65b7a3c0-ffca-441c-a39e-8e6a49e6cc00" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.mylyn/.taskListIndex/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.mylyn/.taskListIndex/segments_1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.mylyn/.tasks.xml.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.mylyn/repositories.xml.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.mylyn/tasks.xml.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/4f/7077bfe9bce100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/56/d0c173dec3e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/65/1063a409c3e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/71/b07ea3ddb1e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/91/f021d1d4c2e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/95/301e5663c3e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/9f/b025009ac4e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/a8/4000d945bce100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/fa/50a885c2bce100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.indexes/properties.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.markers.snap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.syncinfo.snap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-batch-ms/.indexes/af/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-batch-ms/.indexes/e4/b9/22/81/6e/7c/3c/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-batch-ms/.indexes/e4/b9/db/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-batch-ms/.indexes/properties.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-batch-ms/.location" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-batch-ms/.markers" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-batch-ms/.markers.snap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-batch-ms/.syncinfo.snap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-batch-ms/org.eclipse.jdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-discovery/.indexes/af/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-discovery/.indexes/e4/b9/22/81/6e/2c/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-discovery/.indexes/properties.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-discovery/.location" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-discovery/.markers.snap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-discovery/.syncinfo.snap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-discovery/org.eclipse.jdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-gateway/.indexes/af/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-gateway/.indexes/properties.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-gateway/.location" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-gateway/.markers.snap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-gateway/.syncinfo.snap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-gateway/org.eclipse.jdt.core/state.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-skill-ms/.indexes/af/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-skill-ms/.indexes/e4/b9/22/81/6e/db/3c/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-skill-ms/.indexes/e4/b9/22/81/6e/db/92/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-skill-ms/.indexes/e4/b9/22/81/6e/db/9c/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-skill-ms/.indexes/e4/b9/22/81/6e/db/b5/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-skill-ms/.indexes/e4/b9/22/81/6e/db/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-skill-ms/.indexes/e4/b9/22/81/6e/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-skill-ms/.indexes/e4/b9/22/81/96/e3/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-skill-ms/.indexes/e4/b9/db/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-skill-ms/.indexes/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-skill-ms/.indexes/properties.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-skill-ms/.markers" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-skill-ms/.markers.snap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-skill-ms/.syncinfo.snap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-unavailable-ms/.indexes/af/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-unavailable-ms/.indexes/e4/b9/22/81/6e/db/3c/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-unavailable-ms/.indexes/e4/b9/22/81/6e/db/92/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-unavailable-ms/.indexes/e4/b9/22/81/6e/db/9c/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-unavailable-ms/.indexes/e4/b9/22/81/6e/db/b5/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-unavailable-ms/.indexes/e4/b9/22/81/6e/db/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-unavailable-ms/.indexes/e4/b9/22/81/6e/e6/3c/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-unavailable-ms/.indexes/e4/b9/22/81/6e/e6/92/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-unavailable-ms/.indexes/e4/b9/22/81/6e/e6/9c/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-unavailable-ms/.indexes/e4/b9/22/81/6e/e6/b5/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-unavailable-ms/.indexes/e4/b9/22/81/6e/e6/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-unavailable-ms/.indexes/e4/b9/22/81/6e/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-unavailable-ms/.indexes/e4/b9/22/81/96/e3/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-unavailable-ms/.indexes/e4/b9/db/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-unavailable-ms/.indexes/history.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-unavailable-ms/.indexes/properties.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-unavailable-ms/.markers" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-unavailable-ms/.markers.snap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-unavailable-ms/.syncinfo.snap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/history.version" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.version" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/4.tree" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/4.snap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/http-cache/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/http-cache/segments_1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/http-cache/write.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/local-history/_0.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/local-history/_0.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/local-history/_0.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/local-history/_0.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/local-history/_0.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/local-history/_0.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/local-history/_0.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/local-history/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/local-history/segments_1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/local-history/write.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/remote-history/_0.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/remote-history/_0.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/remote-history/_0.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/remote-history/_0.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/remote-history/_0.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/remote-history/_0.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/remote-history/_0.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/remote-history/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/remote-history/segments_1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/http-cache/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/http-cache/segments_1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/http-cache/write.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/local-history/_0.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/local-history/_0.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/local-history/_0.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/local-history/_0.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/local-history/_0.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/local-history/_0.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/local-history/_0.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/local-history/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/local-history/segments_1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/local-history/write.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/_0.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/_0.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/_0.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/_0.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/_0.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/_0.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/_0.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/segments_1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.jboss.tools/http-cache/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.jboss.tools/http-cache/segments_1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.jboss.tools/http-cache/write.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.jboss.tools/local-history/_0.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.jboss.tools/local-history/_0.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.jboss.tools/local-history/_0.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.jboss.tools/local-history/_0.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.jboss.tools/local-history/_0.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.jboss.tools/local-history/_0.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.jboss.tools/local-history/_0.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.jboss.tools/local-history/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.jboss.tools/local-history/segments_1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.jboss.tools/local-history/write.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.jboss.tools/remote-history/_0.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.jboss.tools/remote-history/_0.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.jboss.tools/remote-history/_0.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.jboss.tools/remote-history/_0.frq" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.jboss.tools/remote-history/_0.nrm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.jboss.tools/remote-history/_0.tii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.jboss.tools/remote-history/_0.tis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.jboss.tools/remote-history/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.jboss.tools/remote-history/segments_1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1009205223.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1013242506.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1022261112.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/104857999.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1063643129.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1074049115.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1087769511.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1091119872.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1101913381.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1105303274.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1105897720.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1114206921.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1138270680.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1153440754.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1153477479.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1167629339.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1185321377.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1193343644.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1203712324.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1254815371.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1285198735.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1302940520.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1307477612.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1315662643.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1361867856.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1408211338.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1410507729.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1417287411.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1418130311.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1423668986.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1470073441.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1488853029.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1490711994.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1499108814.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1500645789.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1572010134.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1581620832.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1588806427.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1656262166.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1699558789.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1699950321.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1739470417.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/177483911.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/185814707.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1874887575.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/189117008.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1947547758.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/195458521.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1958249473.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1962442178.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1976179880.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/1994970464.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2059923604.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2079383350.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2133616345.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2154755224.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/216257850.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2166598737.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2232856104.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2250952234.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2252279475.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2262726919.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/229380869.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2318190919.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2327266843.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2342300872.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2365264807.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2383792488.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2452047787.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2509800163.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2592056754.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/264028450.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2651247069.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2657860043.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2663353500.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2673683298.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2688783450.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2712481850.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2718105061.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2731077997.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/27667078.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2783401189.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2792233054.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2798708735.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/284434570.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2845601983.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2854521233.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/289811613.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2936838269.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2951431056.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2951772072.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2966133891.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2975169479.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2983266158.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3000730911.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3014405794.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3016974618.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3018331266.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3038357185.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3045120417.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3065053440.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3081122981.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3105036481.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3150231520.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3156681068.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3158710696.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3182695814.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3187843364.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3200431915.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3203811092.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3214467335.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/321591033.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3225958424.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3248871425.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/325252305.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3252954231.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3289149153.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3299769034.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3299836392.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3312106447.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3346855153.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3355750662.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3378890147.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3387132573.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3483015225.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3488149249.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/350551785.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/351321660.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3564016628.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3564712613.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3603003225.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3636131960.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3677362244.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3679300506.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3687394803.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3687672911.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3693375343.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3721224148.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3724217509.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3745183262.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3767767424.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3786438684.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3789621074.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/378978125.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3834418779.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3852957948.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3894941320.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3920762332.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3925400733.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/4054529819.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/4062865251.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/4066730948.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/4074224275.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/4136507876.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/416372633.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/4166647941.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/4192857352.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/4200957779.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/4215045121.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/4266328024.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/430357653.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/475778625.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/478586905.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/492001059.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/506938912.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/512242481.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/527990897.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/529764600.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/566845672.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/573842242.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/575557243.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/581596413.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/590698374.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/60300922.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/61436394.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/651313811.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/664140773.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/671047869.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/678138923.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/707125362.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/707725204.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/720781322.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/738743011.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/739666891.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/748941447.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/767842954.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/772052311.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/796480090.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/822554790.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/857117355.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/884072946.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/887490228.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/897080602.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/897195339.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/921851813.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/962296111.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/966039686.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/980929648.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/assumedExternalFilesCache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/assignforce-batch-ms.lifecyclemapping" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/assignforce-discovery.lifecyclemapping" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/assignforce-gateway.lifecyclemapping" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/assignforce-skill-ms.lifecyclemapping" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_0.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_0_1.del" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_1.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_1_1.del" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_2.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_2_1.del" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_3.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_3_1.del" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_4.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/segments_6" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/write.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/06c5cf01a0f95f3c51f26ce433263348/_a.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/06c5cf01a0f95f3c51f26ce433263348/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/06c5cf01a0f95f3c51f26ce433263348/segments_b" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/06c5cf01a0f95f3c51f26ce433263348/write.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_k.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_l.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_m.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_m_1.del" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_n.cfs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments.gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_n" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/write.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.jdt/assignforce-batch-ms.container" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.jdt/assignforce-discovery.container" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.jdt/assignforce-gateway.container" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.jdt/assignforce-skill-ms.container" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.jdt/assignforce-unavailable-ms.container" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.rse.core/initializerMarks/org.eclipse.rse.internal.core.RSELocalConnectionInitializer.mark" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.wst.jsdt.core/externalLibsTimeStamps" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.wst.jsdt.core/variablesAndContainers.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/css/overpass-light.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/css/overpass-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/css/overpass-thin.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/images/background_img.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/images/background_img.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/images/background_img_bottom.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/images/icon-addtools.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/images/icon-community.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/images/icon-default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/images/icon-html5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/images/icon-hybridmobile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/images/icon-info.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/images/icon-javaee.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/images/icon-openshift.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/lib/bootstrap-sass-official/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/lib/bootstrap-sass-official/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/lib/bootstrap-sass-official/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/lib/bootstrap-sass-official/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/1031160651/images%2Fwizards%2Fnew_m2_project.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/1041657884/images%2Fwizards%2Fhtml5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/1073822488/images%2Fwizards%2Fopenshift-logo-white-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/1174983282/images%2Fwizards%2Fnewwebprj_wiz.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/1184603960/images%2Fwizards%2Fjbossforge_icon_16px.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/123111872/images%2Fwizards%2Fjbossforge_icon_16px.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/1260025436/images%2Fwizards%2Fopenshift-logo-white-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/1330728111/images%2Fwizards%2Fnewcordovaprj_wiz.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/1366143794/images%2Fwizards%2Fnewwebprj_wiz.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/140548723/images%2Fwizards%2Fnew_m2_project.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/1494349309/images%2Fwizards%2Fnew_m2_project.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/1524375602/images%2Ffuse_integration_wizard.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/1561242828/images%2Fwizards%2Fopenshift-logo-white-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/1632798069/images%2Fwizards%2Fnew_m2_project.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/168788845/images%2Ffuse_integration_wizard.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/1742196079/images%2Fwizards%2Fnewcordovaprj_wiz.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/1904217060/images%2Fwizards%2Fopenshift-logo-white-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/1946896819/images%2Fwizards%2Fnewcordovaprj_wiz.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/1972605923/openshift-logo-white-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/1997362463/jbossforge_icon_16px.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/2016071446/images%2Fwizards%2Fnewwebprj_wiz.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/2136586852/images%2Fwizards%2Fhtml5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/231607946/images%2Fwizards%2Fnewwebprj_wiz.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/24099922/newcordovaprj_wiz.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/249154724/images%2Fwizards%2Fopenshift-logo-white-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/258204760/images%2Fwizards%2Fjbossforge_icon_16px.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/27676889/images%2Fwizards%2Fnewcordovaprj_wiz.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/283041551/newwebprj_wiz.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/286494554/images%2Fwizards%2Fnewwebprj_wiz.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/345811561/images%2Fwizards%2Fnewcordovaprj_wiz.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/51527308/images%2Fwizards%2Fhtml5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/531354948/images%2Fwizards%2Fjbossforge_icon_16px.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/616298794/new_m2_project.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/640516952/images%2Fwizards%2Fhtml5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/732436900/images%2Fwizards%2Fhtml5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/82460032/images%2Fwizards%2Fjbossforge_icon_16px.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/839688550/images%2Ffuse_integration_wizard.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/900049117/html5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/930743095/images%2Ffuse_integration_wizard.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/968989499/images%2Ffuse_integration_wizard.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/images/978142961/images%2Fwizards%2Fnew_m2_project.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/proxyWizards/1513628613189/.rcache/.contributions.2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/proxyWizards/1513628613189/.rcache/.contributors.2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/proxyWizards/1513628613189/.rcache/.extraData.2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/proxyWizards/1513628613189/.rcache/.mainData.2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/proxyWizards/1513628613189/.rcache/.manager/.fileTableLock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/proxyWizards/1513628613189/.rcache/.namespaces.2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/proxyWizards/1513628613189/.rcache/.orphans.2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/proxyWizards/1513628613189/.rcache/.table.2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/proxyWizards/1513628613189/org.jboss.tools.central.discovery.earlyaccess_4.4.4.Final_v20170511_1950_B1616.jar_8551063306376887086.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/proxyWizards/1513628613189/org.jboss.tools.central.discovery.integration_stack_4.4.3.Final_v20170522_0930_23_B10.jar_4908923966257119231.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/proxyWizards/1513628613189/org.jboss.tools.central.discovery_4.4.4.Final_v20170511_1950_B1616.jar_2696159283139780986.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/proxyWizards/1513632555645/.rcache/.contributions.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/proxyWizards/1513632555645/.rcache/.contributors.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/proxyWizards/1513632555645/.rcache/.extraData.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/proxyWizards/1513632555645/.rcache/.mainData.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/proxyWizards/1513632555645/.rcache/.manager/.fileTableLock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/proxyWizards/1513632555645/.rcache/.namespaces.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/proxyWizards/1513632555645/.rcache/.orphans.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/proxyWizards/1513632555645/.rcache/.table.1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/proxyWizards/1513632555645/org.jboss.tools.central.discovery.earlyaccess_4.4.4.Final_v20170511_1950_B1616.jar_1704295929519551370.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/proxyWizards/1513632555645/org.jboss.tools.central.discovery.integration_stack_4.4.3.Final_v20170522_0930_23_B10.jar_6313102660408376628.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/proxyWizards/1513632555645/org.jboss.tools.central.discovery_4.4.4.Final_v20170511_1950_B1616.jar_4978686893642300442.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.model/images/default.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/lib/ApacheCommon2.3/common-annotations.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/lib/ApacheCommon2.3/commons-beanutils.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/lib/ApacheCommon2.3/commons-collections.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/lib/ApacheCommon2.3/commons-digester.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/lib/ApacheCommon2.3/commons-logging.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/lib/ApacheCommon2.3/jstl.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/lib/ApacheCommon2.3/standard.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/lib/RichFaces3.1/richfaces-api-3.1.6.SR1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/lib/RichFaces3.1/richfaces-impl-3.1.6.SR1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/lib/RichFaces3.1/richfaces-ui-3.1.6.SR1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/lib/RichFaces3.3/richfaces-api-3.3.3.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/lib/RichFaces3.3/richfaces-impl-3.3.3.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/lib/RichFaces3.3/richfaces-ui-3.3.3.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/lib/Tiles/struts.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/lib/facelets/jsf-facelets.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/lib/jsf-1.2/jsf-tlds.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/lib/servlet/2.2/servlet.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/lib/servlet/2.3/servlet.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/lib/servlet/2.4/jsp-api.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/lib/servlet/2.4/servlet-api.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFBlankWithLibs/WebContent/WEB-INF/lib/jsf-api.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFBlankWithLibs/WebContent/WEB-INF/lib/jsf-impl.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFKickStartWithLibs/WebContent/WEB-INF/lib/jsf-api.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFKickStartWithLibs/WebContent/WEB-INF/lib/jsf-impl.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFKickStartWithoutLibs/WebContent/WEB-INF/lib/jsf-tlds.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithRILibs/WebContent/WEB-INF/lib/el-api.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithRILibs/WebContent/WEB-INF/lib/el-ri.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithRILibs/WebContent/WEB-INF/lib/jsf-api.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithRILibs/WebContent/WEB-INF/lib/jsf-impl.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.0/JSFBlankWithLibs/WebContent/WEB-INF/lib/jsf-api-2.0.4-b09.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.0/JSFBlankWithLibs/WebContent/WEB-INF/lib/jsf-impl-2.0.4-b09.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.1/JSFBlankWithLibs/WebContent/WEB-INF/lib/javax.faces-2.1.13.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsppreview/pic/default_img.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsppreview/pic/error.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsppreview/pic/expression.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/vpe/pic/default_img.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/vpe/pic/error.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/vpe/pic/expression.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/vpe/tmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.foundation.core/ECF_REMOTE_CACHE/319cc6c15fb84897a8bb26c291c2c6dc19311164-8120797901745848780.tmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springframework.ide.eclipse.beans.core.metadata/metadata/.state" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springframework.ide.eclipse.beans.core.metadata/properties/.state" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/font-custom/fontcustom.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/img/blog.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/img/blog_32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/img/bug_32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/img/comparison_32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/img/compass.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/img/compass_32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/img/extension.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/img/extension_32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/img/favicon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/img/forum.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/img/forum_32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/img/guides.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/img/guides_32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/img/logo_bigleaf.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/img/logo_spring.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/img/logo_sts.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/img/new_32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/img/overlay-incoming.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/img/question.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/img/spring-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/img/springdocs.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/img/springdocs_32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignforce-unavailable-ms/.mvn/wrapper/maven-wrapper.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jun_ms/assignforce-gateway/bin/.mvn/wrapper/maven-wrapper.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jun_ms/assignforce-gateway/bin/src/main/java/com/revature/assignforcegateway/AssignforceGatewayApplication.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jun_ms/assignforce-gateway/bin/src/test/java/com/revature/assignforcegateway/AssignforceGatewayApplicationTests.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/10/40cc9d9c3be4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/13/60e05095c2e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/16/80bc70e60ae100171f24ce5babbf1e65" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/18/a00b4f95c2e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/2/f07749583ce4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/21/c01548ec3be4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/21/c05c81ff0ae100171f24ce5babbf1e65" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/28/50e9a456c3e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/2c/401d4f583ce4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/31/a05a57583ce4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/35/b0b45e57c9e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/38/206ac5b8c2e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/3a/f07ca2bbc3e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/44/e0709a9c3be4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/47/30c1b8f13be4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/47/b0c515ec3ce4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/4a/a06491d83be4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/5/101267583ce4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/55/703b2cdf0ae100171f24ce5babbf1e65" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/57/c0a43bdf0ae100171f24ce5babbf1e65" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/58/20aa9abe3be4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/5a/d0e067b8c2e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/5f/b06d67e60ae100171f24ce5babbf1e65" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/60/007e97033ce4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/61/e0f245ec3be4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/67/20d67fff0ae100171f24ce5babbf1e65" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/6e/d0e668583ce4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/6f/f0a839df0ae100171f24ce5babbf1e65" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/7b/0001e14a3ce4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/7e/009e9056c3e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/7e/10594695c2e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/8/00d723df0ae100171f24ce5babbf1e65" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/8/a0d496583ce4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/80/003dba5ec5e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/83/f07a6ae60ae100171f24ce5babbf1e65" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/86/70d417213ce4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/88/504e89d83be4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/89/70d576ff0ae100171f24ce5babbf1e65" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/8c/9071a0583ce4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/90/b093c675c3e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/92/30ef64583ce4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/92/508b2e95c2e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/95/005f37df0ae100171f24ce5babbf1e65" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/95/e0f59e56c3e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/96/f0039456c4e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/a0/205e4c583ce4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/a2/70254c95c2e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/a2/e0cdc0d63ce4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/a2/f07bafbc3be4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/aa/50d93c1c3ce4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/ac/301120ae3be4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/ac/7030dd4a3ce4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/ae/8022af56c3e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/af/000f9356c3e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/b/b04f6ce60ae100171f24ce5babbf1e65" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/b0/c07a7cff0ae100171f24ce5babbf1e65" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/b0/e0e199583ce4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/b4/40098ed83be4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/b4/b063f7d63be4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/b7/307f4ac7c3e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/b7/90e2a2583ce4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/bb/609eaac03be4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/c/10cd7aff0ae100171f24ce5babbf1e65" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/c3/700673e60ae100171f24ce5babbf1e65" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/c4/00c5fa713ce4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/c8/80c8222b3ce4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/d0/300feda8c3e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/d4/803183ff0ae100171f24ce5babbf1e65" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/d5/00ec66c9c2e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/e2/d0693e95c2e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/e7/40a662c9c2e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/ea/c0a957c9c2e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/eb/d0a84c36c5e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/ed/e0356fe60ae100171f24ce5babbf1e65" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/f0/e037ddb8c2e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/f1/200f3aba3be4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/f3/10514aaa3be4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/f5/e02cbdc9c3e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/f9/60336af8b1e100171d58e49d19dec577" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/fd/80d32edf0ae100171f24ce5babbf1e65" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/fe/80518d9c3be4001715ceea8f1c3572ca" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/org.eclipse.egit.core/GitProjectData.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-batch-ms/org.eclipse.egit.core/GitProjectData.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-discovery/org.eclipse.egit.core/GitProjectData.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-gateway/org.eclipse.egit.core/GitProjectData.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-skill-ms/org.eclipse.egit.core/GitProjectData.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/assignforce-unavailable-ms/org.eclipse.egit.core/GitProjectData.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ajdt.ui.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.epp.logging.aeri.ide.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.m2e.discovery.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.context.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.java.ui.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.monitor.ui.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.tasks.ui.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.rse.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.rse.ui.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.team.ui.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.browser.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.editors.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.jsdt.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.jsdt.ui.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.server.ui.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.sse.ui.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.ws.service.policy.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.jboss.ide.eclipse.as.ui.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.jboss.tools.central.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.jboss.tools.openshift.express.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.jboss.tools.runtime.ui.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springframework.ide.eclipse.boot.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springframework.ide.eclipse.imports.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springsource.ide.eclipse.commons.configurator.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springsource.ide.eclipse.commons.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springsource.ide.eclipse.commons.frameworks.core.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springsource.ide.eclipse.commons.ui.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springsource.ide.eclipse.dashboard.ui.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.debug.core/.launches/assignforce-gateway - AssignforceGatewayApplication.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.debug.core/.launches/assignforce-skill-ms - AssignforceSkillMsApplication.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.debug.core/.launches/assignforce-unavailable-ms - AssignforceUnavailableMsApplication.launch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.debug.ui/dialog_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/com.genuitec.eclipse.aeri.server1/server-config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/server-config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.jboss.tools/server-config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/indexNamesMap.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/javaLikeNames.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.launching/.install.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.launching/libraryInfos.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/OpenTypeHistory.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/.workspace/2017/12/51/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/.workspace/2017/12/51/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/assignforce-batch-ms/2017/12/50/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/assignforce-batch-ms/2017/12/50/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/assignforce-skill-ms/2017/12/50/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/assignforce-skill-ms/2017/12/50/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/assignforce-skill-ms/2017/12/51/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/assignforce-skill-ms/2017/12/51/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/assignforce-unavailable-ms/2017/12/51/refactorings.history" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/assignforce-unavailable-ms/2017/12/51/refactorings.index" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ltk.ui.refactoring/dialog_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core.ui/dialog_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/workspacestate.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.1.7.0.20160603-1933.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.oomph.setup/workspace.setup" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.rse.core/.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.rse.core/profiles/PRF.desktop-pibnp5o_32637/FP.local.files_0/node.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.rse.core/profiles/PRF.desktop-pibnp5o_32637/H.local_16/node.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.rse.core/profiles/PRF.desktop-pibnp5o_32637/node.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.rse.ui/.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.tm.terminal.view.ui/.executables/data.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.editors/dialog_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.intro/introstate" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui/dialog_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.wst.internet.cache/cache.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.wst.jsdt.core/libraries/baseBrowserLibrary.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.wst.jsdt.core/libraries/browserWindow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.wst.jsdt.core/libraries/dom5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.wst.jsdt.core/libraries/system.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.wst.jsdt.core/libraries/xhr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.wst.jsdt.ui/OpenTypeHistory.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.wst.jsdt.ui/QualifiedTypeNameHistory.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.wst.sse.core/task-tags.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.wst.sse.ui/dialog_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.wst.xml.core/default_catalog.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.wst.xml.core/system_catalog.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.hibernate.eclipse/hibernate-tools.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.ide.eclipse.as.core/.global/filesets/default/org.jboss.ide.eclipse.as.32" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.ide.eclipse.as.core/.global/filesets/default/org.jboss.ide.eclipse.as.40" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.ide.eclipse.as.core/.global/filesets/default/org.jboss.ide.eclipse.as.42" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.ide.eclipse.as.core/.global/filesets/default/org.jboss.ide.eclipse.as.50" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.ide.eclipse.as.core/.global/filesets/default/org.jboss.ide.eclipse.as.51" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.ide.eclipse.as.core/.global/filesets/default/org.jboss.ide.eclipse.as.60" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.ide.eclipse.as.core/.global/filesets/default/org.jboss.ide.eclipse.as.70" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.ide.eclipse.as.core/.global/filesets/default/org.jboss.ide.eclipse.as.71" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.ide.eclipse.as.core/.global/filesets/default/org.jboss.ide.eclipse.as.eap.43" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.ide.eclipse.as.core/.global/filesets/default/org.jboss.ide.eclipse.as.eap.50" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.ide.eclipse.as.core/.global/filesets/default/org.jboss.ide.eclipse.as.eap.60" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.ide.eclipse.as.core/.global/filesets/default/org.jboss.ide.eclipse.as.eap.61" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.ide.eclipse.as.core/.global/filesets/default/org.jboss.ide.eclipse.as.eap.70" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.ide.eclipse.as.core/.global/filesets/default/org.jboss.ide.eclipse.as.wildfly.100" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.ide.eclipse.as.core/.global/filesets/default/org.jboss.ide.eclipse.as.wildfly.110" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.ide.eclipse.as.core/.global/filesets/default/org.jboss.ide.eclipse.as.wildfly.80" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.ide.eclipse.as.core/.global/filesets/default/org.jboss.ide.eclipse.as.wildfly.90" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/css/jboss-app.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/css/overpass.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/images/background_img.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/images/background_img_bottom.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/images/icon-addtools.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/images/icon-community.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/images/icon-info.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/js/main.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/lib/bootstrap-sass-official/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/lib/bootstrap-sass-official/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/lib/jquery-highlight/js/jquery.highlight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/lib/jquery/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/d794065/lib/twbs-pagination/js/jquery.twbsPagination.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/central/loading_2.1.4.v20170420_1310.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/jboss_buzz.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/proxyWizards/1513628613189/.rcache/.manager/.fileTable.8" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/proxyWizards/1513628613189/.rcache/.manager/.fileTable.9" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/proxyWizards/1513632555645/.rcache/.manager/.fileTable.7" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/proxyWizards/1513632555645/.rcache/.manager/.fileTable.8" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.central/valid_jboss_buzz.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/JSFCapabilities.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/JSFVersions.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFBlankWithLibs/.preprocessing" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFBlankWithLibs/.settings/org.jboss.tools.jst.web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFBlankWithLibs/WebContent/WEB-INF/faces-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFBlankWithLibs/WebContent/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFBlankWithLibs/ant/build.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFKickStartWithLibs/.preprocessing" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFKickStartWithLibs/.settings/org.jboss.tools.jst.web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFKickStartWithLibs/JavaSource/demo/Messages.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFKickStartWithLibs/JavaSource/demo/User.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFKickStartWithLibs/WebContent/WEB-INF/faces-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFKickStartWithLibs/WebContent/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFKickStartWithLibs/WebContent/index.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFKickStartWithLibs/WebContent/pages/hello.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFKickStartWithLibs/WebContent/pages/inputUserName.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFKickStartWithLibs/ant/build.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFKickStartWithoutLibs/.preprocessing" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFKickStartWithoutLibs/.settings/org.jboss.tools.jst.web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFKickStartWithoutLibs/JavaSource/demo/Messages.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFKickStartWithoutLibs/JavaSource/demo/User.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFKickStartWithoutLibs/WebContent/WEB-INF/faces-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFKickStartWithoutLibs/WebContent/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFKickStartWithoutLibs/WebContent/index.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFKickStartWithoutLibs/WebContent/pages/hello.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFKickStartWithoutLibs/WebContent/pages/inputUserName.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.1/JSFKickStartWithoutLibs/ant/build.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsBlankWithoutLibs/.preprocessing" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsBlankWithoutLibs/.settings/org.jboss.tools.jst.web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsBlankWithoutLibs/WebContent/WEB-INF/faces-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsBlankWithoutLibs/WebContent/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsBlankWithoutLibs/ant/build.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithRILibs/.preprocessing" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithRILibs/.settings/org.jboss.tools.jst.web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithRILibs/JavaSource/demo/Person.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithRILibs/JavaSource/resources.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithRILibs/WebContent/WEB-INF/faces-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithRILibs/WebContent/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithRILibs/WebContent/index.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithRILibs/WebContent/pages/greeting.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithRILibs/WebContent/pages/inputname.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithRILibs/WebContent/templates/common.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithRILibs/ant/build.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithoutLibs/.preprocessing" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithoutLibs/.settings/org.jboss.tools.jst.web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithoutLibs/JavaSource/demo/Person.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithoutLibs/JavaSource/resources.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithoutLibs/WebContent/WEB-INF/faces-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithoutLibs/WebContent/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithoutLibs/WebContent/index.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithoutLibs/WebContent/pages/greeting.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithoutLibs/WebContent/pages/inputname.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithoutLibs/WebContent/templates/common.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2-facelets/FaceletsKickStartWithoutLibs/ant/build.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2/JSFBlankWithoutLibs/.preprocessing" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2/JSFBlankWithoutLibs/.settings/org.jboss.tools.jst.web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2/JSFBlankWithoutLibs/WebContent/WEB-INF/faces-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2/JSFBlankWithoutLibs/WebContent/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2/JSFBlankWithoutLibs/ant/build.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2/JSFKickStartWithoutLibs/.preprocessing" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2/JSFKickStartWithoutLibs/.settings/org.jboss.tools.jst.web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2/JSFKickStartWithoutLibs/JavaSource/demo/Messages.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2/JSFKickStartWithoutLibs/JavaSource/demo/User.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2/JSFKickStartWithoutLibs/WebContent/WEB-INF/faces-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2/JSFKickStartWithoutLibs/WebContent/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2/JSFKickStartWithoutLibs/WebContent/index.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2/JSFKickStartWithoutLibs/WebContent/pages/hello.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2/JSFKickStartWithoutLibs/WebContent/pages/inputUserName.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-1.2/JSFKickStartWithoutLibs/ant/build.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.0/JSFBlankWithLibs/.preprocessing" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.0/JSFBlankWithLibs/.settings/org.jboss.tools.jst.web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.0/JSFBlankWithLibs/WebContent/WEB-INF/faces-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.0/JSFBlankWithLibs/WebContent/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.0/JSFBlankWithoutLibs/.preprocessing" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.0/JSFBlankWithoutLibs/.settings/org.jboss.tools.jst.web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.0/JSFBlankWithoutLibs/WebContent/WEB-INF/faces-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.0/JSFBlankWithoutLibs/WebContent/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.0/JSFKickStartWithoutLibs/.preprocessing" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.0/JSFKickStartWithoutLibs/.settings/org.jboss.tools.jst.web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.0/JSFKickStartWithoutLibs/JavaSource/demo/User.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.0/JSFKickStartWithoutLibs/JavaSource/resources.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.0/JSFKickStartWithoutLibs/WebContent/WEB-INF/.faces-config.xml.jsfdia" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.0/JSFKickStartWithoutLibs/WebContent/WEB-INF/faces-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.0/JSFKickStartWithoutLibs/WebContent/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.0/JSFKickStartWithoutLibs/WebContent/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.0/JSFKickStartWithoutLibs/WebContent/pages/greeting.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.0/JSFKickStartWithoutLibs/WebContent/pages/inputname.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.0/JSFKickStartWithoutLibs/WebContent/resources/demo/input.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.0/JSFKickStartWithoutLibs/WebContent/templates/common.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.1/JSFBlankWithLibs/.preprocessing" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.1/JSFBlankWithLibs/.settings/org.jboss.tools.jst.web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.1/JSFBlankWithLibs/WebContent/WEB-INF/faces-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.1/JSFBlankWithLibs/WebContent/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.1/JSFBlankWithoutLibs/.preprocessing" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.1/JSFBlankWithoutLibs/.settings/org.jboss.tools.jst.web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.1/JSFBlankWithoutLibs/WebContent/WEB-INF/faces-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.1/JSFBlankWithoutLibs/WebContent/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.1/JSFKickStartWithoutLibs/.preprocessing" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.1/JSFKickStartWithoutLibs/.settings/org.jboss.tools.jst.web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.1/JSFKickStartWithoutLibs/JavaSource/demo/User.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.1/JSFKickStartWithoutLibs/JavaSource/resources.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.1/JSFKickStartWithoutLibs/WebContent/WEB-INF/.faces-config.xml.jsfdia" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.1/JSFKickStartWithoutLibs/WebContent/WEB-INF/faces-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.1/JSFKickStartWithoutLibs/WebContent/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.1/JSFKickStartWithoutLibs/WebContent/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.1/JSFKickStartWithoutLibs/WebContent/pages/greeting.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.1/JSFKickStartWithoutLibs/WebContent/pages/inputname.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.1/JSFKickStartWithoutLibs/WebContent/resources/demo/input.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.1/JSFKickStartWithoutLibs/WebContent/templates/common.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.2/JSFBlankWithoutLibs/.preprocessing" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.2/JSFBlankWithoutLibs/.settings/org.jboss.tools.jst.web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.2/JSFBlankWithoutLibs/WebContent/WEB-INF/faces-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.2/JSFBlankWithoutLibs/WebContent/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.2/JSFKickStartWithoutLibs/.preprocessing" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.2/JSFKickStartWithoutLibs/.settings/org.jboss.tools.jst.web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.2/JSFKickStartWithoutLibs/JavaSource/demo/User.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.2/JSFKickStartWithoutLibs/JavaSource/resources.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.2/JSFKickStartWithoutLibs/WebContent/WEB-INF/.faces-config.xml.jsfdia" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.2/JSFKickStartWithoutLibs/WebContent/WEB-INF/faces-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.2/JSFKickStartWithoutLibs/WebContent/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.2/JSFKickStartWithoutLibs/WebContent/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.2/JSFKickStartWithoutLibs/WebContent/pages/greeting.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.2/JSFKickStartWithoutLibs/WebContent/pages/inputname.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.2/JSFKickStartWithoutLibs/WebContent/resources/demo/input.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsf-2.2/JSFKickStartWithoutLibs/WebContent/templates/common.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsppreview/jsf-core.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsppreview/jsf-html.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsppreview/jsp.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsppreview/jstl-c.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsppreview/jstl-fmt.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsppreview/jstl-sql.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsppreview/jstl-x.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsppreview/pic/pictures.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsppreview/prefixmap.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsppreview/struts-bean-el.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsppreview/struts-bean.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsppreview/struts-bean1_2.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsppreview/struts-html-el.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsppreview/struts-html.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsppreview/struts-html1_2.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsppreview/struts-logic-el.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsppreview/struts-logic.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsppreview/struts-logic1_2.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsppreview/struts-nested.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsppreview/struts-nested1_2.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsppreview/struts-template.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsppreview/struts-template1_2.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/jsppreview/tagmap.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/vpe/jsf-core.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/vpe/jsf-html.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/vpe/jsp.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/vpe/jstl-c.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/vpe/jstl-fmt.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/vpe/jstl-sql.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/vpe/jstl-x.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/vpe/pic/pictures.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/vpe/prefixmap.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/vpe/struts-bean.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/vpe/struts-html.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/vpe/struts-logic.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/vpe/struts-nested.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/vpe/struts-template.jpt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.common.projecttemplates/templates/vpe/tagmap.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.foundation.core/ECF_REMOTE_CACHE/URLTransportCache.cacheIndex.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.foundation.core/ECF_REMOTE_CACHE/ad3e417d20abdea71e86f550c1be41ac94c87225-3543585556757219673.tmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.project.examples/gatein/quickstarts/jboss-portal-6.2/project-examples-jboss-portal6.2-jbds8.0-001.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.project.examples/jbosstools/examples/4/4/project-examples-category.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.project.examples/jbosstools/examples/4/4/project-examples-community.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.project.examples/jbosstools/examples/4/4/project-examples-empty.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.project.examples/jbosstools/examples/4/4/project-examples-shared.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.project.examples/quickstarts-json/6b9acd894ddf7033b2877ef97e2729f2f83c1b276995042221343605849.tmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.project.examples/quickstarts-json/URLTransportCache.cacheIndex.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.usage/events/0548c0f2-5c1f-3561-abbf-bc67a1ee9445" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.usage/events/35c9f0e9-8245-32ee-af4b-685906cc338a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.usage/events/5154a0f4-819f-3fdc-b14b-891bc5ebf20e" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.usage/events/9d989e55-a0e7-3441-85f0-d68a1a811405" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.usage/events/central-browser-IE+_11" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.usage/events/central-showOnStartup-true" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.jboss.tools.usage/events/eeb18b4f-68f5-303e-b4c6-ccedfab5f7b1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springframework.ide.eclipse.aop.core/.state" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springframework.ide.eclipse.boot.properties.editor.yaml/dialog_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/bootstrap/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/bootstrap/css/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/bootstrap/js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/bootstrap/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/css/application.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/css/blog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/css/buttons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/css/dashboard.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/css/docs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/css/flexbox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/css/fontcustom.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/css/highlight.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/css/homepage.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/css/icons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/css/markdown-content.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/css/panes.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/css/projects.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/css/responsive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/css/tools.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/css/typography.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/font-awesome/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/js/application.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/js/filter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/js/guide.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/common/js/modernizer.flexbox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1513632556740/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.dashboard.ui/feeds/dashboard.feeds.blogs/-549550714.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.springsource.ide.eclipse.dashboard.ui/feeds/dashboard.feeds.update/623127801.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.metadata/version.ini" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RemoteSystemsTempFiles/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignforce-unavailable-ms/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignforce-unavailable-ms/.mvn/wrapper/maven-wrapper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignforce-unavailable-ms/mvnw" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignforce-unavailable-ms/mvnw.cmd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignforce-unavailable-ms/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignforce-unavailable-ms/src/main/java/com/revature/assignforceunavailablems/AssignforceUnavailableMsApplication.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignforce-unavailable-ms/src/main/java/com/revature/assignforceunavailablems/controller/UnavailableCtrl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignforce-unavailable-ms/src/main/java/com/revature/assignforceunavailablems/dao/ActivatableObjectRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignforce-unavailable-ms/src/main/java/com/revature/assignforceunavailablems/dao/BaseRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignforce-unavailable-ms/src/main/java/com/revature/assignforceunavailablems/dao/UnavailableRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignforce-unavailable-ms/src/main/java/com/revature/assignforceunavailablems/domain/Activatable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignforce-unavailable-ms/src/main/java/com/revature/assignforceunavailablems/domain/Unavailable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignforce-unavailable-ms/src/main/java/com/revature/assignforceunavailablems/service/ActivatableObjectDaoService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignforce-unavailable-ms/src/main/java/com/revature/assignforceunavailablems/service/DaoService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignforce-unavailable-ms/src/main/java/com/revature/assignforceunavailablems/service/UnavailableDaoService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignforce-unavailable-ms/src/main/resources/application.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assignforce-unavailable-ms/src/test/java/com/example/demo/AssignforceSkillMsApplicationTests.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jun_ms/assignforce-batch-ms/src/main/java/com/revature/assignforcebatchms/domain/Batch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jun_ms/assignforce-batch-ms/src/main/java/com/revature/assignforcebatchms/domain/BatchLocation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jun_ms/assignforce-batch-ms/src/main/java/com/revature/assignforcebatchms/domain/BatchStatusLookup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jun_ms/assignforce-gateway/bin/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jun_ms/assignforce-gateway/bin/.mvn/wrapper/maven-wrapper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jun_ms/assignforce-gateway/bin/mvnw" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jun_ms/assignforce-gateway/bin/mvnw.cmd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jun_ms/assignforce-gateway/bin/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jun_ms/assignforce-gateway/bin/src/main/resources/application.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assignforce-batch-ms/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/assignforce-batch-ms/src/main/resources/application.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assignforce-discovery/src/main/java/com/revature/assignforcediscovery/AssignforceDiscoveryApplication.java" afterPath="$PROJECT_DIR$/assignforce-discovery/src/main/java/com/revature/assignforcediscovery/AssignforceDiscoveryApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assignforce-skill-ms/pom.xml" afterPath="$PROJECT_DIR$/assignforce-skill-ms/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assignforce-skill-ms/src/main/java/com/revature/assignforceskillms/AssignforceSkillMsApplication.java" afterPath="$PROJECT_DIR$/assignforce-skill-ms/src/main/java/com/revature/assignforceskillms/AssignforceSkillMsApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assignforce-skill-ms/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/assignforce-skill-ms/src/main/resources/application.yml" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assignforce-skill-ms/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="725">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AssignforceSkillMsApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assignforce-skill-ms/src/main/java/com/revature/assignforceskillms/AssignforceSkillMsApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assignforce-skill-ms/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="812">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/assignforce-skill-ms/pom.xml" />
+        <option value="$PROJECT_DIR$/assignforce-skill-ms/src/main/java/com/revature/assignforceskillms/AssignforceSkillMsApplication.java" />
+        <option value="$PROJECT_DIR$/assignforce-skill-ms/src/main/resources/application.yml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1362" />
+    <option name="width" value="1942" />
+    <option name="height" value="2108" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="assignforce-ms-ecosystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignforce-ms-ecosystem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignforce-ms-ecosystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignforce-ms-ecosystem" type="462c0819:PsiDirectoryNode" />
+              <item name="assignforce-skill-ms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignforce-ms-ecosystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignforce-ms-ecosystem" type="462c0819:PsiDirectoryNode" />
+              <item name="assignforce-skill-ms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignforce-ms-ecosystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignforce-ms-ecosystem" type="462c0819:PsiDirectoryNode" />
+              <item name="assignforce-skill-ms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignforce-ms-ecosystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignforce-ms-ecosystem" type="462c0819:PsiDirectoryNode" />
+              <item name="assignforce-skill-ms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignforce-ms-ecosystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignforce-ms-ecosystem" type="462c0819:PsiDirectoryNode" />
+              <item name="assignforce-skill-ms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignforce-ms-ecosystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignforce-ms-ecosystem" type="462c0819:PsiDirectoryNode" />
+              <item name="assignforce-skill-ms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="revature" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignforce-ms-ecosystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignforce-ms-ecosystem" type="462c0819:PsiDirectoryNode" />
+              <item name="assignforce-skill-ms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="revature" type="462c0819:PsiDirectoryNode" />
+              <item name="assignforceskillms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignforce-ms-ecosystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignforce-ms-ecosystem" type="462c0819:PsiDirectoryNode" />
+              <item name="assignforce-skill-ms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path" value="C:/Software/NodeJs/node" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="65b7a3c0-ffca-441c-a39e-8e6a49e6cc00" name="Default" comment="" />
+      <created>1513634266870</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1513634266870</updated>
+      <workItem from="1513634268131" duration="196000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="196000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2498671" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/assignforce-skill-ms/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignforce-skill-ms/src/main/java/com/revature/assignforceskillms/AssignforceSkillMsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignforce-skill-ms/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="812">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

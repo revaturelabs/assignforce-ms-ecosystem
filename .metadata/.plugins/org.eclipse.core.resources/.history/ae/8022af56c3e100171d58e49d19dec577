@@ -1,0 +1,5 @@
+package com.revature.assignforcebatchms.domain;
+
+public class BatchStatusLookup {
+
+}
