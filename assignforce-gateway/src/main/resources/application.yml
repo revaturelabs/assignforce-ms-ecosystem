@@ -48,3 +48,4 @@ server:
     keyStoreType: jks
     keyAlias: selfsigned
  
+frontEndUrl: http://localhost:4200
