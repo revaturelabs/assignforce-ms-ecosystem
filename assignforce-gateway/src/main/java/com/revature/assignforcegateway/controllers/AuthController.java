@@ -35,7 +35,7 @@ public class AuthController{
 
     @RequestMapping(value= "/", method = RequestMethod.GET)
     public void home(HttpServletResponse response) throws IOException{
-	response.sendRedirect("http://localhost:4200/overview");
+	response.sendRedirect(frontEndUrl + "/overview");
     }
     
 }

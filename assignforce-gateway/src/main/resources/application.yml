@@ -34,7 +34,7 @@ security:
       authenticationScheme: header
       clientAuthenticationScheme: form
       grantType: authorization_code
-      preEstablishedRedirectUri: https://localhost:8443/home
+      preEstablishedRedirectUri: https://localhost:8443/random
       #registeredRedirectUri: https://localhost:8443/
       #useCurrentUri: false
     resource:
