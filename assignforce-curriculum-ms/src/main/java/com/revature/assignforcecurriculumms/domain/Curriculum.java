@@ -1,4 +1,4 @@
-package com.revature.assignforcecurriculumms.model;
+package com.revature.assignforcecurriculumms.domain;
 
 import javax.persistence.*;
 import java.util.List;
@@ -10,7 +10,7 @@ public class Curriculum implements Activatable{
 
 	private int currId;
 	private String name;
-	private List<Integer> skills;
+	private List<CurriculumSkillJT> skills;
 	private Boolean active;
 	private Boolean core;
 	
@@ -18,7 +18,7 @@ public class Curriculum implements Activatable{
 		//noarg constructor
 	}
 
-	public Curriculum(int currId, String name, List<Integer> skills, boolean core) {
+	public Curriculum(int currId, String name, List<CurriculumSkillJT> skills, boolean core) {
 		super();
 		this.currId = currId;
 		this.name = name;
@@ -45,11 +45,11 @@ public class Curriculum implements Activatable{
 		this.name = name;
 	}
 
-	@Transient
-	public List<Integer> getSkills() {
-		return skills;
-	}
-	public void setSkills(List<Integer> skills) {
+	@OneToMany(cascade = CascadeType.ALL)
+	@JoinTable(name = "CURRICULUM_SKILL_JT", joinColumns = {@JoinColumn(name = "CURRICULUM_ID")})
+	//@JoinColumn(name = "CURRICULUM_ID")
+	public List<CurriculumSkillJT> getSkills() { return skills; }
+	public void setSkills(List<CurriculumSkillJT> skills) {
 		this.skills = skills;
 	}
 

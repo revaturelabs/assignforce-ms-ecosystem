@@ -1,4 +1,4 @@
-package com.revature.assignforcecurriculumms.model;
+package com.revature.assignforcecurriculumms.domain;
 
 /**
  * Created by August Duet on 11/29/2016.
