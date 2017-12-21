@@ -45,7 +45,7 @@ public class Curriculum implements Activatable{
 		this.name = name;
 	}
 
-
+	@Transient
 	public List<Integer> getSkills() {
 		return skills;
 	}
