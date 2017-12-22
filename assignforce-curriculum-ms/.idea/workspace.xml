@@ -16,58 +16,27 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="812">
-              <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="35" selection-end-column="21" />
+            <state relative-caret-position="415">
+              <caret line="24" column="57" lean-forward="false" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Curriculum.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/model/Curriculum.java">
+      <file leaf-file-name="Curriculum.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/Curriculum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1102">
-              <caret line="47" column="14" lean-forward="false" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
-              <folding>
-                <element signature="e#1067#1068#0" expanded="true" />
-                <element signature="e#1087#1088#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CurrSkillPK.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/model/CurrSkillPK.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="572">
+              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#480#481#0" expanded="true" />
-                <element signature="e#509#510#0" expanded="true" />
-                <element signature="e#550#551#0" expanded="true" />
-                <element signature="e#586#587#0" expanded="true" />
-                <element signature="e#648#649#0" expanded="true" />
-                <element signature="e#678#679#0" expanded="true" />
-                <element signature="e#721#722#0" expanded="true" />
-                <element signature="e#759#760#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractEntityManagerFactoryBean.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/4.3.13.RELEASE/spring-orm-4.3.13.RELEASE.jar!/org/springframework/orm/jpa/AbstractEntityManagerFactoryBean.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4292">
-              <caret line="221" column="0" lean-forward="false" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Activatable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/model/Activatable.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/Activatable.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="203">
               <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
@@ -76,23 +45,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AssignforceCurriculumMsApplicationTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplicationTests.java">
+      <file leaf-file-name="CurriculumSkillJT.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/CurriculumSkillJT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            <state relative-caret-position="174">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AssignforceCurriculumMsApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplication.java">
+      <file leaf-file-name="CurrSkillPK.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/CurrSkillPK.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+            <state relative-caret-position="290">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DaoService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/service/DaoService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
               <folding>
-                <element signature="e#581#582#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,39 +80,45 @@
       <file leaf-file-name="CurriculumCtrl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/web/CurriculumCtrl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            <state relative-caret-position="2552">
+              <caret line="88" column="117" lean-forward="false" selection-start-line="88" selection-start-column="117" selection-end-line="88" selection-end-column="117" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#320#321#0" expanded="true" />
-                <element signature="e#369#370#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CurriculumSkillJT.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/model/CurriculumSkillJT.java">
+      <file leaf-file-name="CurriculumDTO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/dto/CurriculumDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#361#362#0" expanded="true" />
-                <element signature="e#395#396#0" expanded="true" />
-                <element signature="e#454#455#0" expanded="true" />
-                <element signature="e#500#501#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="725">
+              <caret line="39" column="48" lean-forward="false" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResponseErrorDTO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/dto/ResponseErrorDTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="667">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActivatableObjectDaoService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/service/ActivatableObjectDaoService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="754">
+              <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -147,6 +132,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>SKILL</find>
+    </findStrings>
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -156,14 +146,25 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/web/CurriculumCtrl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/model/Activatable.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/model/Curriculum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/model/CurriculumSkillJT.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/model/CurrSkillPK.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/dao/CurriculumRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/dao/ActivatableObjectRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/dao/BaseRepository.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/config/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/service/CurriculumDaoService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/service/ActivatableObjectDaoService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/service/DaoService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/dto/ResponseErrorDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/CurrSkillPK.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/dto/CurriculumDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/web/CurriculumCtrl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/Curriculum.java" />
       </list>
     </option>
   </component>
@@ -181,9 +182,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1362" />
-    <option name="width" value="1942" />
-    <option name="height" value="2108" />
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="3864" />
+    <option name="height" value="2132" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -200,7 +202,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -242,7 +244,45 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="assignforcecurriculumms" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignforce-curriculum-ms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignforce-curriculum-ms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="assignforcecurriculumms" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignforce-curriculum-ms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignforce-curriculum-ms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="assignforcecurriculumms" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignforce-curriculum-ms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignforce-curriculum-ms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="assignforcecurriculumms" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignforce-curriculum-ms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignforce-curriculum-ms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="assignforcecurriculumms" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="assignforce-curriculum-ms" type="b2602c69:ProjectViewProjectNode" />
@@ -285,7 +325,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -297,7 +337,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../assignforce-unavailable-ms" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../assignforce" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelWidth1" value="75" />
@@ -307,7 +347,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.revature.assignforcecurriculumms.domain.dto" />
+      <recent name="com.revature.assignforcecurriculumms.web" />
+      <recent name="com.revature.assignforcecurriculumms.config" />
+      <recent name="com.revature.assignforcecurriculumms.domain.dao" />
       <recent name="com.revature.assignforcecurriculumms.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Revature\Workspace\project03\assignforce-ms-ecosystem\assignforce-curriculum-ms\src\main\java\com\revature\assignforcecurriculumms\service" />
+      <recent name="D:\Revature\Workspace\project03\assignforce-ms-ecosystem\assignforce-curriculum-ms\src\main\java\com\revature\assignforcecurriculumms\domain\dao" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -436,11 +484,12 @@
       <workItem from="1513453687177" duration="104000" />
       <workItem from="1513613912048" duration="2043000" />
       <workItem from="1513869714820" duration="1933000" />
+      <workItem from="1513883225179" duration="5794000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16232000" />
+    <option name="totallyTimeSpent" value="22026000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2132" extended-state="6" />
@@ -448,7 +497,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -461,7 +510,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25704414" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2597023" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -489,138 +538,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/web/CurriculumCtrl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/model/CurriculumSkillJT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="17" column="6" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/model/Curriculum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1421">
-          <caret line="49" column="22" lean-forward="false" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
-          <folding>
-            <element signature="e#1067#1068#0" expanded="true" />
-            <element signature="e#1087#1088#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="812">
-          <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="35" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/4.3.13.RELEASE/spring-orm-4.3.13.RELEASE.jar!/org/springframework/orm/jpa/AbstractEntityManagerFactoryBean.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4350">
-          <caret line="221" column="0" lean-forward="false" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/model/Activatable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding>
-            <element signature="e#581#582#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/web/CurriculumCtrl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/model/CurriculumSkillJT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="17" column="6" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/model/Curriculum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1131">
-          <caret line="49" column="22" lean-forward="false" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
-          <folding>
-            <element signature="e#1067#1068#0" expanded="true" />
-            <element signature="e#1087#1088#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/web/CurriculumCtrl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/CurriculumSkillJT.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/Curriculum.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="899">
@@ -629,50 +550,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding>
-            <element signature="e#581#582#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="e#581#582#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplicationTests.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplication.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplicationTests.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplication.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -689,63 +571,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding>
-            <element signature="e#581#582#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/web/CurriculumCtrl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/model/Activatable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/model/Curriculum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="39" column="53" lean-forward="false" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
-          <folding>
-            <element signature="e#1067#1068#0" expanded="true" />
-            <element signature="e#1087#1088#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplicationTests.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplication.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/web/CurriculumCtrl.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplicationTests.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/Activatable.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/Curriculum.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/4.3.13.RELEASE/spring-orm-4.3.13.RELEASE.jar!/org/springframework/orm/jpa/AbstractEntityManagerFactoryBean.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4292">
@@ -754,20 +585,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/model/CurriculumSkillJT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/CurriculumSkillJT.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -776,24 +594,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding>
-            <element signature="e#581#582#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplication.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="899">
@@ -802,50 +604,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding>
-            <element signature="e#581#582#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="e#581#582#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplicationTests.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplication.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplicationTests.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplication.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -862,71 +625,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplicationTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplicationTests.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplication.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplicationTests.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplication.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/dao/ActivatableObjectRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        <state relative-caret-position="348">
+          <caret line="12" column="105" lean-forward="false" selection-start-line="12" selection-start-column="105" selection-end-line="12" selection-end-column="105" />
           <folding>
-            <element signature="e#581#582#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplicationTests.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/dao/BaseRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="174">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/dao/CurriculumRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="81" lean-forward="false" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/service/CurriculumDaoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="75" lean-forward="true" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/service/DaoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/dto/ResponseErrorDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="812">
-          <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="35" selection-end-column="21" />
+        <state relative-caret-position="415">
+          <caret line="24" column="57" lean-forward="false" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/web/CurriculumCtrl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/AssignforceCurriculumMsApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding>
-            <element signature="e#581#582#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/model/Activatable.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/Activatable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
@@ -934,45 +714,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/model/Curriculum.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/service/ActivatableObjectDaoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1102">
-          <caret line="47" column="14" lean-forward="false" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
-          <folding>
-            <element signature="e#1067#1068#0" expanded="true" />
-            <element signature="e#1087#1088#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/model/CurriculumSkillJT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        <state relative-caret-position="754">
+          <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/model/CurrSkillPK.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/CurrSkillPK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/CurriculumSkillJT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/dto/CurriculumDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="725">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <caret line="39" column="48" lean-forward="false" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/web/CurriculumCtrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2552">
+          <caret line="88" column="117" lean-forward="false" selection-start-line="88" selection-start-column="117" selection-end-line="88" selection-end-column="117" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#509#510#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#648#649#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/revature/assignforcecurriculumms/domain/Curriculum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,6 +1,5 @@
-package com.revature.assignforcecurriculumms.model;
+package com.revature.assignforcecurriculumms.domain;
 
-import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.Table;
