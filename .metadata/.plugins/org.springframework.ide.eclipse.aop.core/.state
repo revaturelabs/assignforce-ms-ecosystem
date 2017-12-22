@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="assignforce-discovery"/>
+<aop-project name="assignforce-gateway"/>
+<aop-project name="assignforce-unavailable-ms2"/>
+<aop-project name="assignforce-skill-ms"/>
+<aop-project name="assignforce-batch-ms"/>
+</aop-reference-model>
