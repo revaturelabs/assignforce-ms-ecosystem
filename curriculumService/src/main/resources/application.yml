@@ -3,9 +3,7 @@ spring:
       username: ${RDS_USER}
       password: ${RDS_PASS}
       url: ${RDS_URL}
-#      username: junli
-#      password: cc554336233
-#      url: jdbc:oracle:thin:@oct23javajunli.clwojcu9sv3n.us-east-2.rds.amazonaws.com:1521:ORCL
+
     jpa:
         database-platform: org.hibernate.dialect.Oracle10gDialect
 server:
