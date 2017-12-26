@@ -1,7 +1,6 @@
 package com.revature.curriculumservice.web;
 
 import com.revature.curriculumservice.domain.Curriculum;
-import com.revature.curriculumservice.domain.CurriculumSkillJT;
 import com.revature.curriculumservice.domain.dto.CurriculumDTO;
 import com.revature.curriculumservice.domain.dto.ResponseErrorDTO;
 import com.revature.curriculumservice.service.ActivatableObjectDaoService;
@@ -9,6 +8,8 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.HttpStatus;
@@ -24,6 +25,9 @@ import java.util.List;
 @ComponentScan(basePackages="com.revature.assignforce.service")
 @Api(value = "Curriculum Controller", description = "Operations regarding Curricula")
 public class CurriculumCtrl {
+
+	Logger logger = Logger.getLogger(CurriculumCtrl.class);
+
 
 	@Autowired
 	ActivatableObjectDaoService<Curriculum, Integer> currService;
@@ -41,7 +45,7 @@ public class CurriculumCtrl {
 
 		int id = in.getCurrId();
 		String name = in.getName();
-		List<CurriculumSkillJT> skills = in.getSkills(); // HOW TO GET SKILLS FROM JT? @OneToMany
+		List<Integer> skills = in.getSkills(); // HOW TO GET SKILLS FROM JT? @OneToMany
 		boolean core = in.getCore();
 
 		Curriculum out = new Curriculum( id, name, skills, core);
@@ -86,7 +90,7 @@ public class CurriculumCtrl {
 		Integer id = in.getCurrId();
 		id = (id != null)? in.getCurrId() : 0;
 		String name = (in.getName() != null)? in.getName() : "";
-		List<CurriculumSkillJT> skills = (in.getSkills() != null)? in.getSkills() : new ArrayList<CurriculumSkillJT>();
+		List<Integer> skills = (in.getSkills() != null)? in.getSkills() : new ArrayList<Integer>();
 		Boolean core = (in.getCore() != null)? in.getCore() : false;
 		
 		Curriculum out = new Curriculum( id, name, skills, core );

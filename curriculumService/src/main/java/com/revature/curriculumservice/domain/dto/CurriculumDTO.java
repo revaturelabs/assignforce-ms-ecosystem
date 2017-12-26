@@ -1,6 +1,5 @@
 package com.revature.curriculumservice.domain.dto;
 
-import com.revature.curriculumservice.domain.CurriculumSkillJT;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
@@ -14,7 +13,7 @@ public class CurriculumDTO {
 	@ApiModelProperty(notes = "The Curriculum Name")
 	private String name;
 	@ApiModelProperty(notes = "A list of curriculum skills")
-	private List<CurriculumSkillJT> skills;
+	private List<Integer> skills;
 	@ApiModelProperty(notes = "A boolean used to mark a curriculum active or not")
 	private Boolean active;
 	@ApiModelProperty(notes = "A boolean used to mark a curriculum core or not")
@@ -34,10 +33,10 @@ public class CurriculumDTO {
 		this.name = name;
 	}
 
-	public List<CurriculumSkillJT> getSkills() {
+	public List<Integer> getSkills() {
 		return skills;
 	}
-	public void setSkills(List<CurriculumSkillJT> skills) {
+	public void setSkills(List<Integer> skills) {
 		this.skills = skills;
 	}
 
