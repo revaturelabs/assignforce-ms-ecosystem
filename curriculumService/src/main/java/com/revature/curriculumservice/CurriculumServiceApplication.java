@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class AssignforceCurriculumMsApplication {
+public class CurriculumServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AssignforceCurriculumMsApplication.class, args);
+		SpringApplication.run(CurriculumServiceApplication.class, args);
 	}
 
 	@RequestMapping("/test")
