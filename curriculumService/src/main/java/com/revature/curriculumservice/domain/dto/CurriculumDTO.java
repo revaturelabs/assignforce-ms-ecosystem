@@ -53,4 +53,15 @@ public class CurriculumDTO {
 	public void setCore(Boolean core) {
 		this.core = core;
 	}
+
+	@Override
+	public String toString() {
+		return "CurriculumDTO{" +
+				"currId=" + currId +
+				", name='" + name + '\'' +
+				", skills=" + skills +
+				", active=" + active +
+				", core=" + core +
+				'}';
+	}
 }

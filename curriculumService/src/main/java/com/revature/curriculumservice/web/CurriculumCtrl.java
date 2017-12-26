@@ -9,6 +9,7 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
@@ -26,7 +27,7 @@ import java.util.List;
 @Api(value = "Curriculum Controller", description = "Operations regarding Curricula")
 public class CurriculumCtrl {
 
-	Logger logger = Logger.getLogger(CurriculumCtrl.class);
+	private static final Logger logger = LogManager.getLogger(CurriculumCtrl.class);
 
 
 	@Autowired
@@ -43,12 +44,17 @@ public class CurriculumCtrl {
 	})
 	public Object createCurriculum( @RequestBody CurriculumDTO in ) {
 
+		logger.info("Creating Curriculum");
+		logger.info("Incoming Curriculum: "+in.toString());
+		logger.info("CurrId: "+in.getCurrId());
 		int id = in.getCurrId();
 		String name = in.getName();
+		logger.info("Skills: "+in.getSkills());
 		List<Integer> skills = in.getSkills(); // HOW TO GET SKILLS FROM JT? @OneToMany
 		boolean core = in.getCore();
 
 		Curriculum out = new Curriculum( id, name, skills, core);
+		logger.info("Curriculum Object: "+ out.toString());
 		out = currService.saveItem( out );
 
 		if (out == null) {
@@ -68,6 +74,7 @@ public class CurriculumCtrl {
 			@ApiResponse(code=500, message ="Cannot retrieve Curriculum information")
 	})
 	public Object retrieveCurriculum( @PathVariable("id") int ID ) {
+		logger.info("Retrieving Curriculum with id "+ ID);
 
 		Curriculum out = currService.getOneItem(ID);
 		if (out == null) {
