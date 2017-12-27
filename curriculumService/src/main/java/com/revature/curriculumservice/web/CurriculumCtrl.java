@@ -1,10 +1,10 @@
 package com.revature.curriculumservice.web;
 
-import com.revature.assignforcecurriculumms.domain.Curriculum;
-import com.revature.assignforcecurriculumms.domain.CurriculumSkillJT;
-import com.revature.assignforcecurriculumms.domain.dto.CurriculumDTO;
-import com.revature.assignforcecurriculumms.domain.dto.ResponseErrorDTO;
-import com.revature.assignforcecurriculumms.service.ActivatableObjectDaoService;
+import com.revature.curriculumservice.domain.Curriculum;
+import com.revature.curriculumservice.domain.CurriculumSkillJT;
+import com.revature.curriculumservice.domain.dto.CurriculumDTO;
+import com.revature.curriculumservice.domain.dto.ResponseErrorDTO;
+import com.revature.curriculumservice.service.ActivatableObjectDaoService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;

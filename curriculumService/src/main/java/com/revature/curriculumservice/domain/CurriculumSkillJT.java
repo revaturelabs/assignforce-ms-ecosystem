@@ -1,4 +1,4 @@
-package com.revature.curriculumservice.model;
+package com.revature.curriculumservice.domain;
 
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;

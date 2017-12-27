@@ -1,4 +1,4 @@
-package com.revature.curriculumservice.model;
+package com.revature.curriculumservice.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
@@ -15,6 +15,7 @@ public class CurrSkillPK implements Serializable {
         this.currId = currId;
         this.skillId = skillId;
     }
+
 
     @Column(name = "CURRICULUM_ID")
     public int getCurrId() {
