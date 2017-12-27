@@ -1,49 +1,57 @@
 package com.revature.assignforcetrainerms.domain;
 
-import javax.persistence.*;
+//import javax.persistence.*;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
 
 /**
  * Created by Zach Nelson on 2/1/2017.
  */
 
-@Entity
-@Table(name = "Certifications")
-
+//@Table(name = "Certifications")
+@Document(collection = "certification")
 public class Certification {
-
+/*
     @Id
     @Column(name = "ID")
     @SequenceGenerator(allocationSize = 1, name = "certSeq", sequenceName = "CERT_ID_SEQ")
-    @GeneratedValue(generator = "certSeq", strategy = GenerationType.SEQUENCE)
-    private int id;
+    @GeneratedValue(generator = "certSeq", strategy = GenerationType.SEQUENCE)*/
+//
+//    @Id
+//    private int id;
 
-    @Column(name = "Cert_URL")
-    private String file;
+    //@Column(name = "Cert_URL")
+//    @Field
+    private String url;
 
-    @Column(name = "CERT_NAME")
+//    @Column(name = "CERT_NAME")
+//    @Field("CERT_NAME")
     private String name;
 
-    @Column(name = "TRAINER")
+//    @Column(name = "TRAINER")
+//    @Field("TRAINER")
     private int trainer;
 
     public Certification() {
     	//noarg constructor
     }
 
-    public Certification(int id, String file, String name, int trainer) {
-        this.id = id;
-        this.file = file;
+    public Certification(int id, String url, String name, int trainer) {
+//        this.id = id;
+        this.url = url;
         this.name = name;
         this.trainer = trainer;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
+//    public int getId() {
+//        return id;
+//    }
+//
+//    public void setId(int id) {
+//        this.id = id;
+//    }
 
     public String getName() {
         return name;
@@ -54,11 +62,11 @@ public class Certification {
     }
 
     public String getFile() {
-        return file;
+        return url;
     }
 
-    public void setFile(String file) {
-        this.file = file;
+    public void setFile(String url) {
+        this.url = url;
     }
 
     public int getTrainer() {
@@ -72,8 +80,9 @@ public class Certification {
     @Override
     public String toString() {
         return "Certification{" +
-                "ID = " + id +
-                ", Name = '" + name + '\'' +
+                "file='" + url + '\'' +
+                ", name='" + name + '\'' +
+                ", trainer=" + trainer +
                 '}';
     }
 }

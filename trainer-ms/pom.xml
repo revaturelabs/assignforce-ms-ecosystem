@@ -18,6 +18,19 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
+	<!--<repositories>-->
+	<!--<repository>-->
+	<!--<id>nexus1</id>-->
+	<!--<name>nexus snapshots</name>-->
+	<!--<url>http://ec2-18-216-0-70.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/snapshots</url>-->
+	<!--</repository>-->
+	<!--<repository>-->
+	<!--<id>nexus2</id>-->
+	<!--<name>nexus releases</name>-->
+	<!--<url>http://ec2-18-216-0-70.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/releases</url>-->
+	<!--</repository>-->
+	<!--</repositories>-->
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -28,35 +41,67 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<artifactId>spring-boot-starter-data-mongodb</artifactId>
 		</dependency>
-		<dependency>
+		<!--<dependency>-->
+		<!--<groupId>org.mongodb</groupId>-->
+		<!--<artifactId>mongo-java-driver</artifactId>-->
+		<!--<version>3.0.0</version>-->
+		<!--</dependency>-->
+		<!--<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
-		
-		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc7</artifactId>
-			<version>12.1.0.1</version>
-		</dependency>
-		
-		<!-- Eureka -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka-server</artifactId>
+			<artifactId>spring-cloud-starter-hystrix</artifactId>
 		</dependency>
-		
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-sleuth</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-zipkin</artifactId>
+		</dependency>-->
+		<!--<dependency>-->
+		<!--<groupId>org.springframework.boot</groupId>-->
+		<!--<artifactId>spring-boot-starter-data-jpa</artifactId>-->
+		<!--</dependency>-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.6.1</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.6.1</version>
+			<scope>compile</scope>
+		</dependency>
 	</dependencies>
 	
 		<dependencyManagement>
@@ -68,6 +113,13 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+
+
+			<!--<dependency>-->
+				<!--<groupId>com.revature.assignforcecommon</groupId>-->
+				<!--<artifactId>assignforcecommon</artifactId>-->
+				<!--<version>1.0-SNAPSHOT</version>-->
+			<!--</dependency>-->
 		</dependencies>
 	</dependencyManagement>
 
