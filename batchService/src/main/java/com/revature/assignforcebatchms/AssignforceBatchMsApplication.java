@@ -1,4 +1,4 @@
-package com.revature.batchservice;
+package com.revature.assignforcebatchms;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
