@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: location-service
+  profiles:
+    active: development
+  data:
+    mongodb:
+#      uri: mongodb://location:locationpw@ds163656.mlab.com:63656/assignforce-location-dev
+      uri: mongodb://admin:adminpw@ds163836.mlab.com:63836/location
+
+server:
+  port: 9090
+
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka
+#    lease: 5
+#    healthcheck:
+#      enabled: false
+#  instance:
+#    lease-expiration-duration-in-seconds: 2
+#    lease-renewal-interval-in-seconds: 1
