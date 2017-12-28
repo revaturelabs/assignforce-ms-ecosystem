@@ -1,13 +1,15 @@
 ---
 instances: 2
-memory: 300MB
+memory: 750MB
 applications:
   - name: trainerService
-    domain: revatureapps.io
+    domains:
+      - revatureapps.io
+      - cfapps.io
     host: trainer-service
     buildpack: https://github.com/cloudfoundry/java-buildpack.git
     path: target/trainerService-0.0.1-SNAPSHOT.jar
     services:
-      - service-registry //registers with built in eureka discovery
+      - service-registry
     env:
-      SPRING_PROFILES_ACTIVE: dev
+      SPRING_PROFILES_ACTIVE: development
