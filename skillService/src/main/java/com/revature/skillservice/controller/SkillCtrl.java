@@ -142,4 +142,23 @@ public class SkillCtrl {
             return new ResponseEntity< List<Skill> >(all, HttpStatus.OK);
         }
     }
+
+    // GET SKILLS according to List of IDs
+    @RequestMapping(method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_VALUE)
+    @ApiOperation(value = "Retrieve skills by IDs", response = ResponseEntity.class)
+    @ApiResponses({
+            @ApiResponse(code=200, message ="Successfully retrieved skills through IDs"),
+            @ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
+            @ApiResponse(code=500, message ="Cannot retrieve Skills through IDs")
+    })
+    public Object retrieveSkillsByIds(@RequestBody List<Integer> in){
+        List<Skill> skills = skillService.findAllById(in);
+        if (skills == null) {
+            return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Fetching all skills through IDs failed."), HttpStatus.NOT_FOUND);
+        } else if (skills.isEmpty()) {
+            return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("No skills available."), HttpStatus.NOT_FOUND);
+        } else {
+            return new ResponseEntity< List<Skill> >(skills, HttpStatus.OK);
+        }
+    }
 }
