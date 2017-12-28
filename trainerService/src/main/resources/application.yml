@@ -16,16 +16,16 @@
 #server:
 #  port: 9093
 #
-#eureka:
-#  client:
-#    service-url:
-#      defaultZone: http://localhost:8761/eureka
-#    lease: 5
-#    healthcheck:
-#      enabled: false
-#  instance:
-#    lease-expiration-duration-in-seconds: 2
-#    lease-renewal-interval-in-seconds: 1
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    lease: 5
+    healthcheck:
+      enabled: false
+  instance:
+    lease-expiration-duration-in-seconds: 2
+    lease-renewal-interval-in-seconds: 1
 
 spring:
  application:

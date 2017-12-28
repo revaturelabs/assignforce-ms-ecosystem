@@ -11,6 +11,7 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +22,7 @@ import com.revature.assignforcetrainerms.domain.Trainer;
 @RestController
 @RequestMapping("/api/v2/trainer")
 @Api(value = "Trainer Controller", description = "Operations regarding trainers")
-
+@EnableCircuitBreaker
 //@EnableGlobalMethodSecurity(prePostEnabled = true)
 //@EnableAspectJAutoProxy
 public class TrainerCtrl {
