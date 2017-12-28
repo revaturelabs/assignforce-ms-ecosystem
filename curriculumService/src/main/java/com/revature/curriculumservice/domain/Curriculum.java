@@ -10,15 +10,15 @@ public class Curriculum implements Activatable{
 
 	private int currId;
 	private String name;
-	private List<CurriculumSkillJT> skills;
+	private List<Integer> skills;
 	private Boolean active;
 	private Boolean core;
-	
+
 	public Curriculum(){
 		//noarg constructor
 	}
 
-	public Curriculum(int currId, String name, List<CurriculumSkillJT> skills, boolean core) {
+	public Curriculum(int currId, String name, List<Integer> skills, boolean core) {
 		super();
 		this.currId = currId;
 		this.name = name;
@@ -45,11 +45,14 @@ public class Curriculum implements Activatable{
 		this.name = name;
 	}
 
-	@OneToMany(cascade = CascadeType.ALL)
+	/*@OneToMany(cascade = CascadeType.ALL)
 	@JoinTable(name = "CURRICULUM_SKILL_JT", joinColumns = {@JoinColumn(name = "CURRICULUM_ID")})
-	//@JoinColumn(name = "CURRICULUM_ID")
-	public List<CurriculumSkillJT> getSkills() { return skills; }
-	public void setSkills(List<CurriculumSkillJT> skills) {
+	//@JoinColumn(name = "CURRICULUM_ID")*/
+	@ElementCollection
+	@CollectionTable(name = "CURRICULUM_SKILL_JT", joinColumns = @JoinColumn(name = "CURRICULUM_ID"))
+	@Column(name = "SKILL_ID")
+	public List<Integer> getSkills() { return skills; }
+	public void setSkills(List<Integer> skills) {
 		this.skills = skills;
 	}
 
