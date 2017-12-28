@@ -3,11 +3,15 @@ package com.revature.skillservice.controller;
 import com.revature.skillservice.domain.Skill;
 //import com.revature.assignforce.domain.dto.SkillDTO;
 //import com.revature.skillservice.domain.dto.ResponseErrorDTO;
+import com.revature.skillservice.dto.ResponseErrorDTO;
 import com.revature.skillservice.service.ActivatableObjectDaoService;
 //import io.swagger.annotations.Api;
 //import io.swagger.annotations.ApiOperation;
 //import io.swagger.annotations.ApiResponse;
 //import io.swagger.annotations.ApiResponses;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.HttpStatus;
@@ -16,9 +20,12 @@ import org.springframework.http.ResponseEntity;
 //import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * Created by Zach Nelson on 2/9/2017.
  */
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/v2/skill")
 @ComponentScan(basePackages="com.revature.assignforce.service")
@@ -114,10 +121,9 @@ public class SkillCtrl {
         skillService.deleteItem(ID);
         return new ResponseEntity<Object>(null, HttpStatus.OK);
     }
-
+     */
     // GET ALL
     // retrieve all skills
-    @PreAuthorize("hasPermission('', 'basic')")
     @RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     @ApiOperation(value = "Retrieve all Skills", response = ResponseEntity.class)
     @ApiResponses({
@@ -135,5 +141,5 @@ public class SkillCtrl {
         } else {
             return new ResponseEntity< List<Skill> >(all, HttpStatus.OK);
         }
-    }*/
+    }
 }
