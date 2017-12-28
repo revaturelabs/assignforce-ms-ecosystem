@@ -2,8 +2,6 @@ package com.revature.assignforcetrainerms.domain;
 
 import java.util.List;
 
-//import javax.persistence.*;
-//
 //import com.revature.assignforcetrainerms.domain.jsonpojos.Skill;
 //import com.revature.assignforcetrainerms.domain.jsonpojos.Unavailable;
 import org.springframework.data.annotation.Id;
@@ -32,6 +30,7 @@ public class Trainer implements Activatable{
 
 //	@Column(name = "TRAINER_RESUME")
 //	@Field("TRAINER_RESUME")
+
 	private String resume;
 
 /*	@ManyToMany(cascade = CascadeType.ALL, fetch=FetchType.LAZY)
@@ -39,6 +38,7 @@ public class Trainer implements Activatable{
 	joinColumns=@JoinColumn(name="TRAINER"), 
 	inverseJoinColumns=@JoinColumn(name="UNAVAILABILITY"))
 	private List<Unavailable> unavailabilities;*/
+  
 //	@ElementCollection
 //	@CollectionTable(name = "TRAINER_UNAVAILABILITY_JT", joinColumns = @JoinColumn(name = "TRAINER"))
 //	@Column(name = "UNAVAILABILITY")
@@ -50,6 +50,7 @@ public class Trainer implements Activatable{
     inverseJoinColumns=@JoinColumn(name="SKILL"))
 	//@JsonIdentityInfo(generator=ObjectIdGenerators.IntSequenceGenerator.class, property="@id")						// ADDED this to fix serialization/infinite loop issues
 	private List<Skill> skills;*/
+  
 	/*@ElementCollection
 	@CollectionTable(name = "TRAINER_SKILL_JT", joinColumns = @JoinColumn(name = "TRAINER"))
 	@Column(name = "SKILL")                                                    
@@ -67,6 +68,7 @@ public class Trainer implements Activatable{
 	public Trainer(){
 		//no-arg constructor
 	}
+
 
 	public Trainer(int trainerId, String firstName, String lastName, String resume, List<Certification> certifications) {
 		super();

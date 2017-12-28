@@ -1,7 +1,5 @@
 package com.revature.assignforcetrainerms.domain;
 
-//import javax.persistence.*;
-
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
@@ -39,7 +37,6 @@ public class Certification {
     }
 
     public Certification(int id, String url, String name, int trainer) {
-//        this.id = id;
         this.url = url;
         this.name = name;
         this.trainer = trainer;

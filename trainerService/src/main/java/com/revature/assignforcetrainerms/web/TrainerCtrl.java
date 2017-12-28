@@ -21,6 +21,7 @@ import com.revature.assignforcetrainerms.domain.Trainer;
 @RestController
 @RequestMapping("/api/v2/trainer")
 @Api(value = "Trainer Controller", description = "Operations regarding trainers")
+
 //@EnableGlobalMethodSecurity(prePostEnabled = true)
 //@EnableAspectJAutoProxy
 public class TrainerCtrl {
@@ -31,6 +32,7 @@ public class TrainerCtrl {
 	  // CREATE
 		// creating new trainer object from information passed from trainer data transfer object
 //	  @PreAuthorize("hasPermission('', 'manager')")
+
 	@RequestMapping(method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ApiOperation(value = "Create a trainer", response = ResponseEntity.class)
 	@ApiResponses({
@@ -38,17 +40,20 @@ public class TrainerCtrl {
 			@ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
 			@ApiResponse(code=500, message ="Cannot create Trainer")
 	})
+
 	public Object createTrainer( @RequestBody Trainer in ) {
 
 		int ID = in.getTrainerId();
 		String firstName = in.getFirstName();
 		String lastName = in.getLastName();
 		String resume = in.getResume();
+
 //		List<Skill> skills = in.getSkills();
 		List<Certification> certifications = in.getCertifications();
 //		List<Unavailable> unavailabilities = in.getUnavailabilities();
 
 		Trainer out = new Trainer( ID, firstName, lastName, resume, certifications );
+
 		out = trainerService.saveItem( out );
 
 		if (out == null) {
@@ -68,6 +73,7 @@ public class TrainerCtrl {
 			@ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
 			@ApiResponse(code=500, message ="Cannot retrieve Trainer")
 	})
+  
 	public Object retrieveTrainer( @PathVariable("id") int ID ) {
 
 		Trainer out = trainerService.getOneItem(ID);
@@ -109,12 +115,14 @@ public class TrainerCtrl {
 			@ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
 			@ApiResponse(code=500, message ="Cannot update Trainer")
 	})
+  
 	public Object updateTrainer( @RequestBody Trainer in ) {
 		int ID = in.getTrainerId();
 
 		String firstName = in.getFirstName();
 		String lastName = in.getLastName();
 		String resume = in.getResume();
+
 //		List<Skill> skills = in.getSkills();
 //		List<Unavailable> unavailabilities = in.getUnavailabilities();
 		List<Certification> certifications = in.getCertifications();
@@ -135,6 +143,7 @@ public class TrainerCtrl {
 	  // DELETE
 		// delete trainer with given ID
 	  //@PreAuthorize("hasPermission('', 'manager')")
+
 	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ApiOperation(value = "Delete a trainer of a given ID", response = ResponseEntity.class)
 	@ApiResponses({

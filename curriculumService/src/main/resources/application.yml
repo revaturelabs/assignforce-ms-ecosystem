@@ -1,0 +1,10 @@
+spring:
+    datasource:
+      username: ${RDS_USER}
+      password: ${RDS_PASS}
+      url: ${RDS_URL}
+
+    jpa:
+        database-platform: org.hibernate.dialect.Oracle10gDialect
+server:
+    port: 9093
