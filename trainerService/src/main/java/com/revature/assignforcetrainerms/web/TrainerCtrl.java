@@ -5,25 +5,18 @@ import java.util.List;
 
 import com.revature.assignforcetrainerms.domain.Certification;
 import com.revature.assignforcetrainerms.domain.ResponseErrorDTO;
-import com.revature.assignforcetrainerms.service.ActivatableObjectDaoService;
 import com.revature.assignforcetrainerms.service.TrainerDaoService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-//import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
-import com.revature.assignforcetrainerms.domain.jsonpojos.Skill;
 import com.revature.assignforcetrainerms.domain.Trainer;
-import com.revature.assignforcetrainerms.domain.jsonpojos.Unavailable;
-//import com.revature.assignforce.domain.dto.ResponseErrorDTO;
-//import com.revature.assignforce.domain.dto.TrainerDTO;
 
 @RestController
 @RequestMapping("/api/v2/trainer")

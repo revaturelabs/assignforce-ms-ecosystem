@@ -29,12 +29,11 @@
 
 spring:
  application:
-   name: trainer-service
+   name: trainerService
  profiles:
    active: development
  data:
    mongodb:
-#      uri: mongodb://location:locationpw@ds163656.mlab.com:63656/assignforce-location-dev
      uri: mongodb://location:locationpw@ds163656.mlab.com:63656/assignforce-location-dev
 
 server:
