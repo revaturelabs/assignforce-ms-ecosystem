@@ -28,13 +28,26 @@ eureka:
     lease-renewal-interval-in-seconds: 1
 
 spring:
- application:
-   name: trainerService
- profiles:
-   active: development
- data:
-   mongodb:
-     uri: mongodb://location:locationpw@ds163656.mlab.com:63656/assignforce-location-dev
+    application:
+        name: trainerService
+    cloud:
+        services:
+            registrationMethod: route
+    producer:
+        ribbon:
+            ServerListRefreshInterval: 5000
+    ribbon:
+        isSecure: false
+    security:
+        basic:
+            enabled: false
+    profiles:
+        active: development
+    data:
+        mongodb:
+            uri: mongodb://location:locationpw@ds163656.mlab.com:63656/assignforce-location-dev
 
 server:
  port: 9090
+
+
