@@ -3,6 +3,7 @@ package com.revature.assignforcebatchms.web;
 
 import java.sql.Timestamp;
 
+
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -36,6 +37,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.oauth2.client.OAuth2ClientContext;
 
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -46,7 +48,7 @@ import com.revature.assignforce.domain.dto.BatchDTO;
 import com.revature.assignforce.domain.dto.ResponseErrorDTO;
 import com.revature.assignforce.service.DaoService;*/
 
-
+@CrossOrigin(origins="*")
 @RestController
 @RequestMapping("/api/v2/batch")
 @ComponentScan(basePackages = "com.revature.assignforce.service")
@@ -212,24 +214,24 @@ public class BatchCtrl {
 			@ApiResponse(code=200, message ="Successfully retrieved all batches"),
 			@ApiResponse(code=400, message ="Bad Request"),
 			@ApiResponse(code=500, message ="Cannot retrieve all batches")
-	})
+	})*/
 
 	@RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public Object retrieveAllBatches() {
 
 		List<Batch> all = batchService.getAllItems();
-		if (all == null) {
-			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Fetching all batches failed."),
-					HttpStatus.NOT_FOUND);
-		} else if (all.isEmpty()) {
-			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("No batches available."),
-					HttpStatus.NOT_FOUND);
-		} else {
+//		if (all == null) {
+//			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Fetching all batches failed."),
+//					HttpStatus.NOT_FOUND);
+//		} else if (all.isEmpty()) {
+//			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("No batches available."),
+//					HttpStatus.NOT_FOUND);
+//		} else {
 			return new ResponseEntity<List<Batch>>(all, HttpStatus.OK);
-		}
+//		}
 	}
 
-	@PreAuthorize("hasPermission('', 'manager')")
+/*	@PreAuthorize("hasPermission('', 'manager')")
 	@ApiOperation(value = "Update a batch", response = BatchDaoService.class)
 	@ApiResponses({
 			@ApiResponse(code=200, message ="Successfully updated a batch"),

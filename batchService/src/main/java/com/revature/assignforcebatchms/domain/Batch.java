@@ -9,6 +9,7 @@ import javax.persistence.*;
 //import io.swagger.annotations.ApiModel;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
+import org.springframework.beans.factory.annotation.Value;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -170,6 +171,4 @@ public class Batch {
 	public void setSkills(List<Integer> skills) {
 		this.skills = skills;
 	}
-
-	
 }
