@@ -2,28 +2,35 @@ package com.revature.assignforcetrainerms.domain;
 
 import java.util.List;
 
-import javax.persistence.*;
+//import com.revature.assignforcetrainerms.domain.jsonpojos.Skill;
+//import com.revature.assignforcetrainerms.domain.jsonpojos.Unavailable;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
 
-import com.revature.assignforcetrainerms.domain.jsonpojos.Skill;
-import com.revature.assignforcetrainerms.domain.jsonpojos.Unavailable;
-
-@Entity
-@Table(name = "TRAINER")
+//@Entity
+//@Table(name = "TRAINER")
+@Document(collection = "TRAINER")
 public class Trainer implements Activatable{
 
-	@Id
+	/*@Id
 	@Column(name = "ID")
 	@SequenceGenerator(allocationSize = 1, name = "trainerSeq", sequenceName = "TRAINER_SEQ")
-	@GeneratedValue(generator = "trainerSeq", strategy = GenerationType.SEQUENCE)
+	@GeneratedValue(generator = "trainerSeq", strategy = GenerationType.SEQUENCE)*/
+	@Id
 	private int trainerId;
 
-	@Column(name = "FIRST_NAME", nullable = false)
+//	@Column(name = "FIRST_NAME", nullable = false)
+//	@Field("FIRST_NAME")
 	private String firstName;
 	
-	@Column(name = "LAST_NAME", nullable = false)
+//	@Column(name = "LAST_NAME", nullable = false)
+//	@Field("LAST_NAME")
 	private String lastName;
 
-	@Column(name = "TRAINER_RESUME")
+//	@Column(name = "TRAINER_RESUME")
+//	@Field("TRAINER_RESUME")
+
 	private String resume;
 
 /*	@ManyToMany(cascade = CascadeType.ALL, fetch=FetchType.LAZY)
@@ -31,9 +38,10 @@ public class Trainer implements Activatable{
 	joinColumns=@JoinColumn(name="TRAINER"), 
 	inverseJoinColumns=@JoinColumn(name="UNAVAILABILITY"))
 	private List<Unavailable> unavailabilities;*/
-	@ElementCollection                                                          
-	@CollectionTable(name = "TRAINER_UNAVAILABILITY_JT", joinColumns = @JoinColumn(name = "TRAINER"))
-	@Column(name = "UNAVAILABILITY")                                                      
+  
+//	@ElementCollection
+//	@CollectionTable(name = "TRAINER_UNAVAILABILITY_JT", joinColumns = @JoinColumn(name = "TRAINER"))
+//	@Column(name = "UNAVAILABILITY")
 	private List<Integer> UnavailableList;
 
 /*	@ManyToMany(cascade = CascadeType.ALL, fetch=FetchType.LAZY)
@@ -42,31 +50,34 @@ public class Trainer implements Activatable{
     inverseJoinColumns=@JoinColumn(name="SKILL"))
 	//@JsonIdentityInfo(generator=ObjectIdGenerators.IntSequenceGenerator.class, property="@id")						// ADDED this to fix serialization/infinite loop issues
 	private List<Skill> skills;*/
-	
-	@ElementCollection                                                          
+  
+	/*@ElementCollection
 	@CollectionTable(name = "TRAINER_SKILL_JT", joinColumns = @JoinColumn(name = "TRAINER"))
 	@Column(name = "SKILL")                                                    
-	private List<Integer> SkillList;
+	private List<Integer> SkillList;*/
 
-	@OneToMany(cascade = CascadeType.ALL, fetch=FetchType.LAZY)
-	@JoinColumn(name="Trainer")
+//	@OneToMany(cascade = CascadeType.ALL, fetch=FetchType.LAZY)
+//	@JoinColumn(name="Trainer")
+//	@Field
 	private List<Certification> certifications;
 
-	@Column(name="active", insertable = false)
+//	@Column(name="active", insertable = false)
+//	@Field
 	private Boolean active;
 
 	public Trainer(){
 		//no-arg constructor
 	}
 
-	public Trainer(int trainerId, String firstName, String lastName, String resume, List<Integer> unavailability, List<Integer> skills, List<Certification> certifications) {
+
+	public Trainer(int trainerId, String firstName, String lastName, String resume, List<Certification> certifications) {
 		super();
 		this.trainerId = trainerId;
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.UnavailableList = unavailability;
-		this.SkillList = skills;
-		this.certifications = certifications;
+//		this.UnavailableList = unavailability;
+//		this.SkillList = skills;
+//		this.certifications = certifications;
 		this.resume = resume;
 	}
 
@@ -93,22 +104,22 @@ public class Trainer implements Activatable{
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-
-	public List<Integer> getUnavailabilities() {
-		return UnavailableList;
-	}
-
-	public void setUnavailabilities(List<Integer> unavailabilities) {
-		this.UnavailableList = unavailabilities;
-	}
-
-	public List<Integer> getSkills() {
-		return SkillList;
-	}
-
-	public void setSkills(List<Integer> skills) {
-		this.SkillList = skills;
-	}
+//
+//	public List<Integer> getUnavailabilities() {
+//		return UnavailableList;
+//	}
+//
+//	public void setUnavailabilities(List<Integer> unavailabilities) {
+//		this.UnavailableList = unavailabilities;
+//	}
+//
+//	public List<Integer> getSkills() {
+//		return SkillList;
+//	}
+//
+//	public void setSkills(List<Integer> skills) {
+//		this.SkillList = skills;
+//	}
 
 	public Boolean getActive() {
 		return active;
