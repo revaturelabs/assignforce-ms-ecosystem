@@ -9,5 +9,6 @@ applications:
     path: target/trainerService-0.0.1-SNAPSHOT.jar
     services:
       - service-registry
+      - circuit-breaker-dashboard
     env:
       SPRING_PROFILES_ACTIVE: development

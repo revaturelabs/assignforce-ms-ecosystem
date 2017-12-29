@@ -43,4 +43,8 @@ ribbon:
   isSecure: false
 security:
   basic:
+<<<<<<< HEAD
     enabled: false
+=======
+    enabled: false
+>>>>>>> e43a374e624a73d44a74dc712efb30e6fc9b5c39
