@@ -1,5 +1,0 @@
-Skill: Port 9090
-Unavailable: Port 9091
-Batch: Port 9092
-Curriculum: Port 9093
-Trainer: Port 9094
