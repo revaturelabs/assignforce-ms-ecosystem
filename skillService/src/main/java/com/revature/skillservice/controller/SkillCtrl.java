@@ -143,6 +143,8 @@ public class SkillCtrl {
         }
     }
 
+
+
     // GET SKILLS according to List of IDs
     @RequestMapping(method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_VALUE)
     @ApiOperation(value = "Retrieve skills by IDs", response = ResponseEntity.class)

@@ -11,9 +11,7 @@ public abstract class DaoService<T, ID extends Serializable>{
 	@Autowired
 	protected BaseRepository<T, ID> repo;
 
-	public T saveItem(T persisted) {
-		return repo.save(persisted);
-	}
+	public T saveItem(T persisted) { return repo.save(persisted); }
 
 	public T getOneItem(ID id) {
 		return repo.findOne(id);
