@@ -71,7 +71,9 @@ public class TrainerTest {
         trainerDTO.setTrainerId(1);
         trainerDTO.setFirstName("Andy");
         trainerDTO.setLastName("Tang");
-//        List<Skill> skills = new ArrayList<Skill>();
+        List<Integer> skills = new ArrayList<Integer>();
+        skills.add(1);
+        skills.add(2);
 //        Skill aSkill = new Skill();
 //        aSkill.setName("mySkill");
 //        aSkill.setSkillId(1);
@@ -79,13 +81,13 @@ public class TrainerTest {
 //        skills.add(aSkill);
 //        skills.add(aSkill);
 //        skills.add(aSkill);
-//        trainerDTO.setSkills(skills);
+        trainerDTO.setSkills(skills);
         trainerDTO.setCertifications(new ArrayList<>());
 //        trainerDTO.setUnavailabilities(new ArrayList<>());
         trainerDTO.setActive(true);
         trainerDTO.setResume("this is not a filepath");
         testTrainer = new Trainer( trainerDTO.getTrainerId(), trainerDTO.getFirstName(),
-                trainerDTO.getLastName(), trainerDTO.getResume(),
+                trainerDTO.getLastName(), trainerDTO.getResume(), trainerDTO.getSkills(),
                 trainerDTO.getCertifications());
 //        given(customSecurity.hasPermission(any(),any(),any())).willReturn(true);
     }

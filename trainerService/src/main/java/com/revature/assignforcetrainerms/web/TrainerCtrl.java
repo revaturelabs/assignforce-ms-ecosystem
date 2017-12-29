@@ -49,11 +49,11 @@ public class TrainerCtrl {
 		String lastName = in.getLastName();
 		String resume = in.getResume();
 
-//		List<Skill> skills = in.getSkills();
+		List<Integer> skills = in.getSkills();
 		List<Certification> certifications = in.getCertifications();
 //		List<Unavailable> unavailabilities = in.getUnavailabilities();
 
-		Trainer out = new Trainer( ID, firstName, lastName, resume, certifications );
+		Trainer out = new Trainer( ID, firstName, lastName, resume, skills, certifications );
 
 		out = trainerService.saveItem( out );
 
@@ -124,12 +124,12 @@ public class TrainerCtrl {
 		String lastName = in.getLastName();
 		String resume = in.getResume();
 
-//		List<Skill> skills = in.getSkills();
+		List<Integer> skills = in.getSkills();
 //		List<Unavailable> unavailabilities = in.getUnavailabilities();
 		List<Certification> certifications = in.getCertifications();
 
 //		Trainer out = new Trainer( ID, firstName, lastName, resume, unavailabilities, skills, certifications);
-		Trainer out = new Trainer( ID, firstName, lastName, resume, certifications);
+		Trainer out = new Trainer( ID, firstName, lastName, resume, skills, certifications);
 
 		out.setActive(in.getActive());
 		out = trainerService.saveItem( out );
