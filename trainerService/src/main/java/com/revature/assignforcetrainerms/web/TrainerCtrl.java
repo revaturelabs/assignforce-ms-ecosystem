@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.*;
 
 import com.revature.assignforcetrainerms.domain.Trainer;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/v2/trainer")
 @Api(value = "Trainer Controller", description = "Operations regarding trainers")
