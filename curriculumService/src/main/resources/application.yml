@@ -20,9 +20,9 @@ spring:
 
   #Database
   datasource:
-    username: ${RDS_USER}
-    password: ${RDS_PASS}
-    url: ${RDS_URL}
+    username: assignforce_dev
+    password: pVCwxTn3
+    url: jdbc:oracle:thin:@assignforce.chueiwozbnfz.us-east-1.rds.amazonaws.com:1521:ORCL
 
 #      username: ${DB_USER}
 #      password: ${DB_PASSWORD}
