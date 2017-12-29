@@ -1,8 +1,6 @@
 package com.revature.assignforcetrainerms.service;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import org.springframework.stereotype.Repository;
-
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

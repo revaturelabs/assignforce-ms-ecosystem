@@ -1,6 +1,6 @@
 ---
 instances: 2
-memory: 300MB
+memory: 750MB
 applications:
   - name: trainerService
     domain: revatureapps.io
