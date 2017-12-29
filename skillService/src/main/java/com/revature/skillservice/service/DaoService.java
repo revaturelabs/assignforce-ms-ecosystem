@@ -28,4 +28,6 @@ public abstract class DaoService<T, ID extends Serializable>{
 	public List<T> getAllItems() {
 		return (List<T>) repo.findAll();
 	}
+
+	public List<T> findAllById(List<Integer> ids) { return (List<T>) repo.findAll((Iterable<ID>) ids);}
 }

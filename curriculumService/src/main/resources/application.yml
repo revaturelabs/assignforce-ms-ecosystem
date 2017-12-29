@@ -1,8 +1,32 @@
 spring:
-    datasource:
-      username: ${RDS_USER}
-      password: ${RDS_PASS}
-      url: ${RDS_URL}
+
+# config for microservice
+  application:
+    name: curriculumService
+  cloud:
+    services:
+      registrationMethod: route
+
+
+  producer:
+    ribbon:
+      ServerListRefreshInterval: 5000
+  ribbon:
+    isSecure: false  #temporary allows open access to endpoint
+
+  security:
+    basic:
+      enabled: false
+
+  #Database
+  datasource:
+    username: ${RDS_USER}
+    password: ${RDS_PASS}
+    url: ${RDS_URL}
+
+#      username: ${DB_USER}
+#      password: ${DB_PASSWORD}
+#      url: ${DB_URL}
 
     jpa:
         database-platform: org.hibernate.dialect.Oracle10gDialect
