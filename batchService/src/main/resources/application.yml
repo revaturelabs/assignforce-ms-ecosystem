@@ -1,6 +1,9 @@
 spring:
     application:
         name: assignforce-batch-service
+    cloud:
+      services:
+        registrationMethod: route
     #DATABASE CONFIG ISSUE: CANNOT USE ENVIRONMENT VARIABLE
     datasource:
         url: jdbc:oracle:thin:@assignforce.chueiwozbnfz.us-east-1.rds.amazonaws.com:1521:ORCL
@@ -12,7 +15,14 @@ spring:
     #HIBERNATE
     jpa:
         database-platform: org.hibernate.dialect.Oracle10gDialect
-
+producer:          
+ ribbon:
+   ServerListRefreshInterval: 5000
+ribbon:
+ isSecure: false  
+security:
+ basic:
+   enabled: false
 server:
   port: 9092
 
