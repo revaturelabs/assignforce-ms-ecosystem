@@ -1,0 +1,14 @@
+---
+instances: 2  #must be at leat two to even be worth it
+memory: 750M
+applications:
+  - name: skillService
+    domain: cfapps.io
+    host: skill-service
+    buildpack: https://github.com/cloudfoundry/java-buildpack.git
+    path: target/skillService-0.0.1-SNAPSHOT.jar  #this is the default location and name of the built jar
+    services:
+      - service-registry #registers with built in eureka discovery
+      - circuit-breaker-dashboard
+    env:
+      SPRING_PROFILES_ACTIVE: development
