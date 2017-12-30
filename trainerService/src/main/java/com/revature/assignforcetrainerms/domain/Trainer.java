@@ -42,7 +42,7 @@ public class Trainer implements Activatable{
 //	@ElementCollection
 //	@CollectionTable(name = "TRAINER_UNAVAILABILITY_JT", joinColumns = @JoinColumn(name = "TRAINER"))
 //	@Column(name = "UNAVAILABILITY")
-	private List<Integer> UnavailableList;
+//	private List<Integer> UnavailableList;
 
 /*	@ManyToMany(cascade = CascadeType.ALL, fetch=FetchType.LAZY)
 	@JoinTable(name="TRAINER_SKILL_JT",
@@ -51,10 +51,10 @@ public class Trainer implements Activatable{
 	//@JsonIdentityInfo(generator=ObjectIdGenerators.IntSequenceGenerator.class, property="@id")						// ADDED this to fix serialization/infinite loop issues
 	private List<Skill> skills;*/
   
-	/*@ElementCollection
-	@CollectionTable(name = "TRAINER_SKILL_JT", joinColumns = @JoinColumn(name = "TRAINER"))
-	@Column(name = "SKILL")                                                    
-	private List<Integer> SkillList;*/
+//	@ElementCollection
+//	@CollectionTable(name = "TRAINER_SKILL_JT", joinColumns = @JoinColumn(name = "TRAINER"))
+//	@Column(name = "SKILL")
+	private List<Integer> skills;
 
 //	@OneToMany(cascade = CascadeType.ALL, fetch=FetchType.LAZY)
 //	@JoinColumn(name="Trainer")
@@ -70,15 +70,16 @@ public class Trainer implements Activatable{
 	}
 
 
-	public Trainer(int trainerId, String firstName, String lastName, String resume, List<Certification> certifications) {
+	public Trainer(int trainerId, String firstName, String lastName, String resume, List<Integer> skills, List<Certification> certifications) {
 		super();
 		this.trainerId = trainerId;
 		this.firstName = firstName;
 		this.lastName = lastName;
 //		this.UnavailableList = unavailability;
-//		this.SkillList = skills;
-//		this.certifications = certifications;
+		this.skills = skills;
+		this.certifications = certifications;
 		this.resume = resume;
+		this.active = true;
 	}
 
     public int getTrainerId() {
@@ -113,13 +114,13 @@ public class Trainer implements Activatable{
 //		this.UnavailableList = unavailabilities;
 //	}
 //
-//	public List<Integer> getSkills() {
-//		return SkillList;
-//	}
-//
-//	public void setSkills(List<Integer> skills) {
-//		this.SkillList = skills;
-//	}
+	public List<Integer> getSkills() {
+		return skills;
+	}
+
+	public void setSkills(List<Integer> skills) {
+		this.skills = skills;
+	}
 
 	public Boolean getActive() {
 		return active;

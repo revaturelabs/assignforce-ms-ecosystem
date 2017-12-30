@@ -16,6 +16,7 @@ spring:
 #    username: ${DB_USER}
 #    password: ${DB_PASSWORD}
 #    url: ${DB_URL}
+
     jpa:
         database-platform: org.hibernate.dialect.Oracle10gDialect
 producer:
