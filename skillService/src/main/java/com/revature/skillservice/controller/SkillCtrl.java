@@ -37,7 +37,6 @@ public class SkillCtrl {
 
     // CREATE
     // creating new curriculum object from information passed from curriculum data transfer object
-/*    @PreAuthorize("hasPermission('', 'basic')")
     @RequestMapping(method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
     @ApiOperation(value = "Create a skill", response = ResponseEntity.class)
     @ApiResponses({
@@ -51,6 +50,7 @@ public class SkillCtrl {
         String name = in.getName();
 
         Skill out = new Skill( ID, name );
+        out.setActive(in.getActive());
         out = skillService.saveItem( out );
 
         if (out == null) {
@@ -58,7 +58,7 @@ public class SkillCtrl {
         } else {
             return new ResponseEntity<Skill>(out, HttpStatus.OK);
         }
-    }*/
+    }
 
     // RETRIEVE
     // retrieve skill with given ID
@@ -146,7 +146,7 @@ public class SkillCtrl {
 
 
     // GET SKILLS according to List of IDs
-    @RequestMapping(method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/ids", method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_VALUE)
     @ApiOperation(value = "Retrieve skills by IDs", response = ResponseEntity.class)
     @ApiResponses({
             @ApiResponse(code=200, message ="Successfully retrieved skills through IDs"),
