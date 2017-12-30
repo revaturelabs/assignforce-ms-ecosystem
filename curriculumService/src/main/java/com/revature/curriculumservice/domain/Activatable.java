@@ -1,4 +1,4 @@
-package com.revature.curriculumservice.model;
+package com.revature.curriculumservice.domain;
 
 /**
  * Created by August Duet on 11/29/2016.

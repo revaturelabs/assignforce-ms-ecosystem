@@ -1,4 +1,4 @@
-package com.revature.curriculumservice.model;
+package com.revature.curriculumservice.domain;
 
 import javax.persistence.*;
 import java.util.List;
@@ -13,7 +13,7 @@ public class Curriculum implements Activatable{
 	private List<Integer> skills;
 	private Boolean active;
 	private Boolean core;
-	
+
 	public Curriculum(){
 		//noarg constructor
 	}
@@ -45,15 +45,19 @@ public class Curriculum implements Activatable{
 		this.name = name;
 	}
 
-	@Transient
-	public List<Integer> getSkills() {
-		return skills;
-	}
+	/*@OneToMany(cascade = CascadeType.ALL)
+	@JoinTable(name = "CURRICULUM_SKILL_JT", joinColumns = {@JoinColumn(name = "CURRICULUM_ID")})
+	//@JoinColumn(name = "CURRICULUM_ID")*/
+	@ElementCollection
+	@CollectionTable(name = "CURRICULUM_SKILL_JT", joinColumns = @JoinColumn(name = "CURRICULUM_ID"))
+	@Column(name = "SKILL_ID")
+	public List<Integer> getSkills() { return skills; }
 	public void setSkills(List<Integer> skills) {
 		this.skills = skills;
 	}
 
-	@Column(name="ACTIVE", insertable = false)
+	/*@Column(name="ACTIVE", insertable = false)*/
+	@Column(name="ACTIVE")
 	public Boolean getActive() {
 		return active;
 	}
@@ -71,6 +75,12 @@ public class Curriculum implements Activatable{
 
 	@Override
 	public String toString() {
-		return "Curriculum [ID = " + currId + ", name = " + name + ", skills = " + skills + "]";
+		return "Curriculum{" +
+				"currId=" + currId +
+				", name='" + name + '\'' +
+				", skills=" + skills +
+				", active=" + active +
+				", core=" + core +
+				'}';
 	}
 }
