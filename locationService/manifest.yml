@@ -6,7 +6,7 @@ applications:
    domain: cfapps.io
    host: location-service
    buildpack: https://github.com/cloudfoundry/java-buildpack.git
-   path: target/locationService-0.0.1-SNAPSHOT.jar
+   path: target/location-microservice-0.0.1-SNAPSHOT.jar
    services:
      - service-registry
      - circuit-breaker-dashboard
