@@ -55,6 +55,7 @@ public class CurriculumCtrl {
 		boolean core = in.getCore();
 
 		Curriculum out = new Curriculum( id, name, skills, core);
+		out.setActive(in.getActive()); // set Active
 		logger.info("Curriculum Object: "+ out.toString());
 		out = currService.saveItem( out );
 

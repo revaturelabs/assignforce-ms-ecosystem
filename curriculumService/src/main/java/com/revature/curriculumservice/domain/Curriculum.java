@@ -56,7 +56,8 @@ public class Curriculum implements Activatable{
 		this.skills = skills;
 	}
 
-	@Column(name="ACTIVE", insertable = false)
+	/*@Column(name="ACTIVE", insertable = false)*/
+	@Column(name="ACTIVE")
 	public Boolean getActive() {
 		return active;
 	}
@@ -74,6 +75,12 @@ public class Curriculum implements Activatable{
 
 	@Override
 	public String toString() {
-		return "Curriculum [ID = " + currId + ", name = " + name + ", skills = " + skills + "]";
+		return "Curriculum{" +
+				"currId=" + currId +
+				", name='" + name + '\'' +
+				", skills=" + skills +
+				", active=" + active +
+				", core=" + core +
+				'}';
 	}
 }

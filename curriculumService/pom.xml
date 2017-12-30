@@ -72,11 +72,15 @@
 		</dependency>-->
 
 		<!-- pivotal cloud dependency -->
-		<!--<dependency>
+		<dependency>
 			<groupId>io.pivotal.spring.cloud</groupId>
 			<artifactId>spring-cloud-services-starter-service-registry</artifactId>
-		</dependency>-->
-		
+		</dependency>
+		<!-- Circuit Breaker -->
+		<dependency>
+			<groupId>io.pivotal.spring.cloud</groupId>
+			<artifactId>spring-cloud-services-starter-circuit-breaker</artifactId>
+		</dependency>
 	</dependencies>
 
 	<dependencyManagement>
@@ -89,14 +93,14 @@
 				<scope>import</scope>
 			</dependency>
 
-			<!-- pivotal cloud dependency -->
-			<!--<dependency>
+			 pivotal cloud dependency
+			<dependency>
 				<groupId>io.pivotal.spring.cloud</groupId>
 				<artifactId>spring-cloud-services-dependencies</artifactId>
 				<version>1.3.1.RELEASE</version>
 				<type>pom</type>
 				<scope>import</scope>
-			</dependency>-->
+			</dependency>
 
 		</dependencies>
 	</dependencyManagement>
