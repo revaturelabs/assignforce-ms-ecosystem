@@ -1,0 +1,6 @@
+---
+applications:
+  - name: locationService
+    memory: 750M
+    instances: 2
+    random-route: true
