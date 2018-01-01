@@ -24,6 +24,7 @@ import com.revature.assignforcebatchms.service.DaoService;
 //import io.swagger.annotations.ApiResponses;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.hibernate.annotations.Cascade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.ComponentScan;
@@ -86,19 +87,22 @@ public class BatchCtrl {
 	// CREATE
 	// creating new batch object from information passed from batch data
 	// transfer object
-/*	@PreAuthorize("hasPermission('', 'manager')")
-	@ApiOperation(value = "Create a branch", response = BatchDaoService.class)
-	@ApiResponses({
-			@ApiResponse(code=200, message ="Successfully Created a Batch"),
-			@ApiResponse(code=400, message ="Bad Request, BatchDTO"),
-			@ApiResponse(code=500, message ="Cannot retrieve batch")
-	})
+//	@PreAuthorize("hasPermission('', 'manager')")
+//	@ApiOperation(value = "Create a branch", response = BatchDaoService.class)
+//	@ApiResponses({
+//			@ApiResponse(code=200, message ="Successfully Created a Batch"),
+//			@ApiResponse(code=400, message ="Bad Request, BatchDTO"),
+//			@ApiResponse(code=500, message ="Cannot retrieve batch")
+//	})
 	@RequestMapping(method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
 	@Transactional
-	public Object createBatch(@RequestBody BatchDTO in) {
-
-		int ID = in.getID();
-		String name = in.getName();
+	public Object createBatch(@RequestBody Batch batch) {
+		System.out.println("Hey, I got something!");
+		System.out.println(batch);
+		batchService.saveItem(batch);
+		/*
+		int ID = batch.getID();
+		String name = batch.getName();
 		Curriculum curriculum = currService.getOneItem(in.getCurriculum());
 		Curriculum focus = currService.getOneItem(in.getFocus());
 		Trainer trainer = trainerService.getOneItem(in.getTrainer());
@@ -137,16 +141,16 @@ public class BatchCtrl {
 
 		Batch out = new Batch(ID, name, startDate, endDate, curriculum, status, trainer, cotrainer, skills, focus, bl);
 		out = batchService.saveItem(out);
-
-		if (out == null) {
-			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Batch failed to save."),
-					HttpStatus.INTERNAL_SERVER_ERROR);
-		} else {
-			return new ResponseEntity<Batch>(out, HttpStatus.OK);
-		}
+*/
+//		if (out == null) {
+//			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Batch failed to save."),
+//					HttpStatus.INTERNAL_SERVER_ERROR);
+//		} else {
+			return new ResponseEntity<Batch>(batch, HttpStatus.OK);
+//		}
 	}
 
-	@PreAuthorize("hasPermission('', 'manager')")
+/*	@PreAuthorize("hasPermission('', 'manager')")
 	@ApiOperation(value = "Retrieve a batch", response = BatchDaoService.class)
 	@ApiResponses({
 			@ApiResponse(code=200, message ="Successfully retrieved a Batch"),
