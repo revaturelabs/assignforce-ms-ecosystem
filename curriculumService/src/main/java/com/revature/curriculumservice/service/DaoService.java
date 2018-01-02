@@ -1,6 +1,9 @@
 package com.revature.curriculumservice.service;
 
+import com.revature.curriculumservice.domain.Activatable;
+import com.revature.curriculumservice.domain.dao.ActivatableObjectRepository;
 import com.revature.curriculumservice.domain.dao.BaseRepository;
+import com.revature.curriculumservice.domain.dao.CurriculumRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.Serializable;
