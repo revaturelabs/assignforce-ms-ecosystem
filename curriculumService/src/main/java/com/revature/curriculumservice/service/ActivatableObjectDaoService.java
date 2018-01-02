@@ -6,6 +6,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Created by August Duet on 11/29/2016.
@@ -19,6 +20,9 @@ public class ActivatableObjectDaoService<T extends Activatable, ID extends Seria
     public void setRepo(ActivatableObjectRepository<T, ID> repo) {
         this.repo = repo;
     }
+
+
+    public List<T> getAllActive() { return repo.findByActiveIsTrue(); }
 
     @Override
     public void deleteItem(ID id){

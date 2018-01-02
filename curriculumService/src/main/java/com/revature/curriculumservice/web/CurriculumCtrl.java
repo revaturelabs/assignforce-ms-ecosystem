@@ -4,6 +4,7 @@ import com.revature.curriculumservice.domain.Curriculum;
 import com.revature.curriculumservice.domain.dto.CurriculumDTO;
 import com.revature.curriculumservice.domain.dto.ResponseErrorDTO;
 import com.revature.curriculumservice.service.ActivatableObjectDaoService;
+import com.revature.curriculumservice.service.CurriculumDaoService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
@@ -32,7 +33,7 @@ public class CurriculumCtrl {
 
 
 	@Autowired
-	ActivatableObjectDaoService<Curriculum, Integer> currService;
+	CurriculumDaoService currService;
 
 	  // CREATE
 		// creating new curriculum object from information passed from curriculum data transfer object
@@ -140,6 +141,69 @@ public class CurriculumCtrl {
 	public Object retrieveAllCurricula() {
 
 		List<Curriculum> all = currService.getAllItems();
+		if (all == null) {
+			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Fetching all curricula failed."), HttpStatus.NOT_FOUND);
+		} else if (all.isEmpty()) {
+			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("No curricula available."), HttpStatus.NOT_FOUND);
+		} else {
+			return new ResponseEntity< List<Curriculum> >(all, HttpStatus.OK);
+		}
+	}
+
+	// GET ALL
+	// retrieve all active curricula
+	@RequestMapping(value = "/active", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	@ApiOperation(value = "Retrieve all active Curricula", response = ResponseEntity.class)
+	@ApiResponses({
+			@ApiResponse(code=200, message ="Successfully retrieved all active Curricula"),
+			@ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
+			@ApiResponse(code=500, message ="Cannot retrieve Curricula")
+	})
+	public Object retrieveAllActiveCurricula() {
+
+		List<Curriculum> all = currService.getAllActive();
+		if (all == null) {
+			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Fetching all curricula failed."), HttpStatus.NOT_FOUND);
+		} else if (all.isEmpty()) {
+			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("No curricula available."), HttpStatus.NOT_FOUND);
+		} else {
+			return new ResponseEntity< List<Curriculum> >(all, HttpStatus.OK);
+		}
+	}
+
+	// GET ALL
+	// retrieve all active core
+	@RequestMapping(value = "/activeCore", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	@ApiOperation(value = "Retrieve all active core Curricula", response = ResponseEntity.class)
+	@ApiResponses({
+			@ApiResponse(code=200, message ="Successfully retrieved all active  core Curricula"),
+			@ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
+			@ApiResponse(code=500, message ="Cannot retrieve active core Curricula")
+	})
+	public Object retrieveAllActiveCore() {
+
+		List<Curriculum> all = currService.getAllActiveCore();
+		if (all == null) {
+			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Fetching all curricula failed."), HttpStatus.NOT_FOUND);
+		} else if (all.isEmpty()) {
+			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("No curricula available."), HttpStatus.NOT_FOUND);
+		} else {
+			return new ResponseEntity< List<Curriculum> >(all, HttpStatus.OK);
+		}
+	}
+
+	// GET ALL
+	// retrieve all active core
+	@RequestMapping(value = "/activeFocus", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	@ApiOperation(value = "Retrieve all active focus Curricula", response = ResponseEntity.class)
+	@ApiResponses({
+			@ApiResponse(code=200, message ="Successfully retrieved all active  focus Curricula"),
+			@ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
+			@ApiResponse(code=500, message ="Cannot retrieve active focus Curricula")
+	})
+	public Object retrieveAllActiveFocus() {
+
+		List<Curriculum> all = currService.getAllActiveFocus();
 		if (all == null) {
 			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Fetching all curricula failed."), HttpStatus.NOT_FOUND);
 		} else if (all.isEmpty()) {
