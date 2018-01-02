@@ -2,6 +2,8 @@ package com.revature.assignforcegateway.controllers;
 
 import com.revature.assignforcegateway.services.TokenEncryptor;
 
+import com.revature.assignforcecommon.dto.UserDTO;
+
 // import io.swagger.annotations.Api;
 // import io.swagger.annotations.ApiOperation;
 // import io.swagger.annotations.ApiResponse;
@@ -51,11 +53,11 @@ public class AuthController{
     
     @RequestMapping(value= "/auth/userinfo", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
-    public ResponseEntity<OAuth2Authentication> userInfo(OAuth2Authentication principal){
+    public ResponseEntity<UserDTO> userInfo(OAuth2Authentication principal){
 	//Map<String, Object> details = (Map)principal.getUserAuthentication().getDetails();
 	//System.out.println(details.get("photos").getClass());
 							      
-	return new ResponseEntity<OAuth2Authentication>(principal, HttpStatus.OK);
+	return new ResponseEntity<UserDTO>(new UserDTO(principal), HttpStatus.OK);
     }
     
     @RequestMapping(value= "/login**")
@@ -77,7 +79,7 @@ public class AuthController{
     public ResponseEntity logout(OAuth2Authentication principal){
 	OAuth2AuthenticationDetails details =
 	    (OAuth2AuthenticationDetails)principal.getDetails();
-	String token = encryptor.encrypt(details.getTokenValue());
+	String token = details.getTokenValue();
 	String revokeUrl = revokeUri + "?token=" + token; 
 	ResponseEntity resp = template.getForEntity(revokeUrl, String.class);
 

@@ -130,7 +130,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         configuration.setAllowCredentials(true);
         // setAllowedHeaders is important! Without it, OPTIONS preflight request
         // will fail with 403 Invalid CORS request
-        configuration.setAllowedHeaders(Arrays.asList(new String[]{"Cache-Control", "Content-Type", "X-XSRF-TOKEN"}));
+        configuration.setAllowedHeaders(Arrays.asList(new String[]{"Cache-Control", "Content-Type", "X-AUTH-TOKEN"}));
         final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", configuration);
         return source;
