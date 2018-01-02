@@ -4,6 +4,7 @@ package com.revature.assignforcebatchms.web;
 import java.sql.Timestamp;
 
 
+
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -17,13 +18,15 @@ import com.revature.assignforcebatchms.service.ActivatableObjectDaoService;
 import com.revature.assignforcebatchms.service.BatchDaoService;
 import com.revature.assignforcebatchms.service.DaoService;
 
-//import com.revature.assignforcebatchms.service.BatchLocationDaoService;
-//import io.swagger.annotations.Api;
-//import io.swagger.annotations.ApiOperation;
-//import io.swagger.annotations.ApiResponse;
-//import io.swagger.annotations.ApiResponses;
+import com.revature.assignforcebatchms.service.BatchLocationDaoService;
+
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.hibernate.annotations.Cascade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.ComponentScan;
@@ -52,12 +55,15 @@ import com.revature.assignforce.service.DaoService;*/
 @RestController
 @RequestMapping("/api/v2/batch")
 @ComponentScan(basePackages = "com.revature.assignforce.service")
-//@Api(value = "Batch Controller", description = "CRUD with Batches")
+@Api(value = "Batch Controller", description = "CRUD with Batches")
 public class BatchCtrl {
 	private final static Log logger = LogFactory.getLog(BatchCtrl.class);
 
 	@PersistenceContext
 	private EntityManager em;
+	
+	@Autowired
+	DaoService<BatchLocation, Integer> batchLocationService;
 
 	@Autowired
 	DaoService<Batch, Integer> batchService;
@@ -75,9 +81,6 @@ public class BatchCtrl {
 	DaoService<Trainer, Integer> trainerService;
 
 	@Autowired
-	DaoService<BatchLocation, Integer> batchLocationService;
-
-	@Autowired
 	DaoService<Unavailable, Integer> unavailableService;*/
 
 
@@ -86,7 +89,7 @@ public class BatchCtrl {
 	// CREATE
 	// creating new batch object from information passed from batch data
 	// transfer object
-/*	@PreAuthorize("hasPermission('', 'manager')")
+	@PreAuthorize("hasPermission('', 'manager')")
 	@ApiOperation(value = "Create a branch", response = BatchDaoService.class)
 	@ApiResponses({
 			@ApiResponse(code=200, message ="Successfully Created a Batch"),
@@ -95,10 +98,16 @@ public class BatchCtrl {
 	})
 	@RequestMapping(method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
 	@Transactional
-	public Object createBatch(@RequestBody BatchDTO in) {
-
-		int ID = in.getID();
-		String name = in.getName();
+	public Object createBatch(@RequestBody Batch batch) {
+		System.out.println("Hey, I got something!");
+		System.out.println(batch);
+		Integer locationID = batchLocationService.saveItem(batch.getBatchLocation()).getId();
+		batch.setBatchLocation(batchLocationService.getOneItem(locationID));
+		System.out.println(batchLocationService.getOneItem(locationID));
+		batchService.saveItem(batch);
+		/*
+		int ID = batch.getID();
+		String name = batch.getName();
 		Curriculum curriculum = currService.getOneItem(in.getCurriculum());
 		Curriculum focus = currService.getOneItem(in.getFocus());
 		Trainer trainer = trainerService.getOneItem(in.getTrainer());
@@ -137,13 +146,13 @@ public class BatchCtrl {
 
 		Batch out = new Batch(ID, name, startDate, endDate, curriculum, status, trainer, cotrainer, skills, focus, bl);
 		out = batchService.saveItem(out);
-
-		if (out == null) {
-			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Batch failed to save."),
-					HttpStatus.INTERNAL_SERVER_ERROR);
-		} else {
-			return new ResponseEntity<Batch>(out, HttpStatus.OK);
-		}
+*/
+//		if (out == null) {
+//			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Batch failed to save."),
+//					HttpStatus.INTERNAL_SERVER_ERROR);
+//		} else {
+			return new ResponseEntity<Batch>(batch, HttpStatus.OK);
+//		}
 	}
 
 	@PreAuthorize("hasPermission('', 'manager')")
@@ -152,7 +161,7 @@ public class BatchCtrl {
 			@ApiResponse(code=200, message ="Successfully retrieved a Batch"),
 			@ApiResponse(code=400, message ="Bad Request, BatchDTO"),
 			@ApiResponse(code=500, message ="Cannot create batch")
-	})*/
+	})
 	// RETRIEVE
 	// retrieve batch with given ID
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
@@ -199,7 +208,7 @@ public class BatchCtrl {
 
 		return new ResponseEntity<Object>(null, HttpStatus.OK);
 	}
-
+*/
 	// GET ALL
 	// retrieve all batches
 
@@ -207,14 +216,14 @@ public class BatchCtrl {
 //	@PreAuthorize("hasPermission('', 'Trainers')")
 
 
-	@PreAuthorize("hasPermission('', 'basic')")
+//	@PreAuthorize("hasPermission('', 'basic')")
 
 	@ApiOperation(value = "Retrieve all batches", response = BatchDaoService.class)
 	@ApiResponses({
 			@ApiResponse(code=200, message ="Successfully retrieved all batches"),
 			@ApiResponse(code=400, message ="Bad Request"),
 			@ApiResponse(code=500, message ="Cannot retrieve all batches")
-	})*/
+	})
 
 	@RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public Object retrieveAllBatches() {
