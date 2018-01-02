@@ -22,7 +22,7 @@ public class Skill implements Activatable{
 	@Column(name = "NAME", unique=true, nullable=false)
 	private String name;
 
-	@Column(name="active", insertable = false)
+	@Column(name="active")
 	private Boolean active;
 
 	public Skill(){
