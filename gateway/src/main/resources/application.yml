@@ -22,9 +22,28 @@ security:
 zuul:
   prefix: /api
   routes:
-    batches:
-      path: /batches/**
-      serviceId: assignforce-batches-service
+    batch:
+      path: /batch/**
+      serviceId: batchService
+    curriculum:
+      path: /curriculum/**
+      serviceId: curriculumService
+    location:
+      path: /location/**
+      serviceId: locationService
+    skill:
+      path: /skill/**
+      serviceId: skillService
+    trainer:
+      path: /trainer/**
+      serviceId: trainerService
+    unavailable:
+      path: /unavailable/**
+      serviceId: unavailableService
+    userSettings:
+      path: /usersettings/**
+      serviceId: userSettingsService
+
 
 eureka:
   client:
