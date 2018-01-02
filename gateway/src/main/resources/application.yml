@@ -1,8 +1,21 @@
 spring:
   application:
-    name: assignforce-edge-server
+    name: gateway
+  cloud:
+    services:
+      registrationMethod: route
+    
 management:
   security:
+    enabled: false
+
+producer:
+  ribbon:
+    ServerListRefreshInterval: 5000
+ribbon:
+  isSecure: false
+security:
+  basic:
     enabled: false
 
 #Zuul with Eureka
