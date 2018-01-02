@@ -1,17 +1,49 @@
 spring:
   application:
-    name: assignforce-edge-server
+    name: gateway
+  cloud:
+    services:
+      registrationMethod: route
+    
 management:
   security:
+    enabled: false
+
+producer:
+  ribbon:
+    ServerListRefreshInterval: 5000
+ribbon:
+  isSecure: false
+security:
+  basic:
     enabled: false
 
 #Zuul with Eureka
 zuul:
   prefix: /api
   routes:
-    batches:
-      path: /batches/**
-      serviceId: assignforce-batches-service
+    batch:
+      path: /batch/**
+      serviceId: batchService
+    curriculum:
+      path: /curriculum/**
+      serviceId: curriculumService
+    location:
+      path: /location/**
+      serviceId: locationService
+    skill:
+      path: /skill/**
+      serviceId: skillService
+    trainer:
+      path: /trainer/**
+      serviceId: trainerService
+    unavailable:
+      path: /unavailable/**
+      serviceId: unavailableService
+    userSettings:
+      path: /usersettings/**
+      serviceId: userSettingsService
+
 
 eureka:
   client:
@@ -23,19 +55,20 @@ eureka:
       lease-expiration-duration-in-seconds: 2
       lease-renewal-interval-in-seconds: 1
 
-security:
+salesforce:
   oauth2:
     client:
       clientId: 3MVG9ahGHqp.k2_wb8eUMtoR38zX8fWod2YBcK5.4RRrWling4BGamz7JanMJTUGcXxI9qda4fQh3xU0Q9EBH
       clientSecret: 627716562932653016
       accessTokenUri: https://revature--int1.cs17.my.salesforce.com/services/oauth2/token
+      revokeTokenUri: https://revature--int1.cs17.my.salesforce.com/services/oauth2/revoke
       userAuthorizationUri: https://revature--int1.cs17.my.salesforce.com/services/oauth2/authorize?prompt=login
       tokenName: authorization_code
       authenticationScheme: header
       clientAuthenticationScheme: form
       grantType: authorization_code
-      preEstablishedRedirectUri: https://localhost:8443/random
-      #registeredRedirectUri: https://localhost:8443/
+      preEstablishedRedirectUri: https://localhost/login
+      #registeredRedirectUri: https://localhost/login
       #useCurrentUri: false
     resource:
       userInfoUri: https://revature--int1.cs17.my.salesforce.com/services/oauth2/userinfo
@@ -49,3 +82,7 @@ server:
     keyAlias: selfsigned
  
 frontEndUrl: http://localhost:4200
+
+tokenEncryption:
+  password: ${ENC_PASS}
+  salt: ${ENC_SALT}
