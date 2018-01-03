@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Api(value = "S3Credentials Controller", description = "Used to retrieve Credentials")
 public class S3CredentialsCtrl {
 
-    //@PreAuthorize("hasPermission('', 'basic')")
+    /*//@PreAuthorize("hasPermission('', 'basic')")
     @RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     @ApiOperation(value = "Retrieves Credentials", response = ResponseEntity.class)
     @ApiResponses({
@@ -39,5 +39,5 @@ public class S3CredentialsCtrl {
         out.put("SecretKey",s3SecretKey);
         out.put("BucketName",s3Name);
         return new ResponseEntity< HashMap<String,String> >(out, HttpStatus.OK);
-    }
+    }*/
 }
