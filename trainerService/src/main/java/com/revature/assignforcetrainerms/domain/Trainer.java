@@ -69,6 +69,16 @@ public class Trainer implements Activatable{
 		//no-arg constructor
 	}
 
+	public Trainer(String firstName, String lastName, String resume, List<Integer> skills, List<Certification> certifications) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+//		this.UnavailableList = unavailability;
+		this.skills = skills;
+		this.certifications = certifications;
+		this.resume = resume;
+		this.active = true;
+	}
 
 	public Trainer(int trainerId, String firstName, String lastName, String resume, List<Integer> skills, List<Certification> certifications) {
 		super();
