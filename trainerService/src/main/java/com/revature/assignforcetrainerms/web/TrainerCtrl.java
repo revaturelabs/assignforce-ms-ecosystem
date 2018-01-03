@@ -76,7 +76,7 @@ public class TrainerCtrl {
 			@ApiResponse(code=500, message ="Cannot retrieve Trainer")
 	})
   
-	public Object retrieveTrainer( @PathVariable("id") int ID ) {
+	public Object retrieveTrainer( @PathVariable("id") String ID ) {
 
 		Trainer out = trainerService.getOneItem(ID);
 
@@ -158,7 +158,7 @@ public class TrainerCtrl {
 			@ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
 			@ApiResponse(code=500, message ="Cannot delete Trainer")
 	})
-	public Object deleteTrainer( @PathVariable("id") int ID ) {
+	public Object deleteTrainer( @PathVariable("id") String ID ) {
 		trainerService.deleteItem(ID);
 		return new ResponseEntity<Object>(null, HttpStatus.OK);
 	}

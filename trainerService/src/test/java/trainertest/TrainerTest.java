@@ -135,7 +135,7 @@ public class TrainerTest {
     @Test
 //    @WithMockUser(roles="ADMIN")
     public void retrieveTrainerTest() throws Exception{
-        given(trainerService.getOneItem(any(Integer.class))).willReturn(testTrainer);
+        given(trainerService.getOneItem(any(String.class))).willReturn(testTrainer);
         mvc.perform(get("/api/v2/trainer/42")
                 .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andExpect(status().isOk())
@@ -147,7 +147,7 @@ public class TrainerTest {
     @Test
 //    @WithMockUser(roles="ADMIN")
     public void retrieveTrainerWithBadIdTest() throws Exception{
-        given(trainerService.getOneItem(any(Integer.class))).willReturn(null);
+        given(trainerService.getOneItem(any(String.class))).willReturn(null);
         mvc.perform(get("/api/v2/trainer/42")
                 .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andExpect(status().isNotFound());
@@ -188,7 +188,7 @@ public class TrainerTest {
     @Test
 //    @WithMockUser(roles="ADMIN")
     public void deleteTrainerTest() throws Exception{
-        doNothing().when(trainerService).deleteItem(any(Integer.class));
+        doNothing().when(trainerService).deleteItem(any(String.class));
         mvc.perform(delete("/api/v2/trainer/42"))
                 .andExpect(status().isOk());
     }
