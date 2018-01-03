@@ -10,6 +10,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
+import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.http.HttpStatus;
@@ -118,7 +119,7 @@ public class TrainerCtrl {
 	})
   
 	public Object updateTrainer( @RequestBody Trainer in ) {
-		int ID = in.getTrainerId();
+		String ID = in.getTrainerId();
 
 		String firstName = in.getFirstName();
 		String lastName = in.getLastName();

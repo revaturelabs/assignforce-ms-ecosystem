@@ -10,6 +10,7 @@ package trainertest;
 import com.revature.assignforcetrainerms.AssignforceTrainerMsApplication;
 import com.revature.assignforcetrainerms.domain.Trainer;
 import com.revature.assignforcetrainerms.service.TrainerDaoService;
+import org.bson.types.ObjectId;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -68,7 +69,7 @@ public class TrainerTest {
     @Before
     public void setUp(){
         trainerDTO = new Trainer();
-        trainerDTO.setTrainerId(1);
+        trainerDTO.setTrainerId("1234");
         trainerDTO.setFirstName("Andy");
         trainerDTO.setLastName("Tang");
         List<Integer> skills = new ArrayList<Integer>();

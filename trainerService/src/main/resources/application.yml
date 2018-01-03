@@ -36,11 +36,11 @@ spring:
     mongodb:
       uri: mongodb://location:locationpw@ds163656.mlab.com:63656/assignforce-location-dev
 
-producer:
-  ribbon:
-    ServerListRefreshInterval: 5000
-ribbon:
-  isSecure: false
-security:
-  basic:
-    enabled: false
+#producer:
+#  ribbon:
+#    ServerListRefreshInterval: 5000
+#ribbon:
+#  isSecure: false
+#security:
+#  basic:
+#    enabled: false
