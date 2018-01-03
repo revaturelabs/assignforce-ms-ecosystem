@@ -169,6 +169,11 @@ public class BatchCtrl {
 
 		// Remove unavailabilities from trainer and room
 //		removeUnavailabilities(trainer, room, startDate, endDate);
+		
+		Batch b = batchService.getOneItem(ID);
+		b.setBatchLocation(null);
+		batchService.saveItem(b);
+		
 		System.out.println("deleting batch: " + batchService.getOneItem(ID));
 		batchService.deleteItem(ID);
 		return new ResponseEntity<Object>(null, HttpStatus.OK);
