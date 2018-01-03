@@ -150,7 +150,7 @@ public class CurriculumCtrl {
 		}
 	}
 
-	// GET ALL
+	// GET ALL ACTIVE
 	// retrieve all active curricula
 	@RequestMapping(value = "/active", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ApiOperation(value = "Retrieve all active Curricula", response = ResponseEntity.class)
@@ -171,7 +171,29 @@ public class CurriculumCtrl {
 		}
 	}
 
-	// GET ALL
+
+	// GET ALL CORE
+	// retrieve all core
+	@RequestMapping(value = "/core", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	@ApiOperation(value = "Retrieve all core Curricula", response = ResponseEntity.class)
+	@ApiResponses({
+			@ApiResponse(code=200, message ="Successfully retrieved all core Curricula"),
+			@ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
+			@ApiResponse(code=500, message ="Cannot retrieve core Curricula")
+	})
+	public Object retrieveAllCore() {
+
+		List<Curriculum> all = currService.getAllCore();
+		if (all == null) {
+			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Fetching all curricula failed."), HttpStatus.NOT_FOUND);
+		} else if (all.isEmpty()) {
+			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("No curricula available."), HttpStatus.NOT_FOUND);
+		} else {
+			return new ResponseEntity< List<Curriculum> >(all, HttpStatus.OK);
+		}
+	}
+
+	// GET ALL ACTIVE CORE
 	// retrieve all active core
 	@RequestMapping(value = "/activeCore", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ApiOperation(value = "Retrieve all active core Curricula", response = ResponseEntity.class)
@@ -192,7 +214,28 @@ public class CurriculumCtrl {
 		}
 	}
 
-	// GET ALL
+	// GET ALL FOCUS
+	// retrieve all focus
+	@RequestMapping(value = "/focus", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	@ApiOperation(value = "Retrieve all focus Curricula", response = ResponseEntity.class)
+	@ApiResponses({
+			@ApiResponse(code=200, message ="Successfully retrieved all focus Curricula"),
+			@ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
+			@ApiResponse(code=500, message ="Cannot retrieve focus Curricula")
+	})
+	public Object retrieveAllFocus() {
+
+		List<Curriculum> all = currService.getAllFocus();
+		if (all == null) {
+			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Fetching all curricula failed."), HttpStatus.NOT_FOUND);
+		} else if (all.isEmpty()) {
+			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("No curricula available."), HttpStatus.NOT_FOUND);
+		} else {
+			return new ResponseEntity< List<Curriculum> >(all, HttpStatus.OK);
+		}
+	}
+
+	// GET ALL ACTIVE FOCUS
 	// retrieve all active core
 	@RequestMapping(value = "/activeFocus", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ApiOperation(value = "Retrieve all active focus Curricula", response = ResponseEntity.class)
