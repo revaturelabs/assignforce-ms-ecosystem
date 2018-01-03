@@ -97,12 +97,21 @@ public class BatchCtrl {
 	})
 	@RequestMapping(method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
 	@Transactional
-	public Object createBatch(@RequestBody Batch batch) {
+	public Object createBatch(@RequestBody Batch in) {
 		System.out.println("Hey, I got something!");
-		System.out.println(batch);
-		Integer locationID = batchLocationService.saveItem(batch.getBatchLocation()).getId();
+		Batch batch = new Batch();
+		batch.setCotrainer(in.getCotrainer());
+		batch.setCurriculum(in.getCurriculum());
+		batch.setTrainer(in.getTrainer());
+		batch.setEndDate(in.getEndDate());
+		batch.setFocus(in.getFocus());
+		batch.setName(in.getName());
+		batch.setStartDate(in.getStartDate());
+		batch.setSkills(in.getSkills());
+		Integer locationID = batchLocationService.saveItem(in.getBatchLocation()).getId();
 		batch.setBatchLocation(batchLocationService.getOneItem(locationID));
 		System.out.println(batchLocationService.getOneItem(locationID));
+		System.out.println("creating batch: " + batch);
 		batchService.saveItem(batch);
 		if (batch == null) {
 			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Batch failed to save."),
@@ -196,7 +205,7 @@ public class BatchCtrl {
 	}
 
 	// UPDATE
-/*	@PreAuthorize("hasPermission('', 'manager')")
+//	@PreAuthorize("hasPermission('', 'manager')")
 	@ApiOperation(value = "Update a batch", response = BatchDaoService.class)
 	@ApiResponses({
 			@ApiResponse(code=200, message ="Successfully updated a batch"),
@@ -205,8 +214,9 @@ public class BatchCtrl {
 	})
 	@RequestMapping(method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
 	@Transactional
-	public Object updateBatch(@RequestBody BatchDTO in) {
+	public Object updateBatch(@RequestBody Batch in) {
 
+		System.out.println("updating Batch: " + batchService.getOneItem(in.getID()));
 		// try to get batch from database
 		Batch b = batchService.getOneItem(in.getID());
 
@@ -216,59 +226,26 @@ public class BatchCtrl {
 					HttpStatus.NOT_FOUND);
 		}
 
-		Integer oldRoomId = b.getBatchLocation().getRoomId();
-		Trainer oldTrainer = b.getTrainer();
-		Timestamp oldStartDate = b.getStartDate();
-		Timestamp oldEndDate = b.getEndDate();
-
 		b.setName(in.getName());
 		b.setSkills(in.getSkills());
 		b.setStartDate(in.getStartDate());
 		b.setEndDate(in.getEndDate());
-
+		b.setTrainer(in.getTrainer());
+		b.setCotrainer(in.getCotrainer());
+		
 		if (in.getCurriculum() < 1) {
 			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Curriculum cannot be null"),
 					HttpStatus.BAD_REQUEST);
 		}
-		Curriculum c = currService.getOneItem(in.getCurriculum());
-		Curriculum f = currService.getOneItem(in.getFocus());
-
-		b.setCurriculum(c);
-		b.setFocus(f);
-
-		Trainer t = trainerService.getOneItem(in.getTrainer());
-		Trainer ct = trainerService.getOneItem(in.getCotrainer());
-
-		b.setTrainer(t);
-		b.setCotrainer(ct);
+		
+		b.setCurriculum(in.getCurriculum());
+		b.setFocus(in.getFocus());
 
 		BatchLocation bl = b.getBatchLocation();
-		Integer tempLocationId = (in.getLocation() > 0 ? in.getLocation() : null);
-		Integer tempBuildingId = (in.getBuilding() > 0 ? in.getBuilding() : null);
-		Integer tempRoomId = (in.getRoom() > 0 ? in.getRoom() : null);
-
-		bl.setLocationId(tempLocationId);
-		bl.setBuildingId(tempBuildingId);
-		bl.setRoomId(tempRoomId);
 		b.setBatchLocation(bl);
 
-		// Update unavailabilities for room and trainer
-		Room oldRoom;
-		if (oldRoomId != null) {
-			oldRoom = roomService.getOneItem(oldRoomId);
-		} else {
-			oldRoom = null;
-		}
-		removeUnavailabilities(oldTrainer, oldRoom, oldStartDate, oldEndDate);
-
-		Room room;
-		if (tempRoomId != null) {
-			room = roomService.getOneItem(tempRoomId);
-		} else {
-			room = null;
-		}
-		createUnavailabilities(t, room, b.getStartDate(), b.getEndDate());
-
+		System.out.println("changing to: " + in);
+		
 		try {
 			batchService.saveItem(b);
 		} catch (Exception ex) {
@@ -279,81 +256,5 @@ public class BatchCtrl {
 
 		return new ResponseEntity<Batch>(b, HttpStatus.OK);
 	}
-
-	@PreAuthorize("hasPermission('', 'basic')")
-	@ApiOperation(value = "Create an Unavailabilities", response = BatchDaoService.class)
-	@ApiResponses({
-			@ApiResponse(code=200, message ="Successfully created an unavailabilities"),
-			@ApiResponse(code=400, message ="Bad Request"),
-			@ApiResponse(code=500, message ="Cannot create an unavailability")
-	})
-	@Transactional
-	void createUnavailabilities(Trainer trainer, Room room, Timestamp startDate, Timestamp endDate) {
-		Unavailable unavailable = new Unavailable(startDate, endDate);
-		List<Unavailable> unavailabilities;
-
-		if (trainer != null) {
-			unavailabilities = trainer.getUnavailabilities();
-			unavailabilities.add(unavailable);
-			trainer.setUnavailabilities(unavailabilities);
-			trainerService.saveItem(trainer);
-		}
-
-		if (room != null) {
-			unavailabilities = room.getUnavailabilities();
-			unavailabilities.add(unavailable);
-			room.setUnavailabilities(unavailabilities);
-			roomService.saveItem(room);
-		}
-	}
-
-	@PreAuthorize("hasPermission('', 'manager')")
-	@ApiOperation(value = "Remove an Unavailabilities", response = BatchDaoService.class)
-	@ApiResponses({
-			@ApiResponse(code=200, message ="Successfully removed an unavailabilities"),
-			@ApiResponse(code=400, message ="Bad Request"),
-			@ApiResponse(code=500, message ="Cannot remove an unavailability")
-	})
-	@Transactional
-	void removeUnavailabilities(Trainer trainer, Room room, Timestamp startDate, Timestamp endDate) {
-		Unavailable unavailableToRemove;
-		List<Unavailable> unavailabilities;
-
-		if (trainer != null) {
-			int index = -1;
-			unavailabilities = trainer.getUnavailabilities();
-			for (int x = 0; x < unavailabilities.size(); x++) {
-				Unavailable unavailable = unavailabilities.get(x);
-				if (unavailable.getStartDate().equals(startDate) && unavailable.getEndDate().equals(endDate)) {
-					index = x;
-					break;
-				}
-			}
-			if(index != -1){
-				unavailableToRemove = unavailabilities.remove(index);
-				unavailableService.deleteItem(unavailableToRemove.getID());
-				trainer.setUnavailabilities(unavailabilities);
-				trainerService.saveItem(trainer);
-			}
-		}
-
-		if (room != null) {
-			int index = -1;
-			unavailabilities = room.getUnavailabilities();
-			for (int x = 0; x < unavailabilities.size(); x++) {
-				Unavailable unavailable = unavailabilities.get(x);
-				if (unavailable.getStartDate().equals(startDate) && unavailable.getEndDate().equals(endDate)) {
-					index = x;
-					break;
-				}
-			}
-			if(index != -1){
-				unavailableToRemove = unavailabilities.remove(index);
-				unavailableService.deleteItem(unavailableToRemove.getID());
-				room.setUnavailabilities(unavailabilities);
-				roomService.saveItem(room);
-			}
-		}
-	}*/
-
+	
 }
