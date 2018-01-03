@@ -86,7 +86,7 @@ public class TrainerTest {
 //        trainerDTO.setUnavailabilities(new ArrayList<>());
         trainerDTO.setActive(true);
         trainerDTO.setResume("this is not a filepath");
-        testTrainer = new Trainer( trainerDTO.getTrainerId(), trainerDTO.getFirstName(),
+        testTrainer = new Trainer(trainerDTO.getFirstName(),
                 trainerDTO.getLastName(), trainerDTO.getResume(), trainerDTO.getSkills(),
                 trainerDTO.getCertifications());
 //        given(customSecurity.hasPermission(any(),any(),any())).willReturn(true);

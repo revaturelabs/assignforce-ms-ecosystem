@@ -70,7 +70,7 @@ public class Trainer implements Activatable{
 	}
 
 
-	public Trainer(int trainerId, String firstName, String lastName, String resume, List<Integer> skills, List<Certification> certifications) {
+	public Trainer(String firstName, String lastName, String resume, List<Integer> skills, List<Certification> certifications) {
 		super();
 		this.trainerId = trainerId;
 		this.firstName = firstName;

@@ -45,7 +45,6 @@ public class TrainerCtrl {
 
 	public Object createTrainer( @RequestBody Trainer in ) {
 
-		int ID = in.getTrainerId();
 		String firstName = in.getFirstName();
 		String lastName = in.getLastName();
 		String resume = in.getResume();
@@ -54,7 +53,7 @@ public class TrainerCtrl {
 		List<Certification> certifications = in.getCertifications();
 //		List<Unavailable> unavailabilities = in.getUnavailabilities();
 
-		Trainer out = new Trainer( ID, firstName, lastName, resume, skills, certifications );
+		Trainer out = new Trainer(firstName, lastName, resume, skills, certifications );
 
 		out = trainerService.saveItem( out );
 
@@ -130,8 +129,13 @@ public class TrainerCtrl {
 		List<Certification> certifications = in.getCertifications();
 
 //		Trainer out = new Trainer( ID, firstName, lastName, resume, unavailabilities, skills, certifications);
-		Trainer out = new Trainer( ID, firstName, lastName, resume, skills, certifications);
-
+		Trainer out = new Trainer();
+		out.setTrainerId(ID);
+		out.setFirstName(firstName);
+		out.setLastName(lastName);
+		out.setResume(resume);
+		out.setSkills(skills);
+		out.setCertifications(certifications);
 		out.setActive(in.getActive());
 		out = trainerService.saveItem( out );
 
