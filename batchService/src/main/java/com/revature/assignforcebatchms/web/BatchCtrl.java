@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.transaction.Transactional;
 
 import com.revature.assignforcebatchms.domain.*;
-
+import com.revature.assignforcebatchms.domain.dto.ResponseErrorDTO;
 import com.revature.assignforcebatchms.service.ActivatableObjectDaoService;
 import com.revature.assignforcebatchms.service.BatchDaoService;
 import com.revature.assignforcebatchms.service.DaoService;
@@ -88,8 +88,7 @@ public class BatchCtrl {
 
 	// CREATE
 	// creating new batch object from information passed from batch data
-	// transfer object
-	@PreAuthorize("hasPermission('', 'manager')")
+//	@PreAuthorize("hasPermission('', 'manager')")
 	@ApiOperation(value = "Create a branch", response = BatchDaoService.class)
 	@ApiResponses({
 			@ApiResponse(code=200, message ="Successfully Created a Batch"),
@@ -105,57 +104,15 @@ public class BatchCtrl {
 		batch.setBatchLocation(batchLocationService.getOneItem(locationID));
 		System.out.println(batchLocationService.getOneItem(locationID));
 		batchService.saveItem(batch);
-		/*
-		int ID = batch.getID();
-		String name = batch.getName();
-		Curriculum curriculum = currService.getOneItem(in.getCurriculum());
-		Curriculum focus = currService.getOneItem(in.getFocus());
-		Trainer trainer = trainerService.getOneItem(in.getTrainer());
-		Trainer cotrainer = trainerService.getOneItem(in.getCotrainer());
-		Timestamp startDate = in.getStartDate();
-		Timestamp endDate = in.getEndDate();
-		BatchStatusLookup status = new BatchStatusLookup(1, "Scheduled");
-		List<Skill> skills = in.getSkills();
-
-		// Save Batch Location
-		Integer tempBuilding = in.getBuilding();
-		Integer tempRoom = in.getRoom();
-
-		if (tempBuilding < 1) {
-			tempBuilding = null;
-		}
-		if (tempRoom < 1) {
-			tempRoom = null;
-		}
-
-		BatchLocation bl = new BatchLocation();
-		bl.setLocationId(in.getLocation());
-		bl.setBuildingId(tempBuilding);
-		bl.setRoomId(tempRoom);
-
-		bl = batchLocationService.saveItem(bl);
-
-		// Save Unavailable
-		Room room;
-		if (tempRoom != null) {
-			room = roomService.getOneItem(tempRoom);
+		if (batch == null) {
+			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Batch failed to save."),
+					HttpStatus.INTERNAL_SERVER_ERROR);
 		} else {
-			room = null;
-		}
-		createUnavailabilities(trainer, room, startDate, endDate);
-
-		Batch out = new Batch(ID, name, startDate, endDate, curriculum, status, trainer, cotrainer, skills, focus, bl);
-		out = batchService.saveItem(out);
-*/
-//		if (out == null) {
-//			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Batch failed to save."),
-//					HttpStatus.INTERNAL_SERVER_ERROR);
-//		} else {
 			return new ResponseEntity<Batch>(batch, HttpStatus.OK);
-//		}
+		}
 	}
 
-	@PreAuthorize("hasPermission('', 'manager')")
+//	@PreAuthorize("hasPermission('', 'manager')")
 	@ApiOperation(value = "Retrieve a batch", response = BatchDaoService.class)
 	@ApiResponses({
 			@ApiResponse(code=200, message ="Successfully retrieved a Batch"),
@@ -168,17 +125,17 @@ public class BatchCtrl {
 	public Object retrieveBatch(@PathVariable("id") Integer ID) {
 
 		Batch out = batchService.getOneItem(ID);
-//		if (out == null) {
-//			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("No batch found of ID " + ID + "."),
-//					HttpStatus.NOT_FOUND);
-//		} else {
+		if (out == null) {
+			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("No batch found of ID " + ID + "."),
+					HttpStatus.NOT_FOUND);
+		} else {
 			return new ResponseEntity<Batch>(out, HttpStatus.OK);
-//		}
+		}
 	}
 
 	// DELETE
 	// delete batch with given ID
-/*	@PreAuthorize("hasPermission('', 'manager')")
+//	@PreAuthorize("hasPermission('', 'manager')")
 	@ApiOperation(value = "Delete a batch", response = BatchDaoService.class)
 	@ApiResponses({
 			@ApiResponse(code=200, message ="Successfully Deleted a Batch"),
@@ -187,9 +144,9 @@ public class BatchCtrl {
 	})
 	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
 	@Transactional
-	public Object deleteBatch(@PathVariable("id") int ID) {
+	public Object deleteBatch(@PathVariable("id") Integer ID) {
 		Batch batch = batchService.getOneItem(ID);
-		Timestamp startDate = batch.getStartDate();
+/*		Timestamp startDate = batch.getStartDate();
 		Timestamp endDate = batch.getEndDate();
 		Trainer trainer = batch.getTrainer();
 		BatchLocation batchLocation = batch.getBatchLocation();
@@ -199,20 +156,18 @@ public class BatchCtrl {
 			room = roomService.getOneItem(roomId);
 		} else {
 			room = null;
-		}
+		}*/
 
 		// Remove unavailabilities from trainer and room
-		removeUnavailabilities(trainer, room, startDate, endDate);
-
+//		removeUnavailabilities(trainer, room, startDate, endDate);
+		System.out.println("deleting batch: " + batchService.getOneItem(ID));
 		batchService.deleteItem(ID);
-
 		return new ResponseEntity<Object>(null, HttpStatus.OK);
 	}
-*/
+
+	
 	// GET ALL
 	// retrieve all batches
-
-
 //	@PreAuthorize("hasPermission('', 'Trainers')")
 
 
@@ -229,17 +184,18 @@ public class BatchCtrl {
 	public Object retrieveAllBatches() {
 
 		List<Batch> all = batchService.getAllItems();
-//		if (all == null) {
-//			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Fetching all batches failed."),
-//					HttpStatus.NOT_FOUND);
-//		} else if (all.isEmpty()) {
-//			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("No batches available."),
-//					HttpStatus.NOT_FOUND);
-//		} else {
+		if (all == null) {
+			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Fetching all batches failed."),
+					HttpStatus.NOT_FOUND);
+		} else if (all.isEmpty()) {
+			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("No batches available."),
+					HttpStatus.NOT_FOUND);
+					} else {
 			return new ResponseEntity<List<Batch>>(all, HttpStatus.OK);
-//		}
+		}
 	}
 
+	// UPDATE
 /*	@PreAuthorize("hasPermission('', 'manager')")
 	@ApiOperation(value = "Update a batch", response = BatchDaoService.class)
 	@ApiResponses({

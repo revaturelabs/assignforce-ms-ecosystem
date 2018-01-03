@@ -21,21 +21,12 @@ public class BatchLocation {
     @Column(name="LOCATION_ID")
     private Integer locationId = null;
 
-    @Formula("(select LOCATION.NAME from LOCATION where LOCATION_ID = LOCATION.ID)")
-    private String locationName;
-
     @Column(name="BUILDING_ID")
     private Integer buildingId = null;
 
-    @Formula("(select BUILDING.NAME from BUILDING where BUILDING_ID = BUILDING.ID)")
-   private String buildingName;
-
     @Column(name="ROOM_ID")
     private Integer roomId = null;
-
-    @Formula("(select ROOM.NAME from ROOM where ROOM_ID = ROOM.ID)")
-    private String roomName;
-
+    
     public BatchLocation(){}
 
     public Integer getId() {
@@ -68,30 +59,6 @@ public class BatchLocation {
 
     public void setRoomId(Integer roomId) {
         this.roomId = roomId;
-    }
-
-    public String getLocationName() {
-        return locationName;
-    }
-
-    public void setLocationName(String locationName) {
-        this.locationName = locationName;
-    }
-
-    public String getBuildingName() {
-        return buildingName;
-    }
-
-    public void setBuildingName(String buildingName) {
-        this.buildingName = buildingName;
-    }
-
-    public String getRoomName() {
-        return roomName;
-    }
-
-    public void setRoomName(String roomName) {
-        this.roomName = roomName;
     }
 
     @Override
