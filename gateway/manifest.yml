@@ -4,9 +4,9 @@ memory: 750MB  # 750MB is good guess
 applications:
   - name: gateway
     domain: cfapps.io
-    host: gateway  # for example trainer-service
+    host: assignforceBackEnd  # for example trainer-service
     buildpack: https://github.com/cloudfoundry/java-buildpack.git
-    path: target/gateway-0.0.1-SNAPSHOT.jar  #this is the default location and name of the built jar
+    path: target/assignforce-gateway-0.0.1-SNAPSHOT.jar  #this is the default location and name of the built jar
     services:
       - service-registry # registers with built in eureka discovery
       - circuit-breaker-dashboard  # registers with built in dashboard for hystrix circuit breaker
