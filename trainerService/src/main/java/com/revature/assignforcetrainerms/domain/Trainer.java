@@ -18,7 +18,7 @@ public class Trainer implements Activatable{
 	@SequenceGenerator(allocationSize = 1, name = "trainerSeq", sequenceName = "TRAINER_SEQ")
 	@GeneratedValue(generator = "trainerSeq", strategy = GenerationType.SEQUENCE)*/
 	@Id
-	private int trainerId;
+	private String trainerId;
 
 //	@Column(name = "FIRST_NAME", nullable = false)
 //	@Field("FIRST_NAME")
@@ -80,7 +80,7 @@ public class Trainer implements Activatable{
 		this.active = true;
 	}
 
-	public Trainer(int trainerId, String firstName, String lastName, String resume, List<Integer> skills, List<Certification> certifications) {
+	public Trainer(String trainerId, String firstName, String lastName, String resume, List<Integer> skills, List<Certification> certifications) {
 		super();
 		this.trainerId = trainerId;
 		this.firstName = firstName;
@@ -92,11 +92,11 @@ public class Trainer implements Activatable{
 		this.active = true;
 	}
 
-    public int getTrainerId() {
-        return trainerId;
-    }
+	public String getTrainerId() {
+		return trainerId;
+	}
 
-	public void setTrainerId(int trainerId) {
+	public void setTrainerId(String trainerId) {
 		this.trainerId = trainerId;
 	}
 
@@ -154,5 +154,18 @@ public class Trainer implements Activatable{
 
 	public void setResume(String resume) {
 		this.resume = resume;
+	}
+
+	@Override
+	public String toString() {
+		return "Trainer{" +
+				"trainerId='" + trainerId + '\'' +
+				", firstName='" + firstName + '\'' +
+				", lastName='" + lastName + '\'' +
+				", resume='" + resume + '\'' +
+				", skills=" + skills +
+				", certifications=" + certifications +
+				", active=" + active +
+				'}';
 	}
 }

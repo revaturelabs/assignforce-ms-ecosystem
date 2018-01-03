@@ -118,7 +118,7 @@ public class TrainerCtrl {
 	})
   
 	public Object updateTrainer( @RequestBody Trainer in ) {
-		int ID = in.getTrainerId();
+		String ID = in.getTrainerId();
 
 		String firstName = in.getFirstName();
 		String lastName = in.getLastName();

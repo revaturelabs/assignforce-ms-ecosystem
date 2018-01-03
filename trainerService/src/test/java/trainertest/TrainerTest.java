@@ -68,7 +68,7 @@ public class TrainerTest {
     @Before
     public void setUp(){
         trainerDTO = new Trainer();
-        trainerDTO.setTrainerId(1);
+        trainerDTO.setTrainerId("1id");
         trainerDTO.setFirstName("Andy");
         trainerDTO.setLastName("Tang");
         List<Integer> skills = new ArrayList<Integer>();
