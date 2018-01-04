@@ -15,7 +15,7 @@ spring:
 
 
 server:
-  port: 9093
+  port: 9099
 
 producer:
   ribbon:
