@@ -102,10 +102,10 @@
 			  <scope>import</scope>
 			</dependency>
 			<dependency>
-			  <groupId>io.pivotal.spring.cloud</groupId>
-			  <artifactId>spring-cloud-services-dependencies</artifactId>
-			  <version>>1.6.0.RELEASE</version>
-			  <type>pom</type>
+				<groupId>io.pivotal.spring.cloud</groupId>
+				<artifactId>spring-cloud-services-dependencies</artifactId>
+				<version>1.6.0.RELEASE</version>
+				<type>pom</type>
 			  <scope>import</scope>
 			</dependency>
 		</dependencies>
