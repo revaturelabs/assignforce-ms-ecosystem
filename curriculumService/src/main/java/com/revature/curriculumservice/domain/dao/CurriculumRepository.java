@@ -13,4 +13,7 @@ public interface CurriculumRepository extends ActivatableObjectRepository<Curric
 
     List<Curriculum> findByActiveIsTrueAndCoreIsFalse();
 
+    List<Curriculum> findByCoreIsTrue();
+
+    List<Curriculum> findByCoreIsFalse();
 }

@@ -1,15 +1,22 @@
 package com.revature.curriculumservice.web;
 
 
+import com.revature.curriculumservice.CurriculumServiceApplication;
 import com.revature.curriculumservice.domain.Curriculum;
 import com.revature.curriculumservice.domain.dto.CurriculumDTO;
 import com.revature.curriculumservice.service.ActivatableObjectDaoService;
+import com.revature.curriculumservice.service.CurriculumDaoService;
+import com.revature.curriculumservice.utils.JsonMaker;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
+import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.ArrayList;
@@ -24,16 +31,24 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+@RunWith(SpringRunner.class)
+@SpringBootTest(
+        webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
+        classes = CurriculumServiceApplication.class)
+@AutoConfigureMockMvc
 public class CurriculumCtrlTest {
 
-    /*private Curriculum testCurriculum;
     private CurriculumDTO curriculumDTO;
+
+    private Curriculum curriculumTest;
+
+    private JsonMaker jsonMaker = new JsonMaker();
 
     @Autowired
     private MockMvc mvc;
 
     @MockBean
-    ActivatableObjectDaoService<Curriculum, Integer> currService;
+    CurriculumDaoService currService;
 
     @Before
     public void setUp() throws Exception {
@@ -46,53 +61,54 @@ public class CurriculumCtrlTest {
         skills.add(2);
         curriculumDTO.setSkills(skills);
 
-        testCurriculum = new Curriculum(curriculumDTO.getCurrId(), curriculumDTO.getName(), curriculumDTO.getSkills(), true);
-        // given(customSecurity.hasPermission(any(),any(),any())).willReturn(true);
+        curriculumTest = new Curriculum(curriculumDTO.getCurrId(), curriculumDTO.getName(), curriculumDTO.getSkills(), true);
+    //    given(customSecurity.hasPermission(any(),any(),any())).willReturn(true);
     }
 
     @After
     public void tearDown() throws Exception {
         curriculumDTO = null;
-        testCurriculum = null;
+        curriculumTest = null;
     }
 
     @Test
+    // @WithMockUser
     public void createCurriculumTest() throws Exception {
-        given(currService.saveItem(any(Curriculum.class))).willReturn(testCurriculum);
+        given(currService.saveItem(any(Curriculum.class))).willReturn(curriculumTest);
         mvc.perform(post("/api/v2/curriculum")
-                .with(csrf().asHeader())
+                
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
                 .content(jsonMaker.toJsonString(curriculumTest)))
                 .andExpect(status().isOk());
     }
 
     @Test
-    @WithMockUser
+    // @WithMockUser
     public void createCurriculumWithEmptyDTOTest() throws Exception {
         given(currService.saveItem(any(Curriculum.class))).willReturn(null);
         mvc.perform(post("/api/v2/curriculum")
-                .with(csrf().asHeader())
+                
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
                 .content(jsonMaker.toJsonString(curriculumTest)))
                 .andExpect(status().isInternalServerError());
     }
 
     @Test
-    @WithMockUser
+    // @WithMockUser
     public void createCurriculumWithNullDTOTest() throws Exception {
         given(currService.saveItem(any(Curriculum.class))).willReturn(null);
         mvc.perform(post("/api/v2/curriculum")
-                .with(csrf().asHeader())
+                
                 .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andExpect(status().isBadRequest());
     }
 
     @Test
-    @WithMockUser
+    // @WithMockUser
     public void retrieveCurriculumTest() throws Exception {
         given(currService.getOneItem(any(Integer.class))).willReturn(curriculumTest);
         mvc.perform(get("/api/v2/curriculum/1")
-                .with(csrf().asHeader())
+                
                 .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.name", is(curriculumTest.getName())))
@@ -101,86 +117,86 @@ public class CurriculumCtrlTest {
     }
 
     @Test
-    @WithMockUser
+    // @WithMockUser
     public void retrieveCurriculumWithBadIdTest() throws Exception {
         given(currService.getOneItem(any(Integer.class))).willReturn(null);
         mvc.perform(get("/api/v2/curriculum/1")
-                .with(csrf().asHeader())
+                
                 .contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andExpect(status().isNotFound());
     }
 
     @Test
-    @WithMockUser
+    // @WithMockUser
     public void updateCurriculumTest() throws Exception {
         given(currService.saveItem(any(Curriculum.class))).willReturn(curriculumTest);
         mvc.perform(put("/api/v2/curriculum")
-                .with(csrf().asHeader())
+                
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
                 .content(jsonMaker.toJsonString(curriculumTest)))
                 .andExpect(status().isOk());
     }
 
     @Test
-    @WithMockUser
+    // @WithMockUser
     public void updateCurriculumWithEmptyDTOTest() throws Exception {
         curriculumTest = new Curriculum();
         given(currService.saveItem(any(Curriculum.class))).willReturn(null);
         mvc.perform(put("/api/v2/curriculum")
-                .with(csrf().asHeader())
+                
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
                 .content(jsonMaker.toJsonString(curriculumTest)))
                 .andExpect(status().isNotModified());
     }
 
     @Test
-    @WithMockUser
+    // @WithMockUser
     public void updateCurriculumWithNullDTOTest() throws Exception {
         curriculumTest = new Curriculum();
         given(currService.saveItem(any(Curriculum.class))).willReturn(null);
         mvc.perform(put("/api/v2/curriculum")
-                .with(csrf().asHeader())
+                
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
                 .content(""))
                 .andExpect(status().isBadRequest());
     }
 
     @Test
-    @WithMockUser
+    // @WithMockUser
     public void deleteCurriculumTest() throws Exception {
         doNothing().when(currService).deleteItem(any(Integer.class));
         mvc.perform(delete("/api/v2/curriculum/1")
-                .with(csrf().asHeader()))
+                )
                 .andExpect(status().isOk());
     }
 
     @Test
-    @WithMockUser
+    // @WithMockUser
     public void retrieveAllCurriculaTest() throws Exception {
         List<Curriculum> curricula = new ArrayList<>();
         curricula.add(curriculumTest);
         given(currService.getAllItems()).willReturn(curricula);
         mvc.perform(get("/api/v2/curriculum")
-                .with(csrf().asHeader()))
+                )
                 .andExpect(status().isOk());
     }
 
     @Test
-    @WithMockUser
+    // @WithMockUser
     public void retrieveAllCurriculaWithEmptyListTest() throws Exception {
         List<Curriculum> curricula = new ArrayList<>();
         given(currService.getAllItems()).willReturn(curricula);
         mvc.perform(get("/api/v2/curriculum")
-                .with(csrf().asHeader()))
+                )
                 .andExpect(status().isNotFound());
     }
 
     @Test
-    @WithMockUser
+    // @WithMockUser
     public void retrieveAllCurriculaReturnNullTest() throws Exception {
         given(currService.getAllItems()).willReturn(null);
         mvc.perform(get("/api/v2/curriculum")
-                .with(csrf().asHeader()))
+                )
                 .andExpect(status().isNotFound());
-    }*/
+    }
 }
