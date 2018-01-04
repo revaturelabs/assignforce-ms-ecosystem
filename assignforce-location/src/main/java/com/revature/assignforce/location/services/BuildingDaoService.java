@@ -7,5 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 @Service
 public class BuildingDaoService extends ActivatableObjectDaoService<Building, Integer> {
-
+	
+	@Autowired
+	BuildingRepository buildingRepo;
 }

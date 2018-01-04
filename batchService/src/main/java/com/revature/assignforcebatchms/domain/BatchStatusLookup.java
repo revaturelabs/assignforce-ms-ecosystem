@@ -46,5 +46,10 @@ public class BatchStatusLookup {
 
 	public void setBatchStatusName(String batchStatusName) {
 		this.batchStatusName = batchStatusName;
+	}
+	@Override
+	public String toString() {
+		return "BatchStatusLookup [batchStatusID=" + batchStatusID + ", batchStatusName=" + batchStatusName + "]";
 	}	
+	
 }

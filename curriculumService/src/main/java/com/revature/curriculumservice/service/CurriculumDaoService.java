@@ -18,4 +18,8 @@ public class CurriculumDaoService extends ActivatableObjectDaoService<Curriculum
     public List<Curriculum> getAllActiveCore() { return repo.findByActiveIsTrueAndCoreIsTrue(); }
 
     public List<Curriculum> getAllActiveFocus() { return repo.findByActiveIsTrueAndCoreIsFalse(); }
+
+    public List<Curriculum> getAllCore() { return repo.findByCoreIsTrue(); }
+
+    public List<Curriculum> getAllFocus() { return repo.findByCoreIsFalse(); }
 }

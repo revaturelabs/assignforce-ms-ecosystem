@@ -53,7 +53,7 @@ public class Batch {
 	@Column(name = "COTRAINER")
 	private Integer cotrainer;
 
-	@OneToOne
+	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "BATCH_LOCATION")
 	BatchLocation batchLocation;
 	
@@ -170,5 +170,13 @@ public class Batch {
 
 	public void setSkills(List<Integer> skills) {
 		this.skills = skills;
+	}
+
+	@Override
+	public String toString() {
+		return "Batch [ID=" + ID + ", name=" + name + ", startDate=" + startDate + ", endDate=" + endDate
+				+ ", curriculum=" + curriculum + ", focus=" + focus + ", batchStatus=" + batchStatus + ", trainer="
+				+ trainer + ", cotrainer=" + cotrainer + ", batchLocation=" + batchLocation + ", skills=" + skills
+				+ "]";
 	}
 }

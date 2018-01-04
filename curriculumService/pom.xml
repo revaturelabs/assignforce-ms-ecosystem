@@ -77,10 +77,10 @@
 			<artifactId>spring-cloud-services-starter-service-registry</artifactId>
 		</dependency>
 		<!-- Circuit Breaker -->
-		<dependency>
+		<!--<dependency>
 			<groupId>io.pivotal.spring.cloud</groupId>
 			<artifactId>spring-cloud-services-starter-circuit-breaker</artifactId>
-		</dependency>
+		</dependency>-->
 	</dependencies>
 
 	<dependencyManagement>
@@ -93,7 +93,7 @@
 				<scope>import</scope>
 			</dependency>
 
-			 pivotal cloud dependency
+			 <!--pivotal cloud dependency-->
 			<dependency>
 				<groupId>io.pivotal.spring.cloud</groupId>
 				<artifactId>spring-cloud-services-dependencies</artifactId>
