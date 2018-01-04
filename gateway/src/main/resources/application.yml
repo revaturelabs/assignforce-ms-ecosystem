@@ -84,5 +84,5 @@ server:
 frontEndUrl: http://localhost:4200
 
 tokenEncryption:
-  password: ${ENC_PASS}
-  salt: ${ENC_SALT}
+  password: theDawningOfFourHundredBillionSuns"
+  salt: 67616C61787972697365
