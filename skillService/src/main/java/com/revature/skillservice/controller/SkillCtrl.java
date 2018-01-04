@@ -62,27 +62,25 @@ public class SkillCtrl {
 
     // RETRIEVE
     // retrieve skill with given ID
-  /* @PreAuthorize("hasPermission('', 'basic')")*/
     @RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-/*    @ApiOperation(value = "Get a skill of a given ID", response = ResponseEntity.class)
+    @ApiOperation(value = "Get a skill of a given ID", response = ResponseEntity.class)
     @ApiResponses({
             @ApiResponse(code=200, message ="Successfully received Skill information"),
             @ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
             @ApiResponse(code=500, message ="Cannot retrieve Skill")
-    })*/
+    })
     public Object retrieveSkill( @PathVariable("id") int ID ) {
 
         Skill out = skillService.getOneItem(ID);
-       // if (out == null) {
-        //    return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("No skill found of ID " + ID + "."), HttpStatus.NOT_FOUND);
-      //  } else {
+       if (out == null) {
+            return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("No skill found of ID " + ID + "."), HttpStatus.NOT_FOUND);
+        } else {
             return new ResponseEntity<Skill>(out, HttpStatus.OK);
-       // }
+        }
     }
 
     // UPDATE
     // updating an existing skill object with information passed from skill data transfer object
-/*    @PreAuthorize("hasPermission('', 'basic')")
     @RequestMapping(method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
     @ApiOperation(value = "Update a skill", response = ResponseEntity.class)
     @ApiResponses({
@@ -90,7 +88,7 @@ public class SkillCtrl {
             @ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
             @ApiResponse(code=500, message ="Cannot update Skill")
     })
-    public Object updateSkill( @RequestBody SkillDTO in ) {
+    public Object updateSkill( @RequestBody Skill in ) {
 
         int ID = in.getSkillId();
         String name = in.getName();
@@ -108,7 +106,6 @@ public class SkillCtrl {
 
     // DELETE
     // delete skill with given ID
-    @PreAuthorize("hasPermission('', 'basic')")
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
     @ApiOperation(value = "Delete a skill", response = ResponseEntity.class)
     @ApiResponses({
@@ -121,7 +118,6 @@ public class SkillCtrl {
         skillService.deleteItem(ID);
         return new ResponseEntity<Object>(null, HttpStatus.OK);
     }
-     */
     // GET ALL
     // retrieve all skills
     @RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
