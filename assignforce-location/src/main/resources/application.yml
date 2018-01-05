@@ -1,8 +1,0 @@
-spring:
-    datasource:
-        username: jeffreywu0216
-        password: 00000000
-        url: jdbc:oracle:thin:@oracledbtest.csnb7shpjqea.us-east-2.rds.amazonaws.com:1521:ORCL
-
-    jpa:
-        database-platform: org.hibernate.dialect.Oracle10gDialect
