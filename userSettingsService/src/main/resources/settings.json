@@ -1,0 +1,23 @@
+[
+  "_class": "com.revature.assignforce.settings-service.domain.Settings",
+  "id": "1",
+  {
+	"_class": "com.revature.assignforce.settings-service.domain.Settings.BatchSettings",
+	"defaultBatchBuilding": "Revature HQ",
+	"defaultBatchLocation": "Room 11730",
+	"defaultBatchNamePattern": "$y$m $mmm$d $c",
+	"defaultMaxBatchSize": "25",
+	"defaultMinBatchSize": "10"
+  },
+  {
+	"_class": "com.revature.assignforce.settings-service.domain.Settings.ReportSettings",
+	"defaultBatchLength": "11",
+	"defaultGradsPerBatch": "40",
+	"defaultIncomingTraineesPerBatch": "15"
+  },
+  {
+	"_class": "com.revature.assignforce.settings-service.domain.Settings.TrainerSettings",
+	"minDayBtwBatches": "14",
+	"timelineTrainersPerPage": "12"
+  }
+]

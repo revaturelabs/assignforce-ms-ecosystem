@@ -1,0 +1,37 @@
+#spring:
+#  application:
+#    name: settings-service
+#  profiles:
+#    active: mongodb
+#  data:
+#    mongodb:
+#      host:
+#      port: 27017
+
+spring:
+  application:
+    name: settingsService
+  cloud:
+    services:
+      registrationMethod: route
+  data:
+    mongodb:
+      uri: mongodb://location:locationpw@ds163656.mlab.com:63656/assignforce-location-dev
+
+server:
+  port: 9090
+
+cloud:
+ services:
+   registrationMethod: route
+
+producer:
+ ribbon:
+   ServerListRefreshInterval: 5000
+
+ribbon:
+ isSecure: false
+
+security:
+ basic:
+   enabled: false

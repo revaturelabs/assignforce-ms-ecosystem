@@ -1,0 +1,6 @@
+---
+applications:
+  - name: settings-service
+    memory: 1G
+    random-route: true
+    path: build/libs/settings-service.jar
