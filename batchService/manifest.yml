@@ -1,7 +1,7 @@
 instances: 2
 memory: 750MB
 applications:
-  - name: trainerService
+  - name: batchService
     domain: cfapps.io
     host: batch-service
     buildpack: https://github.com/cloudfoundry/java-buildpack.git
