@@ -53,7 +53,8 @@ import com.google.api.services.calendar.model.EventAttendee;
 import com.google.api.services.calendar.model.EventDateTime;
 
 @Controller
-//@Api(value = "Google Calendar Controller", description = "CRUD with the google API")
+@CrossOrigin(origins="*")
+@Api(value = "Google Calendar Controller", description = "CRUD with the google API")
 public class GoogleCalCtrl {
 
     private final static Log logger = LogFactory.getLog(GoogleCalCtrl.class);
