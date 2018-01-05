@@ -27,7 +27,7 @@ public class Curriculum implements Activatable{
 	}
 
 	@Id
-	@Column(name = "ID")
+	@Column(name = "`ID`")
 	@SequenceGenerator(allocationSize = 1, name = "curriculumSeq", sequenceName = "CURRICULUM_SEQ")
 	@GeneratedValue(generator = "curriculumSeq", strategy = GenerationType.SEQUENCE)
 	public int getCurrId() {

@@ -4,11 +4,11 @@ memory: 750M
 applications:
   - name: curriculumService
     domain: cfapps.io
-    host: curriculum-service
+    host: curriculum-service-jun
     buildpack: https://github.com/cloudfoundry/java-buildpack.git
     path: target/curriculumService-0.0.1-SNAPSHOT.jar  #this is the default location and name of the built jar
-    services:
-      - service-registry #registers with built in eureka discovery
-      - circuit-breaker-dashboard
+    #services:
+      #- service-registry #registers with built in eureka discovery
+      #- circuit-breaker-dashboard
     env:
       SPRING_PROFILES_ACTIVE: development
