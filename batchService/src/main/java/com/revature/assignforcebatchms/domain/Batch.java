@@ -48,10 +48,10 @@ public class Batch {
 	private BatchStatusLookup batchStatus;
 
 	@Column(name = "TRAINER")
-	private Integer trainer;
+	private String trainer;
 
 	@Column(name = "COTRAINER")
-	private Integer cotrainer;
+	private String cotrainer;
 
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "BATCH_LOCATION")
@@ -67,7 +67,7 @@ public class Batch {
 	}
 
 	public Batch(int iD, String name, Timestamp startDate, Timestamp endDate, Integer curriculum,
-			BatchStatusLookup batchStatus, Integer trainer, Integer coTrainer, List<Integer> skills,
+			BatchStatusLookup batchStatus, String trainer, String coTrainer, List<Integer> skills,
 			Integer focus, BatchLocation batchLocation
 		) {
 		super();
@@ -140,19 +140,19 @@ public class Batch {
 		this.batchStatus = batchStatus;
 	}
 
-	public Integer getTrainer() {
+	public String getTrainer() {
 		return trainer;
 	}
 
-	public void setTrainer(Integer trainer) {
+	public void setTrainer(String trainer) {
 		this.trainer = trainer;
 	}
 
-	public Integer getCotrainer() {
+	public String getCotrainer() {
 		return cotrainer;
 	}
 
-	public void setCotrainer(Integer cotrainer) {
+	public void setCotrainer(String cotrainer) {
 		this.cotrainer = cotrainer;
 	}
 
