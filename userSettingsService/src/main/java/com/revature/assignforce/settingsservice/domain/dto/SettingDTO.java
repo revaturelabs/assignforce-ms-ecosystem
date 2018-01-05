@@ -1,4 +1,4 @@
-package com.revature.assignforce.settingsservice.domain.dto;
+package com.revature.assignforce.settingsService.domain.dto;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

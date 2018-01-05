@@ -1,4 +1,4 @@
-package com.revature.assignforce.settingsservice;
+package com.revature.assignforce.settingsService;
 
 //import com.revature.assignforce.settingsservice.config.SpringApplicationContextInitializer;
 import org.springframework.boot.SpringApplication;

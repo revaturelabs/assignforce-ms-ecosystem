@@ -1,4 +1,4 @@
-package com.revature.assignforce.settingsservice.service;
+package com.revature.assignforce.settingsService.service;
 
 import com.revature.assignforcecommon.dao.BaseRepository;
 import org.springframework.beans.factory.annotation.Autowired;

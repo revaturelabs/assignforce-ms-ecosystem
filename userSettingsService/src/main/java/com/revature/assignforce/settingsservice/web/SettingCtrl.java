@@ -1,4 +1,4 @@
-package com.revature.assignforce.settingsservice.web;
+package com.revature.assignforce.settingsService.web;
 
 
 import com.revature.assignforce.settingsservice.domain.Setting;

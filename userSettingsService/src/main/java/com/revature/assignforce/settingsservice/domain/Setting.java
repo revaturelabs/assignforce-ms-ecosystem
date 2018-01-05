@@ -1,4 +1,4 @@
-package com.revature.assignforce.settingsservice.domain;
+package com.revature.assignforce.settingsService.domain;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

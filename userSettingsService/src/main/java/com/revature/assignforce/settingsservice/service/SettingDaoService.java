@@ -1,4 +1,4 @@
-package com.revature.assignforce.settingsservice.service;
+package com.revature.assignforce.settingsService.service;
 
 import com.revature.assignforce.settingsservice.domain.Setting;
 import com.revature.assignforce.settingsservice.domain.dao.SettingRepository;
