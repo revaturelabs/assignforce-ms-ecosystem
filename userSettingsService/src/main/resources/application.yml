@@ -1,5 +1,5 @@
 server:
-  port: 9090 # I don't think this is actually needed outside of local eureka, but whatever
+  port: 9091 # I don't think this is actually needed outside of local eureka, but whatever
 
 #eureka:
 #  client:
