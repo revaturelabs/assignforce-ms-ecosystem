@@ -1,0 +1,30 @@
+server:
+  port: 9093
+spring:
+  application:
+    name: curriculumService
+  cloud:
+    services:
+      registrationMethod: route
+  datasource:
+
+#    username: ${RDS_USER}
+#    password: ${RDS_PASS}
+#    url: ${RDS_URL}
+    username: assignforce_dev
+    password: pVCwxTn3
+    url: jdbc:oracle:thin:@assignforce.chueiwozbnfz.us-east-1.rds.amazonaws.com:1521:ORCL
+#    username: ${DB_USER}
+#    password: ${DB_PASSWORD}
+#    url: ${DB_URL}
+
+    jpa:
+        database-platform: org.hibernate.dialect.Oracle10gDialect
+producer:
+  ribbon:
+    ServerListRefreshInterval: 5000
+ribbon:
+  isSecure: false
+security:
+  basic:
+    enabled: false
