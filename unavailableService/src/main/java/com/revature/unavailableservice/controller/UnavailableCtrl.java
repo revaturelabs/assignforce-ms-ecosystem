@@ -1,14 +1,17 @@
 package com.revature.unavailableservice.controller;
 
+import com.revature.unavailableservice.domain.ResponseErrorDTO;
+import com.revature.unavailableservice.domain.UnavailabilityRoom;
+
+import com.revature.unavailableservice.domain.UnavailabilityTrainer;
 import com.revature.unavailableservice.domain.Unavailable;
-//import com.revature.unavailableservice.domain.dto.UnavailableDTO;
-//import com.revature.unavailableservice.domain.dto.ResponseErrorDTO;
 import com.revature.unavailableservice.service.DaoService;
 
-//import io.swagger.annotations.Api;
-//import io.swagger.annotations.ApiOperation;
-//import io.swagger.annotations.ApiResponse;
-//import io.swagger.annotations.ApiResponses;
+import com.revature.unavailableservice.service.UnavailabilityTrainerService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.HttpStatus;
@@ -17,6 +20,9 @@ import org.springframework.http.ResponseEntity;
 //import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
+import java.sql.Timestamp;
+import java.util.List;
+
 /**
  * Created by Nick Edwards on 3/2/2017.
  */
@@ -24,115 +30,160 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/v2/unavailable")
 @ComponentScan(basePackages="com.revature.assignforce.service")
-//@Api(value = "Unavailable Controller", description = "Operations regarding unavailable data")
+@Api(value = "Unavailable Controller", description = "Operations regarding unavailable data")
 public class UnavailableCtrl {
 	
 	@Autowired
 	DaoService<Unavailable, Integer> unavailableService;
 	
+	@Autowired
+	UnavailabilityTrainerService unavailableTrainerService;
+	
+	@Autowired
+	DaoService<UnavailabilityRoom, Integer> unavailableRoomService;
+	
 	// CREATE
-	// creating new unavailable object from information passed from unavailable data transfer object
-/*	@PreAuthorize("hasPermission('', 'basic')")
-	@RequestMapping(method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_VALUE)
+	// creating new room unavailabilities
+//	@PreAuthorize("hasPermission('', 'basic')")
+	@RequestMapping(value="/createRoomUnavailability",method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_VALUE)
 	@ApiOperation(value = "Create an Unavailable ", response = Unavailable.class)
 	@ApiResponses({
 			@ApiResponse(code=200, message ="Successfully received Unavailable information"),
 			@ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
 			@ApiResponse(code=500, message ="Cannot create Unavailable")
 	})
-	public Object createUnavailability( @RequestBody UnavailableDTO in ) {
-		int ID = in.getUnavailableId();
+	public Object createRoomUnavailability( @RequestBody UnavailabilityRoom in ) {
+		unavailableRoomService.saveItem(in);
+		int ID = in.getId();
+		int roomId = in.getRoomId();
 		Timestamp startDate = in.getStartDate();
 		Timestamp endDate = in.getEndDate();
 		
-		Unavailable out = new Unavailable( ID, startDate, endDate );
-		out = unavailableService.saveItem( out );
+		UnavailabilityRoom out = new UnavailabilityRoom( ID, roomId, startDate, endDate );
+		out = unavailableRoomService.saveItem( out );
 		
 		if (out == null) {
 			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Unavailability failed to save."), HttpStatus.NOT_IMPLEMENTED);
 		} else {
-			return new ResponseEntity<Unavailable>(out, HttpStatus.OK);
+			return new ResponseEntity<UnavailabilityRoom>(in, HttpStatus.OK);
 		}
-	}*/
+	}
 	
-	// RETRIEVE
-	// retrieve unavailability with given ID
+	// creating new trainer unavailabilities
 //	@PreAuthorize("hasPermission('', 'basic')")
-	@RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-/*	@ApiOperation(value = "Get an Unavailable with a given ID", response = Unavailable.class)
+	@RequestMapping(value="/createTrainerUnavailability",method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_VALUE)
+	@ApiOperation(value = "Create an Unavailable ", response = Unavailable.class)
+	@ApiResponses({
+			@ApiResponse(code=200, message ="Successfully received Unavailable information"),
+			@ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
+			@ApiResponse(code=500, message ="Cannot create Unavailable")
+	})
+	public Object createTrainerUnavailability( @RequestBody UnavailabilityTrainer in ) {
+		unavailableTrainerService.saveItem(in);
+		int ID = in.getId();
+		String trainerId = in.getTrainerId();
+		Timestamp startDate = in.getStartDate();
+		Timestamp endDate = in.getEndDate();
+		
+		UnavailabilityTrainer out = new UnavailabilityTrainer( ID, trainerId, startDate, endDate );
+		out = unavailableTrainerService.saveItem( out );
+		
+		if (out == null) {
+			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Unavailability failed to save."), HttpStatus.NOT_IMPLEMENTED);
+		} else {
+			return new ResponseEntity<UnavailabilityTrainer>(in, HttpStatus.OK);
+		}
+	}
+	// RETRIEVE
+	// retrieve trainer unavailability with given ID
+//	@PreAuthorize("hasPermission('', 'basic')")
+	@RequestMapping(value = "/trainer/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	@ApiOperation(value = "Get an Unavailable with a given ID", response = Unavailable.class)
 	@ApiResponses({
 			@ApiResponse(code=200, message ="Successfully received Unavailable information"),
 			@ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
 			@ApiResponse(code=500, message ="Cannot retrieve Unavailable")
-	})*/
-	public Object retrieveUnavailability( @PathVariable("id") int ID ) {
-		Unavailable out = unavailableService.getOneItem(ID);
-		//if (out == null) {
-		//	return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("No unavailability found of ID " + ID + "."), HttpStatus.NOT_FOUND);
-	//	} else {
-			return new ResponseEntity<Unavailable>(out, HttpStatus.OK);
-	//	}
+	})
+	public Object retrieveUnavailabilityTrainer( @PathVariable("id") String ID ) {
+		List<UnavailabilityTrainer> out = unavailableTrainerService.findByTrainerId(ID);
+		if (out == null) {
+			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("No unavailability found of ID " + ID + "."), HttpStatus.NOT_FOUND);
+		} else {
+			return new ResponseEntity<List<UnavailabilityTrainer>>(out, HttpStatus.OK);
+		}
 	}
 	
-	// UPDATE
-	// updating an existing unavailability object with information passed from unavailable data transfer object
-/*	@PreAuthorize("hasPermission('', 'trainer_profile')")
-	@RequestMapping(method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
-	@ApiOperation(value = "Update an unavailability ", response = Unavailable.class)
+	// retrieve room unavailability with given ID
+//	@PreAuthorize("hasPermission('', 'basic')")
+	@RequestMapping(value = "/room/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	@ApiOperation(value = "Get an Unavailable with a given ID", response = Unavailable.class)
 	@ApiResponses({
-			@ApiResponse(code=200, message ="Successfully updated Unavailable information"),
+			@ApiResponse(code=200, message ="Successfully received Unavailable information"),
 			@ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
-			@ApiResponse(code=500, message ="Cannot update Unavailable")
+			@ApiResponse(code=500, message ="Cannot retrieve Unavailable")
 	})
-	public Object updateSkill( @RequestBody UnavailableDTO in ) {
+	public Object retrieveUnavailabilitiesRooms( @PathVariable("id") int ID ) {
+		UnavailabilityRoom out = unavailableRoomService.getOneItem(ID);
+		if (out == null) {
+			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("No unavailability found of ID " + ID + "."), HttpStatus.NOT_FOUND);
+		} else {
+			return new ResponseEntity<UnavailabilityRoom>(out, HttpStatus.OK);
+		}
+	}
+	
+	// Update
+	// updating new room unavailabilities
+//	@PreAuthorize("hasPermission('', 'basic')")
+	@RequestMapping(value="/updateRoomUnavailability", method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_VALUE)
+	@ApiOperation(value = "Create an Unavailable ", response = Unavailable.class)
+	@ApiResponses({
+			@ApiResponse(code=200, message ="Successfully received Unavailable information"),
+			@ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
+			@ApiResponse(code=500, message ="Cannot create Unavailable")
+	})
+	public Object updateRoomUnavailability( @RequestBody UnavailabilityRoom in ) {
+		unavailableRoomService.deleteItem(in.getId());
+		unavailableRoomService.saveItem(in);
+		int ID = in.getId();
+		int roomId = in.getRoomId();
+		Timestamp startDate = in.getStartDate();
+		Timestamp endDate = in.getEndDate();
+
+		UnavailabilityRoom out = new UnavailabilityRoom(ID, roomId, startDate, endDate );
+		out = unavailableRoomService.saveItem( out );
 		
-		int ID = in.getUnavailableId();
+		if (out == null) {
+			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Unavailability failed to save."), HttpStatus.NOT_IMPLEMENTED);
+		} else {
+			return new ResponseEntity<UnavailabilityRoom>(in, HttpStatus.OK);
+		}
+	}
+	
+	// updating new trainer unavailabilities
+//	@PreAuthorize("hasPermission('', 'basic')")
+	@RequestMapping(value="/updateTrainerUnavailability", method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_VALUE)
+	@ApiOperation(value = "Create an Unavailable ", response = Unavailable.class)
+	@ApiResponses({
+			@ApiResponse(code=200, message ="Successfully received Unavailable information"),
+			@ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
+			@ApiResponse(code=500, message ="Cannot create Unavailable")
+	})
+	public Object updateTrainerUnavailability( @RequestBody UnavailabilityTrainer in ) {
+		unavailableTrainerService.deleteItem(in.getId());
+
+		int ID = in.getId();
+		String trainerId = in.getTrainerId();
 		Timestamp startDate = in.getStartDate();
 		Timestamp endDate = in.getEndDate();
 		
-		Unavailable out = new Unavailable( ID, startDate, endDate);
-		out = unavailableService.saveItem( out );
+		UnavailabilityTrainer out = new UnavailabilityTrainer( ID, trainerId, startDate, endDate );
+		out = unavailableTrainerService.saveItem( out );
 		
 		if (out == null) {
-			return new ResponseEntity<ResponseErrorDTO> (new ResponseErrorDTO("Unavailability failed to save."), HttpStatus.NOT_MODIFIED);
+			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Unavailability failed to save."), HttpStatus.NOT_IMPLEMENTED);
 		} else {
-				return new ResponseEntity<Unavailable>(out, HttpStatus.OK);
+			return new ResponseEntity<UnavailabilityTrainer>(in, HttpStatus.OK);
 		}
 	}
 	
-	// DELETE
-	// delete unavailability with given ID
-	@PreAuthorize("hasPermission('', 'basic')")
-	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
-	@ApiOperation(value = "Delete an unavailability ", response = Unavailable.class)
-	@ApiResponses({
-			@ApiResponse(code=200, message ="Successfully deletedUnavailable information"),
-			@ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
-			@ApiResponse(code=500, message ="Cannot delete Unavailable")
-	})
-	public Object deleteUnavailability( @PathVariable("id") int ID ) {
-		unavailableService.deleteItem(ID);
-		return new ResponseEntity<Object>(null, HttpStatus.OK);
-	}
-	
-	// GET ALL **PROBABLY WON'T BE USED**
-	@PreAuthorize("hasPermission('', 'basic')")
-	@RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	@ApiOperation(value = "Retrieve all unavailabilities ", response = Unavailable.class)
-	@ApiResponses({
-			@ApiResponse(code=200, message ="Successfully retrieved all Unavailabilities"),
-			@ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
-			@ApiResponse(code=500, message ="Cannot retrieve Unavailablities")
-	})
-	public Object retrieveAllUnavailabilities() {
-		
-		List<Unavailable> all = unavailableService.getAllItems();
-		if (all == null) {
-			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Fetching all unavailabilities failed."), HttpStatus.NOT_FOUND);
-		} else if (all.isEmpty()){
-			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("No unavailabilities available."), HttpStatus.NOT_FOUND);
-		} else {
-			return new ResponseEntity< List<Unavailable> >(all, HttpStatus.OK);
-		}
-	}*/
 }
