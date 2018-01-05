@@ -1,37 +1,32 @@
-#spring:
-#  application:
-#    name: settings-service
-#  profiles:
-#    active: mongodb
-#  data:
-#    mongodb:
-#      host:
-#      port: 27017
+server:
+  port: 9090 # I don't think this is actually needed outside of local eureka, but whatever
 
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka
+#    lease: 5
+#    healthcheck:
+#      enabled: false
+#  instance:
+#    lease-expiration-duration-in-seconds: 2
+#    lease-renewal-interval-in-seconds: 1
 spring:
   application:
-    name: settingsService
+    name: settingsService  # for example trainerService
   cloud:
     services:
       registrationMethod: route
   data:
     mongodb:
-      uri: mongodb://location:locationpw@ds163656.mlab.com:63656/assignforce-location-dev
-
-server:
-  port: 9090
-
-cloud:
- services:
-   registrationMethod: route
+      uri: mongodb://setting:settingpw@ds245347.mlab.com:45347/setting
+  
 
 producer:
- ribbon:
-   ServerListRefreshInterval: 5000
-
+  ribbon:
+    ServerListRefreshInterval: 5000
 ribbon:
- isSecure: false
-
+  isSecure: false
 security:
- basic:
-   enabled: false
+  basic:
+    enabled: false
