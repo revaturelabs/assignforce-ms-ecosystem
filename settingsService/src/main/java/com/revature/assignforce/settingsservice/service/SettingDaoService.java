@@ -1,7 +1,7 @@
 package com.revature.assignforce.settingsService.service;
 
-import com.revature.assignforce.settingsservice.domain.Setting;
-import com.revature.assignforce.settingsservice.domain.dao.SettingRepository;
+import com.revature.assignforce.settingsService.domain.Setting;
+import com.revature.assignforce.settingsService.domain.dao.SettingRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
