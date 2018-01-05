@@ -10,6 +10,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
+import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.http.HttpStatus;
@@ -75,7 +76,7 @@ public class TrainerCtrl {
 			@ApiResponse(code=500, message ="Cannot retrieve Trainer")
 	})
   
-	public Object retrieveTrainer( @PathVariable("id") int ID ) {
+	public Object retrieveTrainer( @PathVariable("id") String ID ) {
 
 		Trainer out = trainerService.getOneItem(ID);
 
@@ -118,7 +119,7 @@ public class TrainerCtrl {
 	})
   
 	public Object updateTrainer( @RequestBody Trainer in ) {
-		int ID = in.getTrainerId();
+		String ID = in.getTrainerId();
 
 		String firstName = in.getFirstName();
 		String lastName = in.getLastName();
@@ -157,7 +158,7 @@ public class TrainerCtrl {
 			@ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
 			@ApiResponse(code=500, message ="Cannot delete Trainer")
 	})
-	public Object deleteTrainer( @PathVariable("id") int ID ) {
+	public Object deleteTrainer( @PathVariable("id") String ID ) {
 		trainerService.deleteItem(ID);
 		return new ResponseEntity<Object>(null, HttpStatus.OK);
 	}

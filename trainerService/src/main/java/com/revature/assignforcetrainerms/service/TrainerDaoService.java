@@ -9,7 +9,7 @@ import com.revature.assignforcetrainerms.dao.TrainerRepository;
 
 @Transactional
 @Service
-public class TrainerDaoService extends ActivatableObjectDaoService<Trainer, Integer>{
+public class TrainerDaoService extends ActivatableObjectDaoService<Trainer, String>{
 
 //	@HystrixCommand(fallbackMethod = "reliable")
 	public Trainer findByFirstName(String name){
