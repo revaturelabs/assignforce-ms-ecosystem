@@ -12,7 +12,17 @@ spring:
         database-platform: org.hibernate.dialect.Oracle10gDialect
 
 server:
-  port: 9091
+  port: 9099
+
+producer:
+  ribbon:
+    ServerListRefreshInterval: 5000
+ribbon:
+  isSecure: false
+security:
+  basic:
+    enabled: false
+
 #
 #eureka:
 #  client:
