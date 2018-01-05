@@ -1,6 +1,11 @@
+server:
+  port: 9092
 spring:
     application:
-        name: assignforce-batch-service
+        name: batchService
+    cloud:
+      services:
+        registrationMethod: route
     #DATABASE CONFIG ISSUE: CANNOT USE ENVIRONMENT VARIABLE
     datasource:
         url: jdbc:oracle:thin:@assignforce.chueiwozbnfz.us-east-1.rds.amazonaws.com:1521:ORCL
@@ -12,17 +17,11 @@ spring:
     #HIBERNATE
     jpa:
         database-platform: org.hibernate.dialect.Oracle10gDialect
-
-server:
-  port: 9092
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka
-    lease: 5
-    healthcheck:
-      enabled: false
-  instance:
-    lease-expiration-duration-in-seconds: 2
-    lease-renewal-interval-in-seconds: 1
+producer:          
+ ribbon:
+   ServerListRefreshInterval: 5000
+ribbon:
+ isSecure: false  
+security:
+ basic:
+   enabled: false
