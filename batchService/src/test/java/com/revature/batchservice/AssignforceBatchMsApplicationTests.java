@@ -1,11 +1,15 @@
 package com.revature.batchservice;
 
+import static org.hamcrest.CoreMatchers.is;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Matchers.any;
+import static org.mockito.Matchers.anyInt;
+import static org.mockito.Mockito.doNothing;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import java.sql.Timestamp;
@@ -30,6 +34,7 @@ import com.revature.assignforcebatchms.domain.Batch;
 import com.revature.assignforcebatchms.domain.BatchLocation;
 import com.revature.assignforcebatchms.domain.BatchStatusLookup;
 import com.revature.assignforcebatchms.service.BatchDaoService;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 
 import utils.JsonMaker;
 
@@ -102,13 +107,104 @@ public class AssignforceBatchMsApplicationTests {
                 .andExpect(status().isOk());
 	}
 	
-	@Test
-	public void testGetBatch() throws Exception {
-		given(batchService.saveItem(any(Batch.class))).willReturn(batch);
-        mvc.perform(get("/api/v2/trainer")
+    @Test
+    public void createBatch() throws Exception {
+        given(batchService.saveItem(any(Batch.class))).willReturn(batch);
+        mvc.perform(post("/api/v2/batch")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(jsonMaker.toJsonString(batch)))
+                    .andExpect(status().isOk())
+                    .andExpect(jsonPath("$.id", is(batch.getID())));
+    }
+
+    @Test
+    public void createBatchWithEmptyDTO() throws Exception {
+        given(batchService.saveItem(any(Batch.class))).willReturn(null);
+        mvc.perform(post("/api/v2/batch")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(jsonMaker.toJsonString(batch)))
+                    .andExpect(status().isInternalServerError());
+    }
+
+    @Test
+    public void retrieveBatch() throws Exception {
+        given(batchService.getOneItem(anyInt())).willReturn(batch);
+        mvc.perform(get("/api/v2/batch/42")
+        		.contentType(MediaType.APPLICATION_JSON)
+                .content(jsonMaker.toJsonString(batch)))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.id", is(batch.getID())));
+    }
+
+    @Test
+    public void retrieveBatchWithEmptyDTO() throws Exception {
+        given(batchService.getOneItem(anyInt())).willReturn(null);
+        mvc.perform(get("/api/v2/batch/42")
+        		.contentType(MediaType.APPLICATION_JSON)
+                .content(jsonMaker.toJsonString(batch)))
+                .andExpect(status().isNotFound());
+    }
+
+    @Test
+    public void deleteBatch() throws Exception {
+        doNothing().when(batchService).deleteItem(anyInt());
+        given(batchService.getOneItem(anyInt())).willReturn(batch);
+//        given(roomService.getOneItem(anyInt())).willReturn(aRoom);
+        mvc.perform(delete("/api/v2/batch/42")
+        		.contentType(MediaType.APPLICATION_JSON)
+                .content(jsonMaker.toJsonString(batch)))
                 .andExpect(status().isOk());
-	}
+    }
+
+    @Test
+    public void retrieveAllBatches() throws Exception {
+        List<Batch> batches = new ArrayList<Batch>();
+        batches.add(batch);
+        given(batchService.getAllItems()).willReturn(batches);
+        mvc.perform(get("/api/v2/batch")
+        		.contentType(MediaType.APPLICATION_JSON)
+                .content(jsonMaker.toJsonString(batch)))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.size()", is(batches.size())));
+    }
+
+    @Test
+    public void retrieveAllBatchesWithEmptySet() throws Exception {
+        List<Batch> batches = new ArrayList<Batch>();
+        given(batchService.getAllItems()).willReturn(batches);
+        mvc.perform(get("/api/v2/batch")
+        		.contentType(MediaType.APPLICATION_JSON)
+                .content(jsonMaker.toJsonString(batch)))
+                .andExpect(status().isNotFound());
+    }
+
+    @Test
+    public void retrieveAllBatchesWithError() throws Exception {
+        given(batchService.getAllItems()).willReturn(null);
+        mvc.perform(get("/api/v2/batch")
+        		.contentType(MediaType.APPLICATION_JSON)
+                .content(jsonMaker.toJsonString(batch)))
+                .andExpect(status().isNotFound());
+    }
+
+    @Test
+    public void updateBatch() throws Exception {
+        given(batchService.saveItem(any(Batch.class))).willReturn(batch);
+        given(batchService.getOneItem(anyInt())).willReturn(batch);
+        mvc.perform(put("/api/v2/batch")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(jsonMaker.toJsonString(batch)))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.id", is(batch.getID())));
+    }
+
+    @Test
+    public void updateBatchWithEmptyDTO() throws Exception {
+        given(batchService.saveItem(any(Batch.class))).willReturn(null);
+        given(batchService.getOneItem(anyInt())).willReturn(batch);
+        mvc.perform(put("/api/v2/batch")
+                .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isBadRequest());
+    }
 	
 }
