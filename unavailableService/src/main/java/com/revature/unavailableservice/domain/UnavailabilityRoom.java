@@ -12,13 +12,13 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "UNAVAILABILITY_ROOM")
-public class UnavailabilityRoom {	
+public class UnavailabilityRoom {
 
 	@Id
 	@Column(name = "ID")
 	@SequenceGenerator(allocationSize = 1, name = "unavailableSeq", sequenceName = "UNAVAILABLE_SEQ")
 	@GeneratedValue(generator = "unavailableSeq", strategy = GenerationType.SEQUENCE)
-	private int ID;
+	private int id;
 
 	@Column(name = "ROOMID", nullable=false)
 	private int roomId;
@@ -39,18 +39,18 @@ public class UnavailabilityRoom {
 	
 	public UnavailabilityRoom(int id, int roomId, Timestamp startDate, Timestamp endDate) {
 		super();
-		this.ID = id;
+		this.id = id;
 		this.roomId = roomId;
 		this.startDate = startDate;
 		this.endDate = endDate;
 	}
 
-	public int getID() {
-		return ID;
+	public int getId() {
+		return id;
 	}
 
-	public void setID(int iD) {
-		ID = iD;
+	public void setId(int Id) {
+		Id = Id;
 	}
 	
 	public int getRoomId() {
@@ -79,7 +79,7 @@ public class UnavailabilityRoom {
 
 	@Override
 	public String toString() {
-		return "Unavailabilities_Rooms [ID=" + ID + ", roomId=" + roomId + ", startDate=" + startDate + ", endDate="
+		return "Unavailabilities_Rooms [ID=" + id + ", roomId=" + roomId + ", startDate=" + startDate + ", endDate="
 				+ endDate + "]";
 	}
 	

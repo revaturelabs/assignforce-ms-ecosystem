@@ -21,21 +21,21 @@ import org.springframework.web.bind.annotation.RestController;
 //@Api(value = "Google Calender Credentials Controller", description = "Operations regarding Google Calender Credentials")
 public class gCalCredentialsCtrl {
 
-	@RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+//	@RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 //	@ApiOperation(value = "Retrieve Google Calender Credentials", response = ResponseEntity.class)
 //	@ApiResponses({
 //			@ApiResponse(code=200, message ="Successfully retrieved Credentials information"),
 //			@ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
 //			@ApiResponse(code=500, message ="Cannot retrieve Credentials information")
 //	})
-	public Object retrieveCredentials() {
-		String clientID = System.getenv("CLIENT_ID");
-		String apiKey = System.getenv("API_KEY");
-		String calendarID = System.getenv("CALENDAR_ID");
-		HashMap<String,String> out = new HashMap<>();
-		out.put("ClientID",clientID);
-		out.put("ApiKey",apiKey);
-		out.put("CalendarID",calendarID);
-		return new ResponseEntity< HashMap<String,String> >(out, HttpStatus.OK);
-	}
+//	public Object retrieveCredentials() {
+//		String clientID = System.getenv("CLIENT_ID");
+//		String apiKey = System.getenv("API_KEY");
+//		String calendarID = System.getenv("CALENDAR_ID");
+//		HashMap<String,String> out = new HashMap<>();
+//		out.put("ClientID",clientID);
+//		out.put("ApiKey",apiKey);
+//		out.put("CalendarID",calendarID);
+//		return new ResponseEntity< HashMap<String,String> >(out, HttpStatus.OK);
+//	}
 }

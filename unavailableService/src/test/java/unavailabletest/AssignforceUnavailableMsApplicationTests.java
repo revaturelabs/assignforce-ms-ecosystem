@@ -35,7 +35,7 @@ import utils.JsonMaker;
 public class AssignforceUnavailableMsApplicationTests {
 	
 	private UnavailabilityRoom uRoom;
-	
+
 	private UnavailabilityTrainer uTrain;
 	
 	@Autowired
@@ -54,11 +54,15 @@ public class AssignforceUnavailableMsApplicationTests {
 	}
 	
 	@Before
-	public void setup(){
+	public void setUp(){
+		uRoom = new UnavailabilityRoom();
+		uTrain = new UnavailabilityTrainer();
+		uRoom.setId(1);
 		uRoom.setRoomId(1);
 		uRoom.setEndDate(new Timestamp(System.currentTimeMillis()));
 		uRoom.setStartDate(new Timestamp(System.currentTimeMillis()));
-		uTrain.setTrainerId(1);
+		uTrain.setId(1);
+		uTrain.setTrainerId("abc123");
 		uTrain.setEndDate(new Timestamp(System.currentTimeMillis()));
 		uTrain.setStartDate(new Timestamp(System.currentTimeMillis()));
 	}
@@ -71,8 +75,8 @@ public class AssignforceUnavailableMsApplicationTests {
 	
 	@Test
 	public void testCreateRoomUnavailability() throws Exception {
-		given(uRoomService.saveItem(any(UnavailabilityRoom.class))).willReturn(uRoom);
-        mvc.perform(post("/api/v2/trainer")
+		given(uRoomService.saveItem(uRoom)).willReturn(uRoom);
+        mvc.perform(post("/api/v2/unavailable/createRoomUnavailability")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(jsonMaker.toJsonString(uRoom)))
                 .andExpect(status().isOk());
@@ -80,8 +84,8 @@ public class AssignforceUnavailableMsApplicationTests {
 	
 	@Test
 	public void testCreateTrainerUnavailability() throws Exception {
-		given(uTrainerService.saveItem(any(UnavailabilityTrainer.class))).willReturn(uTrain);
-        mvc.perform(post("/api/v2/trainer")
+		given(uTrainerService.saveItem(uTrain)).willReturn(uTrain);
+        mvc.perform(post("/api/v2/unavailable/createTrainerUnavailability")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(jsonMaker.toJsonString(uTrain)))
                 .andExpect(status().isOk());
