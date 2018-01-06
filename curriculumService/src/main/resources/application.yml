@@ -1,5 +1,5 @@
 server:
-  port: 9098
+  port: 9093
 spring:
   application:
     name: curriculumService
@@ -50,4 +50,4 @@ security:
   basic:
     enabled: false
 
-debug: true
+# debug: true
