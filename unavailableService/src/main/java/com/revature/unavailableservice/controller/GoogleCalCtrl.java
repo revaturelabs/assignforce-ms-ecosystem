@@ -171,9 +171,10 @@ public class GoogleCalCtrl {
         JsonNode node = mapper.readTree(json);
 //        Employee emp = force.getCurrentEmployee(auth);
 //        String name = emp.getFirstName() + " " + emp.getLastName() + " : Out Of Office";
+        String trainerId = node.get("trainerId").textValue();
         String startDate = node.get("start").get("date").textValue();
         String endDate =  node.get("end").get("date").textValue();
-        Event event = newEvent("name", startDate, endDate);
+        Event event = newEvent(trainerId, startDate, endDate);
         try {
             client.events().insert(googleCalendarId, event).execute();
             return "redirect:/";
@@ -184,7 +185,7 @@ public class GoogleCalCtrl {
         return null;
     }
 
-    private Event newEvent(String name,String startDate, String endDate) {
+    private Event newEvent(String trainerId,String startDate, String endDate) {
         Event event = new Event();
         String pattern = "yyyy-MM-dd";
         Date startdate;
@@ -194,7 +195,7 @@ public class GoogleCalCtrl {
             startdate = format.parse(startDate);
             enddate = format.parse(endDate);
 
-            event.setSummary(name);
+            event.setSummary(trainerId);
             DateTime start = new DateTime(startdate, TimeZone.getTimeZone("EST"));
             event.setStart(new EventDateTime().setDateTime(start));
             DateTime end = new DateTime(enddate, TimeZone.getTimeZone("EST"));
@@ -203,14 +204,15 @@ public class GoogleCalCtrl {
             event.setAttendees(Arrays.asList(new EventAttendee().setEmail("trainers@revature.com")));
 
             UnavailabilityTrainer u = new UnavailabilityTrainer();
+            u.setTrainerId(trainerId);
             Timestamp t = new Timestamp(startdate.getTime());
             u.setStartDate(t);
             t = new Timestamp(enddate.getTime());
             u.setEndDate(t);
             unavailableTrainerService.saveItem(u);
 
-            String[] n = name.split(" ");
-/*           Trainer trainer = tDAO.findByFirstNameAndLastName(n[0], n[1]);
+/*            String[] n = name.split(" ");
+             Trainer trainer = tDAO.findByFirstNameAndLastName(n[0], n[1]);
             try {
                 trainer.getUnavailabilities().add(u);
                 tDAO.save(trainer);
