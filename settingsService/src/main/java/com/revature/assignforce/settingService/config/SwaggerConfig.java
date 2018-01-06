@@ -24,7 +24,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .apis(RequestHandlerSelectors.
-						basePackage("com.revature.assignforce.userSettingsService.web"))
+						basePackage("com.revature.assignforce.userSettingService.web"))
                 .paths(regex("/settings/{userId}"))
                 .build()
                 .apiInfo(metaData());

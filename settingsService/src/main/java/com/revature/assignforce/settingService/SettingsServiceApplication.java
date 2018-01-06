@@ -11,7 +11,7 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 
 @EnableMongoRepositories(basePackages = "com.revature.assignforce.settingService")
 @SpringBootApplication
-//@EnableDiscoveryClients
+//@EnableDiscoveryClient
 public class SettingsServiceApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
