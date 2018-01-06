@@ -1,6 +1,6 @@
 spring:
     application:
-        name: assignforce-skill-service
+        name: unavailableService
     #DATABASE CONFIG ISSUE: CANNOT USE ENVIRONMENT VARIABLE
     datasource:
 
@@ -12,7 +12,7 @@ spring:
         database-platform: org.hibernate.dialect.Oracle10gDialect
 
 server:
-  port: 9099
+  port: 8433
 
 producer:
   ribbon:

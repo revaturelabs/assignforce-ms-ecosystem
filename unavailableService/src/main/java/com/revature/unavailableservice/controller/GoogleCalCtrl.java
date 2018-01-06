@@ -74,7 +74,7 @@ public class GoogleCalCtrl {
 //    @Value("${google.client.client-secret}")
     private String clientSecret = System.getenv("API_KEY");
 //    @Value("${google.client.redirectUri}")
-    private String redirectURI = "http://localhost:9091/api/v2/google/google";
+    private String redirectURI = "https://localhost:8443/api/v2/google/google";
 
 //    @Value("${google.calendar.id}")
     private String googleCalendarId = System.getenv("CALENDAR_ID");
