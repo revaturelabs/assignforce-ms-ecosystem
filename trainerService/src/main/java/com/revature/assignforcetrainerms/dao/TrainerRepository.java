@@ -8,7 +8,7 @@ import com.revature.assignforcetrainerms.domain.Trainer;
 import java.util.List;
 
 @Repository
-public interface TrainerRepository extends ActivatableObjectRepository<Trainer, Integer> {
+public interface TrainerRepository extends ActivatableObjectRepository<Trainer, String> {
 	Trainer findByFirstName(String name);
 	Trainer findByFirstNameAndLastName(String firstName, String lastName);
 	List<Trainer> findByActiveIsTrue();

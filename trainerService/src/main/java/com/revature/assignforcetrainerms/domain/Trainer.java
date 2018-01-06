@@ -4,6 +4,7 @@ import java.util.List;
 
 //import com.revature.assignforcetrainerms.domain.jsonpojos.Skill;
 //import com.revature.assignforcetrainerms.domain.jsonpojos.Unavailable;
+import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
@@ -18,7 +19,7 @@ public class Trainer implements Activatable{
 	@SequenceGenerator(allocationSize = 1, name = "trainerSeq", sequenceName = "TRAINER_SEQ")
 	@GeneratedValue(generator = "trainerSeq", strategy = GenerationType.SEQUENCE)*/
 	@Id
-	private int trainerId;
+	private String trainerId;
 
 //	@Column(name = "FIRST_NAME", nullable = false)
 //	@Field("FIRST_NAME")
@@ -70,8 +71,9 @@ public class Trainer implements Activatable{
 	}
 
 
-	public Trainer(String firstName, String lastName, String resume, List<Integer> skills, List<Certification> certifications) {
+	public Trainer(String ID, String firstName, String lastName, String resume, List<Integer> skills, List<Certification> certifications) {
 		super();
+		this.trainerId = ID;
 		this.trainerId = trainerId;
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -82,11 +84,22 @@ public class Trainer implements Activatable{
 		this.active = true;
 	}
 
-    public int getTrainerId() {
-        return trainerId;
-    }
+	public Trainer(String firstName, String lastName, String resume, List<Integer> skills, List<Certification> certifications) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+//		this.UnavailableList = unavailability;
+		this.skills = skills;
+		this.certifications = certifications;
+		this.resume = resume;
+		this.active = true;
+	}
 
-	public void setTrainerId(int trainerId) {
+	public String getTrainerId() {
+		return trainerId;
+	}
+
+	public void setTrainerId(String trainerId) {
 		this.trainerId = trainerId;
 	}
 
@@ -144,5 +157,18 @@ public class Trainer implements Activatable{
 
 	public void setResume(String resume) {
 		this.resume = resume;
+	}
+
+	@Override
+	public String toString() {
+		return "Trainer{" +
+				"trainerId='" + trainerId + '\'' +
+				", firstName='" + firstName + '\'' +
+				", lastName='" + lastName + '\'' +
+				", resume='" + resume + '\'' +
+				", skills=" + skills +
+				", certifications=" + certifications +
+				", active=" + active +
+				'}';
 	}
 }

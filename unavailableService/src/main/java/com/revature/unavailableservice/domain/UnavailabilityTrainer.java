@@ -12,16 +12,16 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "UNAVAILABILITY_TRAINER")
-public class UnavailabilityTrainer {	
+public class UnavailabilityTrainer {
 
 	@Id
 	@Column(name = "ID")
 	@SequenceGenerator(allocationSize = 1, name = "unavailableSeq", sequenceName = "UNAVAILABLE_SEQ")
 	@GeneratedValue(generator = "unavailableSeq", strategy = GenerationType.SEQUENCE)
-	private int ID;
+	private int id;
 
 	@Column(name = "TRAINERID", nullable=false)
-	private int trainerId;
+	private String trainerId;
 	
 	//@Temporal(TemporalType.TIMESTAMP)
 	@Column(name = "STARTDATE", nullable=false)
@@ -38,27 +38,27 @@ public class UnavailabilityTrainer {
 	}
 
 	
-	public UnavailabilityTrainer(int id, int trainerId, Timestamp startDate, Timestamp endDate) {
+	public UnavailabilityTrainer(int id, String trainerId, Timestamp startDate, Timestamp endDate) {
 		super();
-		this.ID = id;
+		this.id = id;
 		this.trainerId = trainerId;
 		this.startDate = startDate;
 		this.endDate = endDate;
 	}
 
-	public int getID() {
-		return ID;
+	public int getId() {
+		return id;
 	}
 
-	public void setID(int iD) {
-		ID = iD;
+	public void setId(int Id) {
+		this.id = Id;
 	}
 
-	public int getTrainerId() {
+	public String getTrainerId() {
 		return trainerId;
 	}
 
-	public void setTrainerId(int trainerId) {
+	public void setTrainerId(String trainerId) {
 		this.trainerId = trainerId;
 	}
 
@@ -80,7 +80,7 @@ public class UnavailabilityTrainer {
 
 	@Override
 	public String toString() {
-		return "Unavailabilities_Trainers [ID=" + ID + ", trainerId=" + trainerId + ", startDate=" + startDate
+		return "Unavailabilities_Trainers [ID=" + id + ", trainerId=" + trainerId + ", startDate=" + startDate
 				+ ", endDate=" + endDate + "]";
 	}
 

@@ -66,22 +66,23 @@ public class GoogleCalCtrl {
     GoogleAuthorizationCodeFlow flow;
     Credential credential;
 
-    @Value("${google.client.client-id}")
-    private String clientId;
-    @Value("${google.client.client-secret}")
-    private String clientSecret;
-    @Value("${google.client.redirectUri}")
-    private String redirectURI;
 
-    @Value("${google.calendar.id}")
-    private String googleCalendarId;
+//    @Value("${google.client.client-id}")
+    private String clientId = System.getenv("CLIENT_ID");
+//    @Value("${google.client.client-secret}")
+    private String clientSecret = System.getenv("API_KEY");
+//    @Value("${google.client.redirectUri}")
+    private String redirectURI = "http://localhost:9091/api/v2/google/google";
+
+//    @Value("${google.calendar.id}")
+    private String googleCalendarId = System.getenv("CALENDAR_ID");
 
     @Autowired
     private UnavailableDaoService unavailableDaoService;
-    
+
     @Autowired
     private UnavailabilityRoomService unavailableRoomService;
-    
+
     @Autowired
     private UnavailabilityTrainerService unavailableTrainerService;
 
