@@ -1,4 +1,4 @@
-package com.revature.assignforce.settingsService.config;
+package com.revature.assignforce.settingService.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

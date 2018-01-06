@@ -1,16 +1,16 @@
-//package com.revature.assignforce.settingsservice.config.data;
-//
-//import org.springframework.context.annotation.Bean;
-//import org.springframework.context.annotation.Configuration;
-//import org.springframework.context.annotation.Profile;
-//import org.springframework.data.mongodb.MongoDbFactory;
-//import org.springframework.data.mongodb.core.MongoTemplate;
-//
-//@Configuration
-//@Profile( "mongodb")
-//public class MongoConfig {
-//	@Bean
-//	public MongoTemplate mongoTemplate( MongoDbFactory mongoDbFactory) {
-//		return new MongoTemplate( mongoDbFactory);
-//	}
-//}
+package com.revature.assignforce.settingService.config.data;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
+import org.springframework.data.mongodb.MongoDbFactory;
+import org.springframework.data.mongodb.core.MongoTemplate;
+
+@Configuration
+@Profile( "mongodb")
+public class MongoConfig {
+	@Bean
+	public MongoTemplate mongoTemplate( MongoDbFactory mongoDbFactory) {
+		return new MongoTemplate( mongoDbFactory);
+	}
+}
