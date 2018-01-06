@@ -7,21 +7,36 @@ spring:
     services:
       registrationMethod: route
   datasource:
-    url: jdbc:postgresql://baasu.db.elephantsql.com:5432/qfnqeflg
-    username: qfnqeflg
-    password: hna9MVG8qUcelIjDsWmRrDJFM0RZrVMG
+# JUN'S ELEPHANT SQL
+#    url: jdbc:postgresql://baasu.db.elephantsql.com:5432/qfnqeflg
+#    username: qfnqeflg
+#    password: hna9MVG8qUcelIjDsWmRrDJFM0RZrVMG
+#    driverClassName: org.postgresql.Driver
+#    tomcat:
+#          max-active: 3
+
+# ELEPHANT SQL PCF
+    url: jdbc:postgresql://baasu.db.elephantsql.com:5432/fxpulxfi
+    username: fxpulxfi
+    password: LjLdqIrb6yw51t0Q713uZI0nIlSIVCwV
     driverClassName: org.postgresql.Driver
     tomcat:
           max-active: 3
-#    username: ${RDS_USER}
-#    password: ${RDS_PASS}
-#    url: ${RDS_URL}
+
+
+# Oracle DB assignforce dev
     #username: assignforce_dev
     #password: pVCwxTn3
     #url: jdbc:oracle:thin:@assignforce.chueiwozbnfz.us-east-1.rds.amazonaws.com:1521:ORCL
+
+# ORACLE DB with Env Var
 #    username: ${DB_USER}
 #    password: ${DB_PASSWORD}
 #    url: ${DB_URL}
+#
+#    username: ${RDS_USER}
+#    password: ${RDS_PASS}
+#    url: ${RDS_URL}
 
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
