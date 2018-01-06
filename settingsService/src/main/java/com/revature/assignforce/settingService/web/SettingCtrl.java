@@ -1,9 +1,9 @@
-package com.revature.assignforce.settingsService.web;
+package com.revature.assignforce.settingService.web;
 
 
-import com.revature.assignforce.settingsservice.domain.Setting;
-import com.revature.assignforce.settingsservice.domain.dto.ResponseErrorDTO;
-import com.revature.assignforce.settingsservice.service.DaoService;
+import com.revature.assignforce.settingService.domain.Setting;
+import com.revature.assignforce.settingService.domain.dto.ResponseErrorDTO;
+import com.revature.assignforce.settingService.service.DaoService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
@@ -24,6 +24,7 @@ import java.util.List;
  * Created by lazar on 2/8/2017.
  */
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/v2/setting")
 @ComponentScan(basePackages = "com.revature.assignforce.service")
@@ -44,7 +45,8 @@ public class SettingCtrl {
             @ApiResponse(code=500, message ="Cannot create Setting")
     })
     public Object createSetting(@RequestBody Setting in ){
-        return new ResponseEntity(null, HttpStatus.NOT_IMPLEMENTED);
+        settingService.saveItem(in);
+        return new ResponseEntity< Setting >(in, HttpStatus.OK);
     }
 
     //Retrieve

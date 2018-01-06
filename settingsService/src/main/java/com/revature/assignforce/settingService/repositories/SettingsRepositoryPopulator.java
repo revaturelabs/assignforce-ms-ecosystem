@@ -2,7 +2,7 @@
 //
 //import com.fasterxml.jackson.databind.DeserializationFeature;
 //import com.fasterxml.jackson.databind.ObjectMapper;
-//import com.revature.assignforce.settingsservice.domain.Settings;
+//import com.revature.assignforce.settingService.domain.Settings;
 //import org.springframework.beans.BeansException;
 //import org.springframework.beans.factory.BeanFactoryUtils;
 //import org.springframework.context.ApplicationContext;

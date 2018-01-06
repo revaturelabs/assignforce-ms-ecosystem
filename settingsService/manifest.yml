@@ -1,13 +1,12 @@
 ---
-instances: 2  # must be at leat two to even be worth it
-memory: {sufficient size}  # 750MB is good guess
+instances: 2
+memory: 750MB
 applications:
-  - name: {your service name}
+  - name: settingsService
     domain: cfapps.io
-    host: {your service name delimited by '-'}  # for example trainer-service
+    host: settings-service
     buildpack: https://github.com/cloudfoundry/java-buildpack.git
-    path: target/{your project name}-0.0.1-SNAPSHOT.jar  
-    //this is the default location and name of the built jar
+    path: target/settingsService-0.0.1-SNAPSHOT.jar
     services:
-      - service-registry # registers with built in eureka discovery
-      - circuit-breaker-dashboard  # registers with built in dashboard for hystrix circuit breaker
+      - service-registry
+      - circuit-breaker-dashboard

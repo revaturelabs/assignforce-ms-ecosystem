@@ -1,6 +1,6 @@
 //package com.revature.assignforce.settingsservice.repositories;
 //
-//import com.revature.assignforce.settingsservice.domain.Settings;
+//import com.revature.assignforce.settingService.domain.Settings;
 //import org.springframework.context.annotation.Profile;
 //import org.springframework.stereotype.Repository;
 //import org.springframework.data.mongodb.repository.MongoRepository;
