@@ -10,7 +10,7 @@ import java.util.List;
 
 @Transactional
 @Service
-public class UnavailabilityTrainerService extends DaoService<UnavailabilityTrainer, String>{
+public class UnavailabilityTrainerService extends DaoService<UnavailabilityTrainer, Integer>{
     @Autowired
     private  UnavailabilityTrainerRepository repo;
 

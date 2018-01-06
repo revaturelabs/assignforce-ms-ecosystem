@@ -102,7 +102,7 @@ public class AssignforceUnavailableMsApplicationTests {
 
 	@Test
 	public void retrieveTrainerUnavailabilityTest() throws Exception {
-		given(uTrainerService.getOneItem(any(String.class))).willReturn(uTrain);
+		given(uTrainerService.getOneItem(any(Integer.class))).willReturn(uTrain);
 		mvc.perform(get("/api/v2/unavailable/trainer/1111"))
 				.andExpect(status().isOk());
 	}
@@ -111,10 +111,7 @@ public class AssignforceUnavailableMsApplicationTests {
 	public void retrieveRoomUnavailabilityTest() throws Exception {
 		given(uRoomService.getOneItem(any(Integer.class))).willReturn(uRoom);
 		mvc.perform(get("/api/v2/unavailable/room/42"))
-				.andExpect(status().isOk())
-				.andExpect(jsonPath("$.startDate", is(uRoom.getStartDate().getTime())))
-				.andExpect(jsonPath("$.endDate", is(uRoom.getEndDate().getTime())))
-				.andExpect(jsonPath("$.id", is(uRoom.getId())));
+				.andExpect(status().isOk());
 	}
 
 	@Test
@@ -132,6 +129,25 @@ public class AssignforceUnavailableMsApplicationTests {
 		given(uRoomService.saveItem(any(UnavailabilityRoom.class))).willReturn(uRoom);
 		doNothing().when(uRoomService).deleteItem(anyInt());
 		mvc.perform(post("/api/v2/unavailable/updateRoomUnavailability")
+				.contentType(MediaType.APPLICATION_JSON)
+				.content(jsonMaker.toJsonString(uRoom)))
+				.andExpect(status().isOk());
+	}
+
+	@Test
+	public void deleteTrainerUnavailabilityTest() throws Exception {
+		given(uTrainerService.saveItem(any(UnavailabilityTrainer.class))).willReturn(uTrain);
+		doNothing().when(uTrainerService).deleteItem(anyInt());
+		mvc.perform(get("/api/v2/unavailable/deleteTrainerUnavailability/123")
+				.contentType(MediaType.APPLICATION_JSON)
+				.content(jsonMaker.toJsonString(uTrain)))
+				.andExpect(status().isOk());
+	}
+
+	@Test
+	public void deleteRoomUnavailabilityTest() throws Exception {
+		doNothing().when(uRoomService).deleteItem(anyInt());
+		mvc.perform(get("/api/v2/unavailable/deleteRoomUnavailability/123")
 				.contentType(MediaType.APPLICATION_JSON)
 				.content(jsonMaker.toJsonString(uRoom)))
 				.andExpect(status().isOk());
