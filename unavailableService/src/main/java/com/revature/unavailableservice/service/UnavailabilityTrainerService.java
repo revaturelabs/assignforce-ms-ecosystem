@@ -21,4 +21,6 @@ public class UnavailabilityTrainerService extends DaoService<UnavailabilityTrain
     public void deleteItem(Integer id) {
         repo.deleteById(id);
     }
+
+    public UnavailabilityTrainer getOneItem(Integer id) {return repo.findOne(id); }
 }

@@ -34,16 +34,16 @@ import java.util.List;
 @ComponentScan(basePackages="com.revature.assignforce.service")
 @Api(value = "Unavailable Controller", description = "Operations regarding unavailable data")
 public class UnavailableCtrl {
-	
+
 	@Autowired
 	DaoService<Unavailable, Integer> unavailableService;
-	
+
 	@Autowired
 	UnavailabilityTrainerService unavailableTrainerService;
-	
+
 	@Autowired
 	UnavailabilityRoomService unavailableRoomService;
-	
+
 	// CREATE
 	// creating new room unavailabilities
 //	@PreAuthorize("hasPermission('', 'basic')")
@@ -60,17 +60,17 @@ public class UnavailableCtrl {
 		int roomId = in.getRoomId();
 		Timestamp startDate = in.getStartDate();
 		Timestamp endDate = in.getEndDate();
-		
+
 		UnavailabilityRoom out = new UnavailabilityRoom( ID, roomId, startDate, endDate );
 		out = unavailableRoomService.saveItem( out );
-		
+
 		if (out == null) {
 			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Unavailability failed to save."), HttpStatus.NOT_IMPLEMENTED);
 		} else {
 			return new ResponseEntity<UnavailabilityRoom>(in, HttpStatus.OK);
 		}
 	}
-	
+
 	// creating new trainer unavailabilities
 //	@PreAuthorize("hasPermission('', 'basic')")
 	@RequestMapping(value="/createTrainerUnavailability",method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_VALUE)
@@ -86,10 +86,10 @@ public class UnavailableCtrl {
 		String trainerId = in.getTrainerId();
 		Timestamp startDate = in.getStartDate();
 		Timestamp endDate = in.getEndDate();
-		
+
 		UnavailabilityTrainer out = new UnavailabilityTrainer( ID, trainerId, startDate, endDate );
 		out = unavailableTrainerService.saveItem( out );
-		
+
 		if (out == null) {
 			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Unavailability failed to save."), HttpStatus.NOT_IMPLEMENTED);
 		} else {
@@ -114,7 +114,7 @@ public class UnavailableCtrl {
 			return new ResponseEntity<List<UnavailabilityTrainer>>(out, HttpStatus.OK);
 		}
 	}
-	
+
 	// retrieve room unavailability with given ID
 //	@PreAuthorize("hasPermission('', 'basic')")
 	@RequestMapping(value = "/room/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
@@ -132,7 +132,7 @@ public class UnavailableCtrl {
 			return new ResponseEntity<List<UnavailabilityRoom>>(out, HttpStatus.OK);
 		}
 	}
-	
+
 	// Update
 	// updating new room unavailabilities
 //	@PreAuthorize("hasPermission('', 'basic')")
@@ -151,14 +151,14 @@ public class UnavailableCtrl {
 		Timestamp endDate = in.getEndDate();
 		UnavailabilityRoom out = new UnavailabilityRoom(ID, roomId, startDate, endDate );
 		out = unavailableRoomService.saveItem( out );
-		
+
 		if (out == null) {
 			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Unavailability failed to save."), HttpStatus.NOT_IMPLEMENTED);
 		} else {
 			return new ResponseEntity<UnavailabilityRoom>(in, HttpStatus.OK);
 		}
 	}
-	
+
 	// updating new trainer unavailabilities
 //	@PreAuthorize("hasPermission('', 'basic')")
 	@RequestMapping(value="/updateTrainerUnavailability", method = RequestMethod.POST,produces = MediaType.APPLICATION_JSON_VALUE)
@@ -176,7 +176,7 @@ public class UnavailableCtrl {
 		Timestamp endDate = in.getEndDate();
 		UnavailabilityTrainer out = new UnavailabilityTrainer( ID, trainerId, startDate, endDate );
 		out = unavailableTrainerService.saveItem( out );
-		
+
 		if (out == null) {
 			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("Unavailability failed to save."), HttpStatus.NOT_IMPLEMENTED);
 		} else {

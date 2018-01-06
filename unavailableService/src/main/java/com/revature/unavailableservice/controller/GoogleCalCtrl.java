@@ -8,6 +8,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 //import com.revature.assignforce.domain.Employee;
 //import com.revature.assignforce.domain.Force;
 //import com.revature.assignforce.domain.Trainer;
+import com.revature.unavailableservice.domain.UnavailabilityTrainer;
 import com.revature.unavailableservice.domain.Unavailable;
 import com.revature.unavailableservice.service.UnavailabilityRoomService;
 import com.revature.unavailableservice.service.UnavailabilityTrainerService;
@@ -77,12 +78,6 @@ public class GoogleCalCtrl {
 
 //    @Value("${google.calendar.id}")
     private String googleCalendarId = System.getenv("CALENDAR_ID");
-
-    @Autowired
-    private UnavailableDaoService unavailableDaoService;
-
-    @Autowired
-    private UnavailabilityRoomService unavailableRoomService;
 
     @Autowired
     private UnavailabilityTrainerService unavailableTrainerService;
@@ -207,12 +202,12 @@ public class GoogleCalCtrl {
 
             event.setAttendees(Arrays.asList(new EventAttendee().setEmail("trainers@revature.com")));
 
-            Unavailable u = new Unavailable();
+            UnavailabilityTrainer u = new UnavailabilityTrainer();
             Timestamp t = new Timestamp(startdate.getTime());
             u.setStartDate(t);
             t = new Timestamp(enddate.getTime());
             u.setEndDate(t);
-            unavailableDaoService.saveItem(u);
+            unavailableTrainerService.saveItem(u);
 
             String[] n = name.split(" ");
 /*           Trainer trainer = tDAO.findByFirstNameAndLastName(n[0], n[1]);
