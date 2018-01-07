@@ -35,67 +35,66 @@ import java.util.Map;
 @Controller
 public class AuthController{
 
-    @Value("${frontEndUrl}")
-    private String frontEndUrl;
+    // @Value("${frontEndUrl}")
+    // private String frontEndUrl;
 
-    @Value("${salesforce.oauth2.client.revokeTokenUri}")
-    private String revokeUri;
+    // @Value("${salesforce.oauth2.client.revokeTokenUri}")
+    // private String revokeUri;
     
-    @Autowired
-    private RestTemplate template;
+    // @Autowired
+    // private RestTemplate template;
 
-    @Autowired
-    private TokenEncryptor encryptor;
+    // @Autowired
+    // private TokenEncryptor encryptor;
 
-    @Autowired
-    private SalesforceRest salesforceRest;
+    // @Autowired
+    // private SalesforceRest salesforceRest;
     
-    @Bean
-    public RestTemplate rt(RestTemplateBuilder builder) {
-	return builder.build();
-    }
+    // @Bean
+    // public RestTemplate rt(RestTemplateBuilder builder) {
+    // 	return builder.build();
+    // }
     
-    @RequestMapping(value= "/auth/userinfo", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    @ResponseBody
-    public ResponseEntity<UserDTO> userInfo(OAuth2Authentication principal){
-	//Map<String, Object> details = (Map)principal.getUserAuthentication().getDetails();
-	//System.out.println(details.get("photos").getClass());
+    // @RequestMapping(value= "/auth/userinfo", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    // @ResponseBody
+    // public ResponseEntity<UserDTO> userInfo(OAuth2Authentication principal){
+    // 	//Map<String, Object> details = (Map)principal.getUserAuthentication().getDetails();
+    // 	//System.out.println(details.get("photos").getClass());
 							      
-	return new ResponseEntity<UserDTO>(salesforceRest.getCurrentUser(principal.getUserAuthentication()), HttpStatus.OK);
-    }
-
-    @PreAuthorize("hasPermission('', 'basic')")
-    @RequestMapping(value= "/login**")
-    public String login(OAuth2Authentication principal){
-	OAuth2AuthenticationDetails details =
-	    (OAuth2AuthenticationDetails)principal.getDetails();
-	String token = encryptor.encrypt(details.getTokenValue());
-	String redirectUrl = frontEndUrl + "/loginsuccess" + "?token=" + token;
-	
-	return "redirect:" + redirectUrl;
-    }
-
-    // @RequestMapping(value= "/", method = RequestMethod.GET)
-    // public void home(HttpServletResponse response) throws IOException{
-    // 	response.sendRedirect(frontEndUrl + "/overview");
+    // 	return new ResponseEntity<UserDTO>(salesforceRest.getCurrentUser(principal.getUserAuthentication()), HttpStatus.OK);
     // }
 
-    @RequestMapping(value= "/revokelogout", method = RequestMethod.POST)
-    public ResponseEntity logout(OAuth2Authentication principal){
-	OAuth2AuthenticationDetails details =
-	    (OAuth2AuthenticationDetails)principal.getDetails();
-	String token = details.getTokenValue();
-	String revokeUrl = revokeUri + "?token=" + token; 
-	ResponseEntity resp = template.getForEntity(revokeUrl, String.class);
+    // @RequestMapping(value= "/login**")
+    // public String login(OAuth2Authentication principal){
+    // 	OAuth2AuthenticationDetails details =
+    // 	    (OAuth2AuthenticationDetails)principal.getDetails();
+    // 	String token = encryptor.encrypt(details.getTokenValue());
+    // 	String redirectUrl = frontEndUrl + "/loginsuccess" + "?token=" + token;
+	
+    // 	return "redirect:" + redirectUrl;
+    // }
 
-	ResponseEntity ret = null;
-	if(resp.getStatusCode() == HttpStatus.OK){
-	    ret = new ResponseEntity(HttpStatus.NO_CONTENT);
-	}
-	else {
-	    ret = new ResponseEntity(resp.getStatusCode());
-	}
+    // // @RequestMapping(value= "/", method = RequestMethod.GET)
+    // // public void home(HttpServletResponse response) throws IOException{
+    // // 	response.sendRedirect(frontEndUrl + "/overview");
+    // // }
 
-	return ret;
-    }
+    // @RequestMapping(value= "/revokelogout", method = RequestMethod.POST)
+    // public ResponseEntity logout(OAuth2Authentication principal){
+    // 	OAuth2AuthenticationDetails details =
+    // 	    (OAuth2AuthenticationDetails)principal.getDetails();
+    // 	String token = details.getTokenValue();
+    // 	String revokeUrl = revokeUri + "?token=" + token; 
+    // 	ResponseEntity resp = template.getForEntity(revokeUrl, String.class);
+
+    // 	ResponseEntity ret = null;
+    // 	if(resp.getStatusCode() == HttpStatus.OK){
+    // 	    ret = new ResponseEntity(HttpStatus.NO_CONTENT);
+    // 	}
+    // 	else {
+    // 	    ret = new ResponseEntity(resp.getStatusCode());
+    // 	}
+
+    // 	return ret;
+    // }
 }
