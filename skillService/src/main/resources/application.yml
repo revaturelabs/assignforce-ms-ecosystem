@@ -11,7 +11,7 @@ spring:
       password: yNw3vmJWCKzIfg9VD_hqADTr_FcsOyW0
       driverClassName: org.postgresql.Driver
       tomcat:
-        max-active: 5
+        max-active: 4
 #        url: jdbc:oracle:thin:@assignforce.chueiwozbnfz.us-east-1.rds.amazonaws.com:1521:ORCL
 #        username: assignforce_dev
 #        password: pVCwxTn3
