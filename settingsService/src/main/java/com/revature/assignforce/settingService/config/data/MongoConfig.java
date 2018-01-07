@@ -1,16 +1,26 @@
-//package com.revature.assignforce.settingsservice.config.data;
-//
-//import org.springframework.context.annotation.Bean;
-//import org.springframework.context.annotation.Configuration;
-//import org.springframework.context.annotation.Profile;
-//import org.springframework.data.mongodb.MongoDbFactory;
-//import org.springframework.data.mongodb.core.MongoTemplate;
-//
-//@Configuration
-//@Profile( "mongodb")
-//public class MongoConfig {
-//	@Bean
-//	public MongoTemplate mongoTemplate( MongoDbFactory mongoDbFactory) {
-//		return new MongoTemplate( mongoDbFactory);
-//	}
-//}
+package com.revature.assignforce.settingService.config.data;
+
+import java.io.IOException;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.mongodb.MongoDbFactory;
+import org.springframework.data.mongodb.core.MongoTemplate;
+import cz.jirutka.spring.embedmongo.EmbeddedMongoFactoryBean;
+import com.mongodb.MongoClient;
+
+@Configuration
+public class MongoConfig {
+	private static final String MONGO_DB_URL = "localhost";
+    private static final String MONGO_DB_NAME = "embeded_db";
+
+    @Bean
+    public MongoTemplate mongoTemplate() throws IOException {
+        EmbeddedMongoFactoryBean mongo = new EmbeddedMongoFactoryBean();
+        mongo.setBindIp( MONGO_DB_URL);
+        MongoClient mongoClient = mongo.getObject();
+        MongoTemplate mongoTemplate = new MongoTemplate(
+				mongoClient,
+				MONGO_DB_NAME);
+        return mongoTemplate;
+    }
+}

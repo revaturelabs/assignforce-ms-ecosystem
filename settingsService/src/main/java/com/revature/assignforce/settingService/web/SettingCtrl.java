@@ -1,9 +1,9 @@
 package com.revature.assignforce.settingService.web;
 
-
 import com.revature.assignforce.settingService.domain.Setting;
-import com.revature.assignforce.settingService.domain.dto.ResponseErrorDTO;
-import com.revature.assignforce.settingService.service.DaoService;
+import com.revature.assignforce.settingService.service.SettingService;
+//import com.revature.assignforce.settingService.domain.dto.ResponseErrorDTO;
+//import com.revature.assignforce.settingService.service.DaoService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
@@ -32,8 +32,17 @@ import java.util.List;
 public class SettingCtrl {
     private final static Log logger = LogFactory.getLog(SettingCtrl.class);
 
+	/*
     @Autowired
     DaoService<Setting, Integer> settingService;
+	*/
+
+	private SettingService settingService;
+
+	@Autowired
+	public SettingCtrl( SettingService ss) {
+		this.settingService = ss;
+	}
 
     //Create
     //@PreAuthorize("hasPermission('', 'manager')")
@@ -44,9 +53,9 @@ public class SettingCtrl {
             @ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
             @ApiResponse(code=500, message ="Cannot create Setting")
     })
-    public Object createSetting(@RequestBody Setting in ){
-        settingService.saveItem(in);
-        return new ResponseEntity< Setting >(in, HttpStatus.OK);
+    public ResponseEntity<?> createSetting( @RequestBody Setting s) {
+        settingService.updateOrSaveSettings( s);
+        return new ResponseEntity< Setting >( s, HttpStatus.OK);
     }
 
     //Retrieve
@@ -58,16 +67,20 @@ public class SettingCtrl {
             @ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
             @ApiResponse(code=500, message ="Cannot retrieve Setting")
     })
-    public Object retrieveSetting (@PathVariable("settingId") int settingId){
-
-        Setting setting = settingService.getOneItem(settingId);
-        if(setting == null) {
-            return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("No Setting found of ID " + settingId +"."), HttpStatus.NOT_FOUND);
-        } else {
+    public ResponseEntity< ?> retrieveSetting ( /*@PathVariable("settingId")  settingId*/) {
+		Setting settings = settingService.getSettings();
+		if( settings != null)
+			return ResponseEntity.ok( settings);
+		else
+			return ResponseEntity.notFound().build();
+	}
+		/*
             return new ResponseEntity< Setting >(setting, HttpStatus.OK);
-        }
-    }
+		else
+			return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("No Setting found of ID " + Setting.getId() +"."), HttpStatus.NOT_FOUND);
+			*/
 
+	/*
     //@PreAuthorize("hasPermission('', 'basic')")
     @RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     @ApiOperation(value = "Gets all Settings", response = ResponseEntity.class)
@@ -88,6 +101,7 @@ public class SettingCtrl {
             return new ResponseEntity< List<Setting> >(settings, HttpStatus.OK);
         }
     }
+	*/
 
     //Update
     //@PreAuthorize("hasPermission('', 'manager')")
@@ -98,17 +112,21 @@ public class SettingCtrl {
             @ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
             @ApiResponse(code=500, message ="Cannot update Setting")
     })
-    public Object updateSetting(@RequestBody Setting in ){
+    public ResponseEntity< ?> updateSetting( @RequestBody Setting s ) {
 
+		return ResponseEntity.accepted().body(
+				settingService.updateOrSaveSettings( s));
+	}
+		/*
         try{
-            settingService.saveItem(in);
+            settingService.updateOrSaveSettings( s);
         }catch (Exception ex){
             logger.warn(ex);
             return new ResponseEntity<ResponseErrorDTO>(new ResponseErrorDTO("An error has occured while updating system settings"),
                     HttpStatus.INTERNAL_SERVER_ERROR);
         }
         return new ResponseEntity<Object>(null, HttpStatus.NO_CONTENT);
-    }
+		*/
 
     //Delete
     //@PreAuthorize("hasPermission('', 'manager')")
@@ -119,7 +137,7 @@ public class SettingCtrl {
             @ApiResponse(code=400, message ="You cannot delete settings"),
             @ApiResponse(code=500, message ="You cannot delete settings")
     })
-    public Object deleteSetting(){
+    public ResponseEntity< ?> deleteSetting(){
         return new ResponseEntity<Object>(null, HttpStatus.NOT_IMPLEMENTED);
     }
 }

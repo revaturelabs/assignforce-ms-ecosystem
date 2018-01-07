@@ -1,143 +1,153 @@
 package com.revature.assignforce.settingService.domain;
 
+import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
+import java.util.regex.Pattern;
 import javax.persistence.*;
 
 /**
  * Created by lazar on 2/8/2017.
  */
 
-@Document(collection = "settings")
+@ApiModel( "Settings")
+@Document( collection = "Settings")
 public class Setting {
     @Id
-    private int settingId;
-
+    private static ObjectId _id = new ObjectId();
     private String alias;
 
-    private Integer trainersPerPage;
+	//	Batch Settings
+	@ApiModelProperty( notes="Default minimum size of batch.")
+	private Short defaultMinBatchSize;
+	@ApiModelProperty( notes="Default maximum size of batch.")
+	private Short defaultMaxBatchSize;
+	@ApiModelProperty( notes="Default building to create batches from.")
+	private String defaultBatchBuilding;
+	@ApiModelProperty( notes="Default location to create batches from.")
+    private Short defaultBatchLocation;
+	@ApiModelProperty( notes="Default regular expression pattern to create names from.")
+    private Pattern defaultBatchNamePattern;
 
-    private Integer reportGrads;
+	//	Report Settings
+	@ApiModelProperty( notes="Number of incoming graduates reported.")
+	private Short defaultIncomingTraineesPerBatch;
+	@ApiModelProperty( notes="Default number of graduates reported.")
+	private Short defaultGradsPerBatch;
+ 	@ApiModelProperty( notes="Default duration of batch training.")
+	private Short defaultBatchLength;
 
-    private Integer batchLength;
+	//	Trainer Settings
+	@ApiModelProperty( notes="Minimum allowance of time off for trainers.")
+	private Short minDayBtwBatches;
+	@ApiModelProperty( notes="Number of trainers viewed per page.")
+	private Short timelineTrainersPerPage;
 
-    private Integer reportIncomingGrads;
+    public Setting() { }
 
-    private Integer minBatchSize;
-
-    private Integer maxBatchSize;
-
-    private Integer trainerBreakDays;
-
-    private Integer defaultLocation;
-
-    private Integer defaultBuilding;
-
-    private String defaultNamePattern;
-
-    public Setting() {
-    	//noarg constructor
+    public static String getId() {
+        return _id.toHexString();
     }
+	public void setId( ObjectId id) {
+		this._id = id;
+	}
 
-    public int getSettingId() {
-        return settingId;
-    }
+//    public String getAlias() {
+//        return alias;
+//    }
+//
+//    public void setAlias(String alias) {
+//        this.alias = alias;
+//    }
 
-    public void setSettingId(int settingId) {
-        this.settingId = settingId;
-    }
+	// Batch Settings getters & setters
+	public String getDefaultBatchBuilding() {
+		return this.defaultBatchBuilding;
+	}
+	public void setDefaultBatchBuilding( String defaultBatchBuilding) {
+		this.defaultBatchBuilding = defaultBatchBuilding;
+	}
 
-    public String getAlias() {
-        return alias;
-    }
+	public Short getDefaultBatchLocation() {
+		return this.defaultBatchLocation;
+	}
+	public void setDefaultBatchLocation( Short defaultBatchLocation) {
+		this.defaultBatchLocation = defaultBatchLocation;
+	}
 
-    public void setAlias(String alias) {
-        this.alias = alias;
-    }
+	public Pattern getDefaultNamePattern() {
+		return this.defaultBatchNamePattern;
+	}
+	public void setDefaultNamePattern( Pattern defaultNamePattern) {
+		this.defaultBatchNamePattern = defaultNamePattern;
+	}
 
-    public Integer getTrainersPerPage() {
-        return trainersPerPage;
-    }
+	public Short getDefaultMaxBatchSize() {
+		return this.defaultMaxBatchSize;
+	}
+	public void setDefaultMaxBatchSize( Short defaultMaxBatchSize) {
+		this.defaultMaxBatchSize = defaultMaxBatchSize;
+	}
 
-    public void setTrainersPerPage(Integer trainersPerPage) {
-        this.trainersPerPage = trainersPerPage;
-    }
+	public Short getDefaultMinBatchSize() {
+		return defaultMinBatchSize;
+	}
+	public void setDefaultMinBatchSize( Short defaultMinBatchSize) {
+		this.defaultMinBatchSize = defaultMinBatchSize;
+	}
 
-    public Integer getReportGrads() {
-        return reportGrads;
-    }
+	//Report Settings getters & setters
+	public Short getDefaultBatchLength() {
+		return this.defaultBatchLength;
+	}
+	public void setDefaultBatchLength( Short batchLength) {
+		this.defaultBatchLength = batchLength;
+	}
 
-    public void setReportGrads(Integer reportGrads) {
-        this.reportGrads = reportGrads;
-    }
+	public Short getDefaultGradsPerBatch() {
+		return this.defaultGradsPerBatch;
+	}
+	public void setDefaultGradsPerBatch( Short gradsPerBatch) {
+		this.defaultGradsPerBatch = gradsPerBatch;
+	}
 
-    public Integer getBatchLength() {
-        return batchLength;
-    }
+	public Short getDefaultIncomingTraineesPerBatch() {
+		return this.defaultIncomingTraineesPerBatch;
+	}
+	public void setDefaultIncomingTraineesPerBatch( Short traineesPerBatch) {
+		this.defaultIncomingTraineesPerBatch = traineesPerBatch;
+	}
 
-    public void setBatchLength(Integer batchLength) {
-        this.batchLength = batchLength;
-    }
+	// Trainer Settings getters & setters
+	public Short getMinDayBtwBatches() {
+			return this.minDayBtwBatches;
+	}
+	public void setMinDayBtwBatces( Short minDayBtwBatches) {
+		this.minDayBtwBatches = minDayBtwBatches;
+	}
 
-    public Integer getReportIncomingGrads() {
-        return reportIncomingGrads;
-    }
+	public Short getTimelineTrainersPerPage() {
+		return this.timelineTrainersPerPage;
+	}
+	public void setTimelineTrainersPerPage( Short trainersPerPage) {
+		this.timelineTrainersPerPage = trainersPerPage;
+	}
 
-    public void setReportIncomingGrads(Integer reportIncomingGrads) {
-        this.reportIncomingGrads = reportIncomingGrads;
-    }
-
-    public Integer getMinBatchSize() {
-        return minBatchSize;
-    }
-
-    public void setMinBatchSize(Integer minBatchSize) {
-        this.minBatchSize = minBatchSize;
-    }
-
-    public Integer getMaxBatchSize() {
-        return maxBatchSize;
-    }
-
-    public void setMaxBatchSize(Integer maxBatchSize) {
-        this.maxBatchSize = maxBatchSize;
-    }
-
-    public Integer getTrainerBreakDays() {
-        return trainerBreakDays;
-    }
-
-    public void setTrainerBreakDays(Integer trainerBreakDays) {
-        this.trainerBreakDays = trainerBreakDays;
-    }
-
-    public Integer getDefaultLocation() {
-        return defaultLocation;
-    }
-
-    public void setDefaultLocation(Integer defaultLocation) {
-        this.defaultLocation = defaultLocation;
-    }
-
-    public Integer getDefaultBuilding() {
-        return defaultBuilding;
-    }
-
-    public void setDefaultBuilding(Integer defaultBuilding) {
-        this.defaultBuilding = defaultBuilding;
-    }
-
-    public String getDefaultNamePattern() {
-        return defaultNamePattern;
-    }
-
-    public void setDefaultNamePattern(String defaultNamePattern) {
-        this.defaultNamePattern = defaultNamePattern;
-    }
-
-    @Override
-    public String toString() {
-        return super.toString();
-    }
+	public String toString() {
+		return "Settings [" +
+			", defaultBatchBuilding: " + this.defaultBatchBuilding +
+			", defaultBatchLocation: " + this.defaultBatchLocation +
+			", defaultBatchNamePattern: " + this.defaultBatchNamePattern +
+			", defaultMaxBatchSize: " + this.defaultMaxBatchSize +
+			", defaultMinBatchSize: " + this.defaultMinBatchSize +
+			" defaultBatchLength: " + this.defaultBatchLength +
+			", defaultGradsPerBatch: " + this.defaultGradsPerBatch +
+			", defaultIncomingTraineesPerBatch: " +
+			this.defaultIncomingTraineesPerBatch +
+			"minDayBtwBatches: " + this.minDayBtwBatches +
+			", timelineTrainersPerPage: " + this.timelineTrainersPerPage + "]";
+	}
 }
