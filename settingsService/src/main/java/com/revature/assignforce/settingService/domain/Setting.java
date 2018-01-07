@@ -17,7 +17,7 @@ import javax.persistence.*;
 @Document( collection = "Settings")
 public class Setting {
     @Id
-    private static ObjectId _id = new ObjectId();
+    private final static ObjectId _id = new ObjectId();
     private String alias;
 
 	//	Batch Settings
@@ -51,9 +51,6 @@ public class Setting {
     public static String getId() {
         return _id.toHexString();
     }
-	public void setId( ObjectId id) {
-		this._id = id;
-	}
 
 //    public String getAlias() {
 //        return alias;
