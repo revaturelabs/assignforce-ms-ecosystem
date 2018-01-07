@@ -11,3 +11,5 @@ applications:
       - service-registry #registers with built in eureka discovery
       - circuit-breaker-dashboard
       # - skill-database
+    env:
+      SPRING_PROFILES_ACTIVE: development
