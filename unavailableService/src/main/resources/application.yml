@@ -4,12 +4,12 @@ spring:
         name: unavailableService
     #DATABASE CONFIG ISSUE: CANNOT USE ENVIRONMENT VARIABLE
     datasource:
-      url: jdbc:postgresql://baasu.db.elephantsql.com:5432/dtfjfsxg
-      username: dtfjfsxg
-      password: dxHr1OkROL4Qa7famATXzeRyNq_tOjL0
-      driverClassName: org.postgresql.Driver
-      tomcat:
-         max-active: 3
+        url: jdbc:postgresql://baasu.db.elephantsql.com:5432/dtfjfsxg
+        username: dtfjfsxg
+        password: dxHr1OkROL4Qa7famATXzeRyNq_tOjL0
+        driverClassName: org.postgresql.Driver
+        tomcat:
+           max-active: 2
     jpa:
         database-platform: org.hibernate.dialect.PostgreSQLDialect
 

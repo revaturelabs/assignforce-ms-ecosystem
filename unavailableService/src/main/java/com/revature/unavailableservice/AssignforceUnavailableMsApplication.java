@@ -24,7 +24,7 @@ public class AssignforceUnavailableMsApplication {
 		SpringApplication.run(AssignforceUnavailableMsApplication.class, args);
 	}
 
-	@Autowired
+	/*@Autowired
 	UnavailabilityTrainerService trainerService;
 	@Autowired
 	UnavailabilityRoomService roomService;
@@ -32,8 +32,18 @@ public class AssignforceUnavailableMsApplication {
 
 	@Bean
 	public CommandLineRunner demo(UnavailabilityTrainerRepository trainerRepo, UnavailabilityRoomRepository roomRepo) {
-		trainerService.saveItem(new UnavailabilityTrainer(1, "1022", new Timestamp(System.currentTimeMillis()), new Timestamp(System.currentTimeMillis())));
-		roomService.saveItem(new UnavailabilityRoom(1, 11, new Timestamp(System.currentTimeMillis()), new Timestamp(System.currentTimeMillis())));
+//		trainerService.saveItem(new UnavailabilityTrainer(1, "1022", new Timestamp(System.currentTimeMillis()), new Timestamp(System.currentTimeMillis())));
+//		roomService.saveItem(new UnavailabilityRoom(1, 11, new Timestamp(System.currentTimeMillis()), new Timestamp(System.currentTimeMillis())));
+		UnavailabilityTrainer uTrainer = new UnavailabilityTrainer();
+		UnavailabilityRoom uRoom = new UnavailabilityRoom();
+		uTrainer.setTrainerId("12345ab");
+		uTrainer.setStartDate(new Timestamp(System.currentTimeMillis()));
+		uTrainer.setEndDate(new Timestamp(System.currentTimeMillis()));
+		trainerService.saveItem(uTrainer);
+		uRoom.setRoomId(999);
+		uRoom.setStartDate(new Timestamp(System.currentTimeMillis()));
+		uRoom.setEndDate(new Timestamp(System.currentTimeMillis()));
+		roomService.saveItem(uRoom);
 		return (args) -> {
 			// save a couple of customers
 			List<UnavailabilityTrainer> trainers = trainerService.getAllItems();
@@ -46,5 +56,5 @@ public class AssignforceUnavailableMsApplication {
 			}
 		};
 
-	}
+	}*/
 }
