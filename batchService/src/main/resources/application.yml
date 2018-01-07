@@ -14,10 +14,6 @@ spring:
         driverClassName: org.postgresql.Driver
         tomcat:
           max-active: 3
-#        url: ${DB_URL}
-#        username: ${DB_USER}
-#        password: ${DB_PASSWORD}
-    #HIBERNATE
     jpa:
         database-platform: org.hibernate.dialect.PostgreSQLDialect
 

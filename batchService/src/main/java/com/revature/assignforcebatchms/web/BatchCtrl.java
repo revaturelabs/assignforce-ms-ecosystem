@@ -153,8 +153,8 @@ public class BatchCtrl {
 	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
 	@Transactional
 	public Object deleteBatch(@PathVariable("id") Integer ID) {
-		Batch batch = batchService.getOneItem(ID);
-/*		Timestamp startDate = batch.getStartDate();
+/*		Batch batch = batchService.getOneItem(ID);
+		Timestamp startDate = batch.getStartDate();
 		Timestamp endDate = batch.getEndDate();
 		Trainer trainer = batch.getTrainer();
 		BatchLocation batchLocation = batch.getBatchLocation();
@@ -245,7 +245,7 @@ public class BatchCtrl {
 		b.setCurriculum(in.getCurriculum());
 		b.setFocus(in.getFocus());
 
-		BatchLocation bl = b.getBatchLocation();
+		BatchLocation bl = in.getBatchLocation();
 		b.setBatchLocation(bl);
 
 		System.out.println("changing to: " + in);
