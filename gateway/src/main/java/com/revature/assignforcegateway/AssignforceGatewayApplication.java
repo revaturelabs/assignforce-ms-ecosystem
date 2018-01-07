@@ -14,7 +14,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.CommandLineRunner;
 
 
-@SpringBootApplication(scanBasePackages = {"com.revature.assignforcegateway", "com.revature.assignforcecommon.security"}, exclude = {DataSourceAutoConfiguration.class, DataSourceTransactionManagerAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class, DataSourceTransactionManagerAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
 @EnableZuulProxy
 @EnableDiscoveryClient
 public class AssignforceGatewayApplication {
