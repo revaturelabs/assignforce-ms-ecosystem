@@ -20,6 +20,7 @@ spring:
     #HIBERNATE
     jpa:
         database-platform: org.hibernate.dialect.PostgreSQLDialect
+
 producer:          
  ribbon:
    ServerListRefreshInterval: 5000
