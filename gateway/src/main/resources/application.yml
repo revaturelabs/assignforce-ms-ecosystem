@@ -59,7 +59,7 @@ salesforce:
   oauth2:
     client:
       clientId: 3MVG9ahGHqp.k2_wb8eUMtoR38zX8fWod2YBcK5.4RRrWling4BGamz7JanMJTUGcXxI9qda4fQh3xU0Q9EBH
-      clientSecret: 627716562932653016
+      clientSecret: ${OAUTH_CLIENT_SECRET}
       accessTokenUri: https://revature--int1.cs17.my.salesforce.com/services/oauth2/token
       revokeTokenUri: https://revature--int1.cs17.my.salesforce.com/services/oauth2/revoke
       userAuthorizationUri: https://revature--int1.cs17.my.salesforce.com/services/oauth2/authorize?prompt=login
@@ -67,7 +67,7 @@ salesforce:
       authenticationScheme: header
       clientAuthenticationScheme: form
       grantType: authorization_code
-      preEstablishedRedirectUri: https://localhost/login
+      preEstablishedRedirectUri: https://assignforcebackend.cfapps.io/login
       #registeredRedirectUri: https://localhost/login
       #useCurrentUri: false
     resource:
@@ -81,8 +81,8 @@ server:
 #    keyStoreType: jks
 #    keyAlias: selfsigned
  
-frontEndUrl: http://localhost:4200
+frontEndUrl: https://assignforcefrontend.cfapps.io/
 
 tokenEncryption:
-  password: theDawningOfFourHundredBillionSuns
-  salt: 67616C61787972697365
+  password: ${ENC_PASS}
+  salt: ${ENC_SALT}
