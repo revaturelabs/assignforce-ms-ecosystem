@@ -16,6 +16,7 @@ spring:
     jpa:
         database-platform: org.hibernate.dialect.Oracle10gDialect
 
+
 server:
   port: 9090
 
