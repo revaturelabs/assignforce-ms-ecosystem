@@ -16,7 +16,6 @@ spring:
           max-active: 3
     jpa:
         database-platform: org.hibernate.dialect.PostgreSQLDialect
-
 producer:          
  ribbon:
    ServerListRefreshInterval: 5000

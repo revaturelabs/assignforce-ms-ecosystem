@@ -7,11 +7,9 @@ import com.revature.assignforcebatchms.service.ActivatableObjectDaoService;
 import com.revature.assignforcebatchms.service.BatchLocationDaoService;
 import com.revature.assignforcebatchms.service.DaoService;
 import utils.JsonMaker;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;

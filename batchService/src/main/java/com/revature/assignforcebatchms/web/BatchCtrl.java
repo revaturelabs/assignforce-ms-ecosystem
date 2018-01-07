@@ -3,6 +3,9 @@ package com.revature.assignforcebatchms.web;
 
 import java.sql.Timestamp;
 
+
+
+
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -65,24 +68,6 @@ public class BatchCtrl {
 
 	@Autowired
 	DaoService<Batch, Integer> batchService;
-
-/*
-	@Autowired
-	DaoService<Curriculum, Integer> currService;
-
-	@Autowired
-	DaoService<Location, Integer> locationService;
-
-	@Autowired
-	DaoService<Room, Integer> roomService;
-
-	@Autowired
-	DaoService<Trainer, Integer> trainerService;
-
-	@Autowired
-	DaoService<Unavailable, Integer> unavailableService;*/
-
-
 
 
 	// CREATE
