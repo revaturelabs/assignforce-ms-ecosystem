@@ -74,12 +74,12 @@ salesforce:
       userInfoUri: https://revature--int1.cs17.my.salesforce.com/services/oauth2/userinfo
 #  ignored: /api/v2/google/**
 server:
-  port: 443
-  ssl:
-    keyStore: classpath:keystore.jks
-    keyStorePassword: password
-    keyStoreType: jks
-    keyAlias: selfsigned
+  port: 80
+#  ssl:
+#    keyStore: classpath:keystore.jks
+#    keyStorePassword: password
+#    keyStoreType: jks
+#    keyAlias: selfsigned
  
 frontEndUrl: http://localhost:4200
 

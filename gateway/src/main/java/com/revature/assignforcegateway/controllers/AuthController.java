@@ -1,7 +1,7 @@
 package com.revature.assignforcegateway.controllers;
 
-import com.revature.assignforcegateway.services.TokenEncryptor;
-
+import com.revature.assignforcecommon.security.TokenEncryptor;
+import com.revature.assignforcecommon.security.SalesforceRest;
 import com.revature.assignforcecommon.dto.UserDTO;
 
 // import io.swagger.annotations.Api;
@@ -24,6 +24,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationDetails;
+import org.springframework.security.access.prepost.PreAuthorize;
 
 import java.security.Principal;
 import javax.servlet.http.HttpServletResponse;
@@ -45,6 +46,9 @@ public class AuthController{
 
     @Autowired
     private TokenEncryptor encryptor;
+
+    @Autowired
+    private SalesforceRest salesforceRest;
     
     @Bean
     public RestTemplate rt(RestTemplateBuilder builder) {
@@ -57,9 +61,10 @@ public class AuthController{
 	//Map<String, Object> details = (Map)principal.getUserAuthentication().getDetails();
 	//System.out.println(details.get("photos").getClass());
 							      
-	return new ResponseEntity<UserDTO>(new UserDTO(principal), HttpStatus.OK);
+	return new ResponseEntity<UserDTO>(salesforceRest.getCurrentUser(principal.getUserAuthentication()), HttpStatus.OK);
     }
-    
+
+    @PreAuthorize("hasPermission('', 'basic')")
     @RequestMapping(value= "/login**")
     public String login(OAuth2Authentication principal){
 	OAuth2AuthenticationDetails details =
