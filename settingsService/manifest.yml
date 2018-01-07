@@ -10,3 +10,4 @@ applications:
     services:
       - service-registry
       - circuit-breaker-dashboard
+      - settings-database

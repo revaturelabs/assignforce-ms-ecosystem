@@ -17,10 +17,6 @@ spring:
   cloud:
     services:
       registrationMethod: route
-  data:
-    mongodb:
-      uri: mongodb://setting:settingpw@ds245347.mlab.com:45347/setting
-  
 
 producer:
   ribbon:

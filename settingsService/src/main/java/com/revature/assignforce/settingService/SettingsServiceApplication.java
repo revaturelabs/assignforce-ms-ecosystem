@@ -1,8 +1,6 @@
 package com.revature.assignforce.settingService;
 
-//import com.revature.assignforce.settingService.config.SpringApplicationContextInitializer;
-import com.mongodb.MongoClient;
-import cz.jirutka.spring.embedmongo.EmbeddedMongoFactoryBean;
+import com.revature.assignforce.settingService.config.SpringApplicationContextInitializer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -18,16 +16,15 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 
 //@EnableMongoRepositories(basePackages = "com.revature.assignforce.settingService")
 @SpringBootApplication
-//@EnableDiscoveryClients
-public class SettingsServiceApplication {
+//@EnableDiscoveryClient
+public class SettingsServiceApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
-		/*
 		new SpringApplicationBuilder( SettingsServiceApplication.class).
 			initializers( new SpringApplicationContextInitializer())
 			.application()
 			.run( args);
-			*/
-		SpringApplication.run(SettingsServiceApplication.class, args);
+
+//		SpringApplication.run(SettingsServiceApplication.class, args);
 	}
 }
