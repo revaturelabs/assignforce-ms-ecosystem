@@ -40,7 +40,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 /**
- * Created by roger on 7/11/2017.
+ * Created by Me on 01/01/2018.
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(
@@ -50,17 +50,16 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 public class AssignforceBatchMsApplicationTests {
 
-    private Batch batch = null;
-
     private JsonMaker jsonMaker = new JsonMaker();
 
-    private BatchLocation batchLocation = null;
+    @MockBean
+    private BatchLocation batchLocation;
 
-    private BatchStatusLookup batchStatusLookup = null;
+    @MockBean
+    private BatchStatusLookup batchStatusLookup;
 
-    private Batch testBatch = null;
-    
-    private Batch batchDTO = null;
+    @MockBean
+    private Batch testBatch;
 
     private Timestamp sTimestamp = new Timestamp(Timestamp.valueOf(LocalDateTime.now().minusMonths(3)).getTime());
 
@@ -84,26 +83,15 @@ public class AssignforceBatchMsApplicationTests {
         unavailability.add(0);
         batchStatusLookup = new BatchStatusLookup(0, "aStatus");
         batchLocation = new BatchLocation();
-        batchLocation.setId(0);
+        batchLocation.setId(330);
         batchLocation.setLocationId(0);
         batchLocation.setBuildingId(0);
         batchLocation.setRoomId(0);
         testBatch = new Batch(0, "new batch",
                 new Timestamp(Timestamp.valueOf(LocalDateTime.now()).getTime()),
-                new Timestamp(Timestamp.valueOf(LocalDateTime.now()).getTime()), 0,
+                new Timestamp(Timestamp.valueOf(LocalDateTime.now()).getTime()), 1,
                 batchStatusLookup, "trainer", "cotrainer", skills,
-                0, batchLocation);
-        batchDTO = new Batch();
-        batchDTO.setID(testBatch.getID());
-        batchDTO.setName(testBatch.getName());
-        batchDTO.setCurriculum(testBatch.getCurriculum());
-        batchDTO.setFocus(testBatch.getFocus());
-        batchDTO.setTrainer(testBatch.getTrainer());
-        batchDTO.setCotrainer(testBatch.getCotrainer());
-        batchDTO.setBatchLocation(testBatch.getBatchLocation());
-        batchDTO.setStartDate(testBatch.getStartDate());
-        batchDTO.setEndDate(testBatch.getEndDate());
-        batchDTO.setSkills(testBatch.getSkills());
+                1, batchLocation);
     }
 
     @After
@@ -113,26 +101,18 @@ public class AssignforceBatchMsApplicationTests {
 
     @Test
     public void createBatch() throws Exception {
+    	given(batchLocationService.saveItem(any(BatchLocation.class))).willReturn(batchLocation);
         given(batchService.saveItem(any(Batch.class))).willReturn(testBatch);
         mvc.perform(post("/api/v2/batch")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(jsonMaker.toJsonString(testBatch)))
                     .andExpect(status().isOk());
     }
-    
-    @Test
-    public void createBatchWithEmptyDTO() throws Exception {
-        given(batchService.saveItem(any(Batch.class))).willReturn(null);
-        mvc.perform(post("/api/v2/batch")
-                .contentType(MediaType.APPLICATION_JSON)
-                .content(jsonMaker.toJsonString(batchDTO)))
-                    .andExpect(status().isInternalServerError());
-    }
 
     @Test
     public void retrieveBatch() throws Exception {
         given(batchService.getOneItem(anyInt())).willReturn(testBatch);
-        mvc.perform(get("/api/v2/batch/42"))
+        mvc.perform(get("/api/v2/batch/330"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.id", is(testBatch.getID())));
     }
@@ -140,19 +120,19 @@ public class AssignforceBatchMsApplicationTests {
     @Test
     public void retrieveInvalidBatch() throws Exception {
         given(batchService.getOneItem(anyInt())).willReturn(null);
-        mvc.perform(get("/api/v2/batch/42"))
+        mvc.perform(get("/api/v2/batch/330"))
                 .andExpect(status().isNotFound());
     }
 
     @Test
     public void deleteBatch() throws Exception {
+    	given(batchService.getOneItem(anyInt())).willReturn(testBatch);
         doNothing().when(batchService).deleteItem(anyInt());
-        given(batchService.getOneItem(anyInt())).willReturn(testBatch);
-        mvc.perform(delete("/api/v2/batch/42"))
+        mvc.perform(delete("/api/v2/batch/330"))
                 .andExpect(status().isOk());
     }
 
-    @Test 
+    @Test
     public void retrieveAllBatches() throws Exception {
         List<Batch> batches = new ArrayList<Batch>();
         batches.add(testBatch);
@@ -183,7 +163,7 @@ public class AssignforceBatchMsApplicationTests {
         given(batchService.getOneItem(anyInt())).willReturn(testBatch);
         mvc.perform(put("/api/v2/batch")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(jsonMaker.toJsonString(batchDTO)))
+                .content(jsonMaker.toJsonString(testBatch)))
                 .andExpect(status().isOk());
     }
 
