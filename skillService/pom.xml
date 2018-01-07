@@ -42,11 +42,11 @@
 			<scope>test</scope>
 		</dependency>
 		
-		<dependency>
+		<!--<dependency>
 			<groupId>com.oracle</groupId>
 			<artifactId>ojdbc7</artifactId>
 			<version>12.1.0.1</version>
-		</dependency>
+		</dependency>-->
 
 		<!-- Eureka -->
 		<dependency>
@@ -79,6 +79,12 @@
 			<artifactId>spring-cloud-services-starter-service-registry</artifactId>
 		</dependency>
 
+		<!-- PostgreSQL -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
 
 	</dependencies>
 
