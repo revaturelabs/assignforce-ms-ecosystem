@@ -1,0 +1,14 @@
+---
+instances: 2
+memory: 750MB
+applications:
+  - name: unavailableService
+    domain: cfapps.io
+    host: unavailable-service
+    buildpack: https://github.com/cloudfoundry/java-buildpack.git
+    path: target/unavailableService-0.0.1-SNAPSHOT.jar
+    services:
+      - service-registry
+      - circuit-breaker-dashboard
+    env:
+      SPRING_PROFILES_ACTIVE: development

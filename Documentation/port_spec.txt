@@ -1,0 +1,15 @@
+PORT USED FOR EACH SERVICE:
+
+gateway: 443, or 8443?
+
+discovery: 8761
+
+batch-ms: 9092
+
+skill-ms: 9090
+
+unavailable-ms: 9091
+
+location-ms:
+
+curriculum-ms: 9093
