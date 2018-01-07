@@ -1,6 +1,6 @@
 ---
 instances: 2  #must be at leat two to even be worth it
-memory: 750M
+memory: 850M
 applications:
   - name: curriculumService
     domain: cfapps.io
