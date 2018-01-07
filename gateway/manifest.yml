@@ -10,3 +10,4 @@ applications:
     services:
       - service-registry # registers with built in eureka discovery
       - circuit-breaker-dashboard  # registers with built in dashboard for hystrix circuit breaker
+      # - config-server
