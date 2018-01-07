@@ -108,6 +108,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     } 
 
     @Bean
+    @Primary
     @ConfigurationProperties("salesforce.oauth2.client")
     public AuthorizationCodeResourceDetails salesforce() {
 	return new AuthorizationCodeResourceDetails();
@@ -124,7 +125,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 	// require https
-	http.requiresChannel().antMatchers("/**").requiresSecure().and().portMapper().http(80).mapsTo(443);
+	//http.requiresChannel().antMatchers("/**").requiresSecure().and().portMapper().http(80).mapsTo(443);
 	    
 	http.antMatcher("/**").authorizeRequests().anyRequest().authenticated().and()
 	    .cors().and()
