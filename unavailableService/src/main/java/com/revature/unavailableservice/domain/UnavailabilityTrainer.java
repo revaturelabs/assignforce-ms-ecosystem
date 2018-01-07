@@ -16,7 +16,7 @@ public class UnavailabilityTrainer {
 
 	@Id
 	@Column(name = "ID")
-	@SequenceGenerator(allocationSize = 1, name = "unavailableSeq", sequenceName = "UNAVAILABLE_SEQ")
+	@SequenceGenerator(allocationSize = 1, name = "unavailableSeq", sequenceName = "UNAVAILABLE_TRAINER_SEQ")
 	@GeneratedValue(generator = "unavailableSeq", strategy = GenerationType.SEQUENCE)
 	private int id;
 

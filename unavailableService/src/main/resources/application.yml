@@ -1,15 +1,19 @@
+
 spring:
     application:
         name: unavailableService
     #DATABASE CONFIG ISSUE: CANNOT USE ENVIRONMENT VARIABLE
     datasource:
-
-        url: jdbc:oracle:thin:@assignforce.chueiwozbnfz.us-east-1.rds.amazonaws.com:1521:ORCL
-        username: assignforce_dev
-        password: pVCwxTn3
-    #HIBERNATE
+      url: jdbc:postgresql://baasu.db.elephantsql.com:5432/dtfjfsxg
+      username: dtfjfsxg
+      password: dxHr1OkROL4Qa7famATXzeRyNq_tOjL0
+      driverClassName: org.postgresql.Driver
+      tomcat:
+         max-active: 3
     jpa:
-        database-platform: org.hibernate.dialect.Oracle10gDialect
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+
 
 server:
   port: 8433
@@ -22,6 +26,7 @@ ribbon:
 security:
   basic:
     enabled: false
+
 
 #
 #eureka:

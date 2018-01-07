@@ -24,27 +24,27 @@ public class AssignforceUnavailableMsApplication {
 		SpringApplication.run(AssignforceUnavailableMsApplication.class, args);
 	}
 
-//	@Autowired
-//	UnavailabilityTrainerService trainerService;
-//	@Autowired
-//	UnavailabilityRoomService roomService;
-//
-//
-//	@Bean
-//	public CommandLineRunner demo(UnavailabilityTrainerRepository trainerRepo, UnavailabilityRoomRepository roomRepo) {
-////		trainerService.saveItem(new UnavailabilityTrainer(1, "1022", new Timestamp(System.currentTimeMillis()), new Timestamp(System.currentTimeMillis())));
-//		//roomService.saveItem(new UnavailabilityRoom(1, 11, new Timestamp(System.currentTimeMillis()), new Timestamp(System.currentTimeMillis())));
-//		return (args) -> {
-//			// save a couple of customers
-//			List<UnavailabilityTrainer> trainers = trainerService.getAllItems();
-//			List<UnavailabilityRoom> rooms = roomService.getAllItems();
-//			for (UnavailabilityTrainer post : trainers) {
-//				System.out.println(post.toString());
-//			}
-//			for(UnavailabilityRoom room : rooms) {
-//				System.out.println(room.toString());
-//			}
-//		};
+	@Autowired
+	UnavailabilityTrainerService trainerService;
+	@Autowired
+	UnavailabilityRoomService roomService;
 
-//	}
+
+	@Bean
+	public CommandLineRunner demo(UnavailabilityTrainerRepository trainerRepo, UnavailabilityRoomRepository roomRepo) {
+		trainerService.saveItem(new UnavailabilityTrainer(1, "1022", new Timestamp(System.currentTimeMillis()), new Timestamp(System.currentTimeMillis())));
+		roomService.saveItem(new UnavailabilityRoom(1, 11, new Timestamp(System.currentTimeMillis()), new Timestamp(System.currentTimeMillis())));
+		return (args) -> {
+			// save a couple of customers
+			List<UnavailabilityTrainer> trainers = trainerService.getAllItems();
+			List<UnavailabilityRoom> rooms = roomService.getAllItems();
+			for (UnavailabilityTrainer post : trainers) {
+				System.out.println(post.toString());
+			}
+			for(UnavailabilityRoom room : rooms) {
+				System.out.println(room.toString());
+			}
+		};
+
+	}
 }

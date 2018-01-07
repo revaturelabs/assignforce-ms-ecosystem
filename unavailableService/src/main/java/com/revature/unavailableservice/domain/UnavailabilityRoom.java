@@ -16,7 +16,7 @@ public class UnavailabilityRoom {
 
 	@Id
 	@Column(name = "ID")
-	@SequenceGenerator(allocationSize = 1, name = "unavailableSeq", sequenceName = "UNAVAILABLE_SEQ")
+	@SequenceGenerator(allocationSize = 1, name = "unavailableSeq", sequenceName = "UNAVAILABLE_ROOM_SEQ")
 	@GeneratedValue(generator = "unavailableSeq", strategy = GenerationType.SEQUENCE)
 	private int id;
 
