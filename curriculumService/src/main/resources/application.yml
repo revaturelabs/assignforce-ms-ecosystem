@@ -16,9 +16,9 @@ spring:
 #          max-active: 3
 
 # ELEPHANT SQL PCF
-    url: jdbc:postgresql://baasu.db.elephantsql.com:5432/fxpulxfi
-    username: fxpulxfi
-    password: LjLdqIrb6yw51t0Q713uZI0nIlSIVCwV
+    url: jdbc:postgresql://baasu.db.elephantsql.com:5432/whmpsxcx
+    username: whmpsxcx
+    password: 8hwWKLx4g7H7s3rqhvOOSSD-RI9HFbeo
     driverClassName: org.postgresql.Driver
     tomcat:
           max-active: 3
