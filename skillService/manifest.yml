@@ -1,6 +1,6 @@
 ---
 instances: 2  #must be at leat two to even be worth it
-memory: 750M
+memory: 850M
 applications:
   - name: skillService
     domain: cfapps.io
@@ -10,6 +10,6 @@ applications:
     services:
       - service-registry #registers with built in eureka discovery
       - circuit-breaker-dashboard
-      - skill-database
+      # - skill-database
     env:
       SPRING_PROFILES_ACTIVE: development

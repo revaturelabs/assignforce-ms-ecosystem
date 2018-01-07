@@ -21,7 +21,7 @@ spring:
     password: 8hwWKLx4g7H7s3rqhvOOSSD-RI9HFbeo
     driverClassName: org.postgresql.Driver
     tomcat:
-          max-active: 3
+          max-active: 2
 
 
 # Oracle DB assignforce dev
