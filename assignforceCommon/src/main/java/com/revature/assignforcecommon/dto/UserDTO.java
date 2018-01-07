@@ -9,8 +9,12 @@ import java.util.ArrayList;
 
 public class UserDTO{
 
-    private List<String> authorities;
+    private String id;
+    private String role;
+    private String nickname;
     private String username;
+    private String firstname;
+    private String lastname;
     private String picture;
     private String thumbnail;
     //private String profile;
@@ -18,38 +22,23 @@ public class UserDTO{
     public UserDTO(){
     }
 
-    public UserDTO(OAuth2Authentication p){
-	authorities = new ArrayList<>();
-	for(GrantedAuthority authority : p.getAuthorities()){
-	    this.authorities.add(authority.getAuthority());
-	}
-        Map<String, Object> details = (Map)p.getUserAuthentication().getDetails();
-	this.username = (String)details.get("preferred_username");
-	//this.profile = (String)details.get("profile");
-	Map<String, String> photos = (Map)details.get("photos");
-	this.picture = photos.get("picture");
-	this.thumbnail = photos.get("thumbnail");
+    // public UserDTO(OAuth2Authentication p){
+    // 	authorities = new ArrayList<>();
+    // 	for(GrantedAuthority authority : p.getAuthorities()){
+    // 	    this.authorities.add(authority.getAuthority());
+    // 	}
+    //     Map<String, Object> details = (Map)p.getUserAuthentication().getDetails();
+    // 	this.id = (String) details.get("user_id");
+    // 	this.username = (String)details.get("preferred_username");
+    // 	this.firstname = (String) details.get("given_name");
+    // 	this.lastname = (String) details.get("family_name");
+    // 	//this.profile = (String)details.get("profile");
+    // 	Map<String, String> photos = (Map)details.get("photos");
+    // 	this.picture = photos.get("picture");
+    // 	this.thumbnail = photos.get("thumbnail");
 	
-    }
-    
-    /**
-     * Gets the value of authorities
-     *
-     * @return the value of authorities
-     */
-    public List<String> getAuthorities() {
-	return this.authorities;
-    }
-
-    /**
-     * Sets the value of authorities
-     *
-     * @param argAuthorities Value to assign to this.authorities
-     */
-    public void setAuthorities(List <String> argAuthorities) {
-	this.authorities = argAuthorities;
-    }
-
+    // }
+ 
     /**
      * Gets the value of username
      *
@@ -95,6 +84,7 @@ public class UserDTO{
 	return this.thumbnail;
     }
 
+
     /**
      * Sets the value of thumbnail
      *
@@ -103,6 +93,99 @@ public class UserDTO{
     public void setThumbnail(final String argThumbnail) {
 	this.thumbnail = argThumbnail;
     }
+
+    /**
+     * Gets the value of role
+     *
+     * @return the value of role
+     */
+    public String getRole() {
+	return this.role;
+    }
+
+    /**
+     * Sets the value of role
+     *
+     * @param argRole Value to assign to this.role
+     */
+    public void setRole(final String argRole) {
+	this.role = argRole;
+    }
+
+    /**
+     * Gets the value of firstname
+     *
+     * @return the value of firstname
+     */
+    public String getFirstname() {
+	return this.firstname;
+    }
+
+    /**
+     * Sets the value of firstname
+     *
+     * @param argFirstname Value to assign to this.firstname
+     */
+    public void setFirstname(final String argFirstname) {
+	this.firstname = argFirstname;
+    }
+
+    /**
+     * Gets the value of lastname
+     *
+     * @return the value of lastname
+     */
+    public String getLastname() {
+	return this.lastname;
+    }
+
+    /**
+     * Sets the value of lastname
+     *
+     * @param argLastname Value to assign to this.lastname
+     */
+    public void setLastname(final String argLastname) {
+	this.lastname = argLastname;
+    }
+
+    
+    /**
+     * Gets the value of id
+     *
+     * @return the value of id
+     */
+    public String getId() {
+	return this.id;
+    }
+
+    /**
+     * Sets the value of id
+     *
+     * @param argId Value to assign to this.id
+     */
+    public void setId(final String argId) {
+	this.id = argId;
+    }
+
+    
+    /**
+     * Gets the value of nickname
+     *
+     * @return the value of nickname
+     */
+    public final String getNickname() {
+	return this.nickname;
+    }
+
+    /**
+     * Sets the value of nickname
+     *
+     * @param argNickname Value to assign to this.nickname
+     */
+    public final void setNickname(final String argNickname) {
+	this.nickname = argNickname;
+    }
+
 
     // /**
     //  * Gets the value of profile

@@ -7,5 +7,5 @@ package com.revature.assignforcecommon.domain;
 public interface Activatable {
 
     void setActive(Boolean active);
-    boolean getActive();
+    Boolean getActive();
 }
