@@ -1,5 +1,5 @@
 ---
-instances: 2  #must be at leat two to even be worth it
+instances: 2  #must be at least two to even be worth it
 memory: 850M
 applications:
   - name: curriculumService
