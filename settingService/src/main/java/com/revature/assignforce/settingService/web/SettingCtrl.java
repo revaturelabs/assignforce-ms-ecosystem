@@ -62,14 +62,14 @@ public class SettingCtrl {
 
     //Retrieve
     //@PreAuthorize("hasPermission('', 'basic')")
-    @RequestMapping(value = "/{settingId}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    @ApiOperation(value = "Get a Setting based on an ID", response = ResponseEntity.class)
+    @RequestMapping( method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @ApiOperation(value = "Get a Settings", response = ResponseEntity.class)
     @ApiResponses({
             @ApiResponse(code=200, message ="Successfully received Setting information"),
             @ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
             @ApiResponse(code=500, message ="Cannot retrieve Setting")
     })
-    public ResponseEntity< ?> retrieveSetting ( /*@PathVariable("settingId")  settingId*/) {
+    public ResponseEntity< ?> retrieveSetting () {
 		Setting settings = settingService.getSettings();
 		if( settings != null)
 			return ResponseEntity.ok( settings);

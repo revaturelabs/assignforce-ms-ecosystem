@@ -97,7 +97,7 @@ public class SettingCtrlTest {
     //@WithMockUser(roles = "Her Majesty The Queen Of England")
     public void retrieveSettingTest() throws Exception {
         given(settingServiceImplementation.getSettings()).willReturn(testSetting);
-        mvc.perform(get("/api/v2/setting/42"))
+        mvc.perform(get("/api/v2/setting"))
 			.andExpect(status().isOk());
 			//.with(csrf().asHeader())) <- swap this with line above when you
 			//get security working
