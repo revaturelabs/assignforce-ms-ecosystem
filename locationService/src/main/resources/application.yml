@@ -4,15 +4,27 @@ spring:
   profiles:
     active: development
   datasource:
-    username: assignforce_dev
-    password: pVCwxTn3
-    url: jdbc:oracle:thin:@assignforce.chueiwozbnfz.us-east-1.rds.amazonaws.com:1521:ORCL
+    url: jdbc:postgresql://baasu.db.elephantsql.com:5432/fxpulxfi
+    username: fxpulxfi
+    password: LjLdqIrb6yw51t0Q713uZI0nIlSIVCwV
+    driverClassName: org.postgresql.Driver
+    tomcat:
+      max-active: 2
   jpa:
-    database-platform: org.hibernate.dialect.Oracle10gDialect
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+#  datasource:
+#    username: assignforce_dev
+#    password: pVCwxTn3
+#    url: jdbc:oracle:thin:@assignforce.chueiwozbnfz.us-east-1.rds.amazonaws.com:1521:ORCL
+
 #  datasource:
 #    username: jeffreywu0216
 #    password: 00000000
 #    url: jdbc:oracle:thin:@assignforce-location.csnb7shpjqea.us-east-2.rds.amazonaws.com:1521:ORCL
+#  jpa:
+#    database-platform: org.hibernate.dialect.Oracle10gDialect
+
 #  jpa:
 #    database-platform: org.hibernate.dialect.Oracle10gDialect
 
