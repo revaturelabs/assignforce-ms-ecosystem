@@ -10,7 +10,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication()
 @EnableDiscoveryClient
-public class SettingServiceApplication extends SpringBootServletInitializer {
+public class SettingsServiceApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
 		new SpringApplicationBuilder( SettingsServiceApplication.class).
