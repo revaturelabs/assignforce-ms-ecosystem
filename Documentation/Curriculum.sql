@@ -134,7 +134,6 @@ Insert into CURRICULUM ("id","active","core","name") values (164,0,1,'big data')
 Insert into CURRICULUM ("id","active","core","name") values (248,0,1,'Core Name');
 Insert into CURRICULUM ("id","active","core","name") values (250,0,1,'Angular Js');
 Insert into CURRICULUM ("id","active","core","name") values (251,0,1,'Angular');
-COMMIT;
 
 
 ----------------------------
