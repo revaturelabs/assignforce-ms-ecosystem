@@ -17,7 +17,7 @@ import javax.persistence.*;
 public class Setting {
 
     @Id
-    private String id;
+    private static String id;
     //private String alias;
 
 	//	Batch Settings
@@ -51,7 +51,7 @@ public class Setting {
     public static String getId() {
         return id;
     }
-	public String setId() {
+	public void setId() {
 		this.id = "1";
 	}
 
