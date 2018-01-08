@@ -25,7 +25,7 @@ import java.util.List;
 /**
  * Created by Zach Nelson on 2/9/2017.
  */
-@CrossOrigin(origins = "*")
+// @CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/v2/skill")
 @ComponentScan(basePackages="com.revature.skillservice.controller")
