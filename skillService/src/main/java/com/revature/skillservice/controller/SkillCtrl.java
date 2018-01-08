@@ -28,7 +28,7 @@ import java.util.List;
 @CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/v2/skill")
-@ComponentScan(basePackages="com.revature.skillservice.service")
+@ComponentScan(basePackages="com.revature.skillservice.controller")
 //@Api(value = "Skill Controller", description = "Operations regarding Skillz(such as the ability to do a Backflip)")
 public class SkillCtrl {
 
