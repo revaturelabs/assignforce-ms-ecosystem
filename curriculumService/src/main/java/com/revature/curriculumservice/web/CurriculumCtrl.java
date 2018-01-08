@@ -25,7 +25,7 @@ import java.util.List;
 @CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/v2/curriculum")
-@ComponentScan(basePackages="com.revature.assignforce.service")
+@ComponentScan(basePackages="com.revature.curriculumservice.service")
 @Api(value = "Curriculum Controller", description = "Operations regarding Curricula")
 public class CurriculumCtrl {
 
