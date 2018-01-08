@@ -13,7 +13,7 @@ server:
 #    lease-renewal-interval-in-seconds: 1
 spring:
   application:
-    name: settingsService  # for example trainerService
+    name: settingService  # for example trainerService
   cloud:
     services:
       registrationMethod: route
