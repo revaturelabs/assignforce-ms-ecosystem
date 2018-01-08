@@ -23,7 +23,7 @@ import java.util.List;
 /**
  * Created by lazar on 2/8/2017.
  */
-
+@CrossOrigin( origins = "*")
 @RestController
 @RequestMapping("/api/v2/setting")
 @ComponentScan(basePackages = "com.revature.assignforce.service")
