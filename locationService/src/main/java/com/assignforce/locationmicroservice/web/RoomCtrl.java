@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin (origins = "*")
+//@CrossOrigin (origins = "*")
 @RestController
 @RequestMapping("/api/v2/room")
 @ComponentScan(basePackages="com.assignforce.locationmicroservice.service")
