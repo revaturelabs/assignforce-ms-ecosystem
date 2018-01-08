@@ -10,7 +10,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @EnableMongoRepositories(basePackages = "com.revature.assignforce.settingService")
-@SpringBootApplication()
+@SpringBootApplication
+//@EnableDiscoveryClients
 public class SettingsServiceApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
