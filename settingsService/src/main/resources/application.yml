@@ -1,22 +1,15 @@
 server:
   port: 9091 # I don't think this is actually needed outside of local eureka, but whatever
 
-#eureka:
-#  client:
-#    service-url:
-#      defaultZone: http://localhost:8761/eureka
-#    lease: 5
-#    healthcheck:
-#      enabled: false
-#  instance:
-#    lease-expiration-duration-in-seconds: 2
-#    lease-renewal-interval-in-seconds: 1
 spring:
   application:
-    name: settingsService  # for example trainerService
+    name: settingService  # for example trainerService
   cloud:
     services:
       registrationMethod: route
+#  data:
+#    mongodb:
+#      uri: mongodb://CloudFoundry_gr96rqgi_8ngdj3ra_te1vk55l:d-yZJXF1dVnJdPUu4f456KsU1S8Z3DU0@ds239587.mlab.com:39587/CloudFoundry_gr96rqgi_8ngdj3ra
 
 producer:
   ribbon:
@@ -26,3 +19,25 @@ ribbon:
 security:
   basic:
     enabled: false
+
+salesforce:
+  oauth2:
+    client:
+      clientId: 3MVG9ahGHqp.k2_wb8eUMtoR38zX8fWod2YBcK5.4RRrWling4BGamz7JanMJTUGcXxI9qda4fQh3xU0Q9EBH
+      clientSecret: ${OAUTH_CLIENT_SECRET}
+      accessTokenUri: https://revature--int1.cs17.my.salesforce.com/services/oauth2/token
+      revokeTokenUri: https://revature--int1.cs17.my.salesforce.com/services/oauth2/revoke
+      userAuthorizationUri: https://revature--int1.cs17.my.salesforce.com/services/oauth2/authorize?prompt=login
+      tokenName: authorization_code
+      authenticationScheme: header
+      clientAuthenticationScheme: form
+      grantType: authorization_code
+      preEstablishedRedirectUri: https://assignforcebackend.cfapps.io/login
+    resource:
+      userInfoUri: https://revature--int1.cs17.my.salesforce.com/services/oauth2/userinfo
+
+frontEndUrl: https://assignforcefrontend.cfapps.io/
+
+tokenEncryption:
+  password: ${ENC_PASS}
+  salt: ${ENC_SALT}
