@@ -9,7 +9,7 @@ spring:
     password: LjLdqIrb6yw51t0Q713uZI0nIlSIVCwV
     driverClassName: org.postgresql.Driver
     tomcat:
-      max-active: 2
+      max-active: 1
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
 
