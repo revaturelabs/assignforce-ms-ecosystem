@@ -20,7 +20,7 @@ public class SettingServiceImplementation implements SettingService {
 	}
 
 	public Setting getSettings() {
-		return settingRepository.findById( Setting.getId()).orElse( null);
+		return settingRepository.findBy_Id( Setting.getId());
 	}
 
 	public Setting updateOrSaveSettings( Setting newSettings) {

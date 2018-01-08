@@ -15,7 +15,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
+//import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -55,7 +55,9 @@ public class SettingCtrl {
     })
     public ResponseEntity<?> createSetting( @RequestBody Setting s) {
         settingService.updateOrSaveSettings( s);
-        return new ResponseEntity< Setting >( s, HttpStatus.OK);
+		// You can use the code below if you want to implement creation
+        // return new ResponseEntity< Setting >( s, HttpStatus.OK);
+		return ResponseEntity.status( HttpStatus.NOT_IMPLEMENTED).build();
     }
 
     //Retrieve

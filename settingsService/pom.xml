@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
@@ -7,10 +7,17 @@
 	<artifactId>settingsService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
+	<name>settingService</name>
+	<description>Microservice to host settings</description>
 
-	<name>settingsService</name>
-	<description>Demo project for Spring Boot</description>
+	<parent>
+	  <groupId>org.springframework.boot</groupId>
+	  <artifactId>spring-boot-starter-parent</artifactId>
+	  <version>1.5.9.RELEASE</version>
+	  <relativePath/> <!-- lookup parent from repository -->
+	</parent>
 
+	<!--
 	<repositories>
 	  <repository>
 		<id>nexus1</id>
@@ -22,23 +29,10 @@
 		<name>nexus releases</name>
 		<url>http://ec2-18-216-0-70.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/releases</url>
 	  </repository>
-	  <repository>
-		<id>sonatype-snapshots</id>
-		<name>Sonatype repository for deploying snapshots</name>
-		<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-		<snapshots>
-		  <enabled>true</enabled>
-		</snapshots>
-	  </repository>
 	</repositories>
+	-->
 
-	<parent>
-	  <groupId>org.springframework.boot</groupId>
-	  <artifactId>spring-boot-starter-parent</artifactId>
-	  <version>1.5.9.RELEASE</version>
-	  <relativePath/> <!-- lookup parent from repository -->
-	</parent>
-
+	
 	<properties>
 	  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	  <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -47,7 +41,10 @@
 	</properties>
 
 	<dependencies>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-mongodb</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-spring-service-connector</artifactId>
@@ -59,18 +56,10 @@
 			<artifactId>spring-cloud-cloudfoundry-connector</artifactId>
 			<version>2.0.1.RELEASE</version>
 		</dependency>
+		<!--
 		<dependency>
 			<groupId>io.pivotal.spring.cloud</groupId>
 			<artifactId>spring-cloud-services-starter-service-registry</artifactId>
-		</dependency>
-		<dependency>
-		  <groupId>io.pivotal.spring.cloud</groupId>
-		  <artifactId>spring-cloud-services-starter-circuit-breaker</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.revature.assignforcecommon</groupId>
-			<artifactId>assignforcecommon</artifactId>
-			<version>1.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -79,10 +68,6 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-config</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
@@ -96,14 +81,26 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-zipkin</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-mongodb</artifactId>
-		</dependency>
+		-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
+		<dependency>
+		  <groupId>io.pivotal.spring.cloud</groupId>
+		  <artifactId>spring-cloud-services-starter-circuit-breaker</artifactId>
+		</dependency>
+		<!--
+		<dependency>
+			<groupId>com.revature.assignforcecommon</groupId>
+			<artifactId>assignforcecommon</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>

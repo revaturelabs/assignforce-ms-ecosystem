@@ -16,9 +16,10 @@ import javax.persistence.*;
 @ApiModel( "Settings")
 @Document( collection = "Settings")
 public class Setting {
+
     @Id
-    private final static ObjectId _id = new ObjectId();
-    private String alias;
+    private final static ObjectId _Id = new ObjectId();
+    //private String alias;
 
 	//	Batch Settings
 	@ApiModelProperty( notes="Default minimum size of batch.")
@@ -49,7 +50,7 @@ public class Setting {
     public Setting() { }
 
     public static String getId() {
-        return _id.toHexString();
+        return _Id.toHexString();
     }
 
 //    public String getAlias() {
