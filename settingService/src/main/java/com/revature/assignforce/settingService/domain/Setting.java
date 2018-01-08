@@ -6,7 +6,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
-import java.util.regex.Pattern;
 import javax.persistence.*;
 
 /**
@@ -18,7 +17,7 @@ import javax.persistence.*;
 public class Setting {
 
     @Id
-    private final static ObjectId _Id = new ObjectId();
+    private static final String id = "1";
     //private String alias;
 
 	//	Batch Settings
@@ -31,7 +30,7 @@ public class Setting {
 	@ApiModelProperty( notes="Default location to create batches from.")
     private Short defaultBatchLocation;
 	@ApiModelProperty( notes="Default regular expression pattern to create names from.")
-    private Pattern defaultBatchNamePattern;
+    private String defaultBatchNamePattern;
 
 	//	Report Settings
 	@ApiModelProperty( notes="Number of incoming graduates reported.")
@@ -50,7 +49,7 @@ public class Setting {
     public Setting() { }
 
     public static String getId() {
-        return _Id.toHexString();
+        return id;
     }
 
 //    public String getAlias() {
@@ -76,10 +75,10 @@ public class Setting {
 		this.defaultBatchLocation = defaultBatchLocation;
 	}
 
-	public Pattern getDefaultNamePattern() {
+	public String getDefaultNamePattern() {
 		return this.defaultBatchNamePattern;
 	}
-	public void setDefaultNamePattern( Pattern defaultNamePattern) {
+	public void setDefaultNamePattern( String defaultNamePattern) {
 		this.defaultBatchNamePattern = defaultNamePattern;
 	}
 

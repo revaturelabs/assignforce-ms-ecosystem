@@ -12,5 +12,5 @@ import java.io.Serializable;
 
 @Repository
 public interface SettingRepository extends BaseRepository< Setting, String> {
-	Setting findBy_Id( String _Id);
+	Setting findById( String id);
 }
