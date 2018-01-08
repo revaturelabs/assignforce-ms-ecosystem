@@ -24,6 +24,19 @@
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Edgware.RELEASE</spring-cloud.version>
 	</properties>
+	
+	<!--  <repositories>
+        <repository>
+          <id>nexus1</id>
+          <name>nexus snapshots</name>
+          <url>http://ec2-18-216-0-70.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/snapshots</url>
+        </repository>
+         <repository>
+          <id>nexus2</id>
+          <name>nexus releases</name>
+          <url>http://ec2-18-216-0-70.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/releases</url>
+        </repository>
+      </repositories>-->
 
 	<dependencies>
 		<dependency>
@@ -41,11 +54,11 @@
 			<scope>test</scope>
 		</dependency>
 		
-		<dependency>
+		<!--  <dependency>
 			<groupId>com.oracle</groupId>
 			<artifactId>ojdbc7</artifactId>
 			<version>12.1.0.1</version>
-		</dependency>
+		</dependency>-->
 		
 		<dependency>
 			<groupId>org.postgresql</groupId>
@@ -132,11 +145,11 @@
 				<scope>import</scope>
 			</dependency>
 			
-			<!--<dependency>
-				<groupId>com.revature.assignforcecommon</groupId>
-				<artifactId>assignforcecommon</artifactId>
-				<version>1.0-SNAPSHOT</version>
-			</dependency>-->
+			<!--  <dependency>  
+          		<groupId>com.revature.assignforcecommon</groupId>
+          		<artifactId>assignforcecommon</artifactId>
+          		<version>1.0-SNAPSHOT</version>
+    		</dependency>-->
 			
 		</dependencies>
 	</dependencyManagement>

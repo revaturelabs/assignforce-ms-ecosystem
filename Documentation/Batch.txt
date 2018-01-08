@@ -1,0 +1,71 @@
+Database:
+
+entities:
+
+BATCH
+This is the batch table.  It stores batches
+
+COLUMNS
+ID: Number -> primary id key
+END_DATE: TIMESTAMP -> end date
+NAME: VARCHAR(255) -> name of the batch
+START_DATE: TIMESTAMP -> start date of batch
+BATCH_LOCATION: NUMBER -> references batch location
+STATUS: NUMBER -> references batch status 
+CURRICULUM: NUMBER -> references a curriculum that is core
+FOCUS: NUMBER -> references a curriculum that is not core
+TRAINER: VARCHAR(45) -> references a trainer
+COTRAINER: VARCHAR(45) -> references a cotrainer
+
+
+BATCH_LOCATION
+This table is a table that connects a location, building, and room to a batch
+
+COLUMNS
+ID: NUMBER -> primary key ID
+LOCATION_ID: NUMBER -> references a location
+BUILDING_ID: NUMBER -> references a building
+ROOM_ID: NUMBER -> references a room
+
+
+BATCH_SKILL_JT
+This table maps batches to skills
+In the backend, this utilizes an element collection to set up the relations
+@ElementCollection
+
+COLUMNS:
+BATCH_ID: NUMBER -> references a batch
+SKILL_ID: NUMBER -> references a skill
+
+
+BATCH_STATUS_LOOKUP (We have not used this)
+This table is a lookup table for the status of a batch
+
+COLUMNS
+BATCH_STATUS_ID: NUMBER -> Primary Key ID
+BS_NAME: VARCHAR(255)
+
+
+CONTROLLERS
+
+createBatch:
+receives a batch object
+creates a batch
+creates the batch location for that batch
+creates all mappings of batch to skills in the BATCJ_SKILL_JT table
+
+retrieveBatch:
+receives an int id
+retrieves a batch by that id
+
+deleteBatch:
+receives an int id
+deletes a batch with that id, and removes all references to this batch in the BATCH_SKILL_JT
+
+retrieveAllBatches:
+retrieves all batches
+returns a list of batches
+
+updateBatch
+receives a batch
+changes the batch that has the id of the batch received to the data equal to the batch received
