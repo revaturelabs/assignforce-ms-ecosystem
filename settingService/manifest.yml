@@ -2,11 +2,11 @@
 instances: 2
 memory: 750MB
 applications:
-  - name: settingsService
+  - name: settingService
     domain: cfapps.io
-    host: settings-service
+    host: setting-service
     buildpack: https://github.com/cloudfoundry/java-buildpack.git
-    path: target/settingsService-0.0.1-SNAPSHOT.jar
+    path: target/settingService-0.0.1-SNAPSHOT.jar
     services:
       - service-registry
       - circuit-breaker-dashboard
