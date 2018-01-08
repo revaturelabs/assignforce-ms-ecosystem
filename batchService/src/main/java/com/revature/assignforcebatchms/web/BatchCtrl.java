@@ -52,7 +52,6 @@ import com.revature.assignforce.domain.dto.BatchDTO;
 import com.revature.assignforce.domain.dto.ResponseErrorDTO;
 import com.revature.assignforce.service.DaoService;*/
 
-@CrossOrigin(origins="*")
 @RestController
 @RequestMapping("/api/v2/batch")
 @ComponentScan(basePackages = "com.revature.assignforce.service")
