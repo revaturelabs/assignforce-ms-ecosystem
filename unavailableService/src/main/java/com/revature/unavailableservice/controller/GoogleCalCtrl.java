@@ -54,7 +54,7 @@ import com.google.api.services.calendar.model.EventAttendee;
 import com.google.api.services.calendar.model.EventDateTime;
 
 @Controller
-@CrossOrigin(origins="*")
+//@CrossOrigin(origins="*")
 @Api(value = "Google Calendar Controller", description = "CRUD with the google API")
 public class GoogleCalCtrl {
 

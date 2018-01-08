@@ -28,7 +28,7 @@ import java.util.List;
  * Created by Nick Edwards on 3/2/2017.
  */
 
-@CrossOrigin(origins="*")
+//@CrossOrigin(origins="*")
 @RestController
 @RequestMapping("/api/v2/unavailable")
 @ComponentScan(basePackages="com.revature.assignforce.service")

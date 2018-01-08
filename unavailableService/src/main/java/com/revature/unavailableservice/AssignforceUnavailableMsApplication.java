@@ -10,13 +10,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.data.mongo.MongoDataAutoConfiguration;
+import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 
 import java.sql.Timestamp;
 import java.util.List;
 //import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.revature.unavailableservice", "com.revature.assignforcecommon.security"},
+        exclude = {MongoAutoConfiguration.class, MongoDataAutoConfiguration.class})
 //@EnableDiscoveryClient
 public class AssignforceUnavailableMsApplication {
 

@@ -25,6 +25,19 @@
 		<spring-cloud.version>Edgware.RELEASE</spring-cloud.version>
 	</properties>
 
+	<repositories>
+		<repository>
+			<id>nexus1</id>
+			<name>nexus snapshots</name>
+			<url>http://ec2-18-216-0-70.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/snapshots</url>
+		</repository>
+		<repository>
+			<id>nexus2</id>
+			<name>nexus releases</name>
+			<url>http://ec2-18-216-0-70.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/releases</url>
+		</repository>
+	</repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -54,6 +67,12 @@
 			<version>2.8.2</version>
 		</dependency>
 
+
+		<dependency>
+			<groupId>com.revature.assignforcecommon</groupId>
+			<artifactId>assignforcecommon</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
 		<!-- Eureka -->
 		<!--<dependency>-->
 			<!--<groupId>org.springframework.cloud</groupId>-->
