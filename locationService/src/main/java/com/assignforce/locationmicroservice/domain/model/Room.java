@@ -10,8 +10,7 @@ import java.util.List;
 @Table(name = "ROOM")
 @JsonInclude(value = JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class
-Room implements Activatable {
+public class Room implements Activatable {
 
 	@Id
 	@Column(name = "ID")
@@ -39,7 +38,7 @@ Room implements Activatable {
 //	private List<Integer> unavailableList;
 
 	@Column(name = "active", insertable = false)
-	private Boolean active;
+	private boolean active;
 
 	public Room() {
 		//No arg constructor
@@ -53,7 +52,7 @@ Room implements Activatable {
 //		this.unavailabilities = unavailabilities;
 	}
 	
-	public Room(int roomID, String roomName, int building, /*List<Unavailable> unavailabilities,*/ Boolean active) {
+	public Room(int roomID, String roomName, int building, /*List<Unavailable> unavailabilities,*/ boolean active) {
 		super();
 		this.roomID = roomID;
 		this.roomName = roomName;
@@ -98,7 +97,7 @@ Room implements Activatable {
 	public boolean getActive() {
 		return active;
 	}
-	public void setActive(Boolean active) {
+	public void setActive(boolean active) {
 		this.active = active;
 	}
 

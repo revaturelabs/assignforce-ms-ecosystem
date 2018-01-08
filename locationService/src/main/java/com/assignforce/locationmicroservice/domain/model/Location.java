@@ -27,7 +27,7 @@ public class Location implements Activatable {
 	private String state;
 
 	@Column(name = "active", insertable = false)
-	private Boolean active;
+	private boolean active;
 
 	@OneToMany(cascade=CascadeType.ALL)
 	@JoinColumn(name = "LOCATION")
@@ -37,7 +37,7 @@ public class Location implements Activatable {
 	//No arg constructor
 	}
 
-	public Location(int iD, String name, String city, String state, List<Building> buildings, Boolean active) {
+	public Location(int iD, String name, String city, String state, List<Building> buildings, boolean active) {
 		super();
 		ID = iD;
 		this.name = name;
@@ -83,7 +83,7 @@ public class Location implements Activatable {
 		return active;
 	}
 
-	public void setActive(Boolean active) {
+	public void setActive(boolean active) {
 		this.active = active;
 	}
 

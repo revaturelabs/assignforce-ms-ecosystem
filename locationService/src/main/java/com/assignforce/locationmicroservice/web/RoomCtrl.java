@@ -90,7 +90,7 @@ public class RoomCtrl {
 		int building = in.getBuilding();
 		
 //		List<Unavailable> unavailabilities = in.getUnavailabilities();
-		Boolean active = in.getActive();
+		boolean active = in.getActive();
 		Room out = new Room( ID, name, building/*, unavailabilities*/, active);
 		out = roomService.saveItem( out );		
 		

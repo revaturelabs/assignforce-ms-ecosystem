@@ -19,14 +19,14 @@ public class LocationDTO {
 	private String state;
 	@ApiModelProperty(notes = "A list of buildings at the location", name = "buildings", dataType = "List<Building>")
 	private List<Building> buildings;
-	@ApiModelProperty(notes = "A boolean used to mark a location active or not", name = "active", dataType = "Boolean")
-	private Boolean active;
+	@ApiModelProperty(notes = "A boolean used to mark a location active or not", name = "active", dataType = "boolean")
+	private boolean active;
 
-	public Boolean getActive() {
+	public boolean getActive() {
 		return active;
 	}
 
-	public void setActive(Boolean active) {
+	public void setActive(boolean active) {
 		this.active = active;
 	}
 

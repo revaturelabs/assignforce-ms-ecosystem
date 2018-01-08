@@ -49,7 +49,7 @@ public class BuildingCtrl {
 		int location = in.getLocation(); //building's location id.  This is where it is was breaking - said the location id is 0
 		List<Room> rooms = in.getRooms(); //list of rooms(if being created in this step, no rooms..)
 
-		// buildings, Boolean active
+		// buildings, boolean active
 		Building out = new Building(ID, name, rooms, true, location);
 		out = buildingService.saveItem(out);// I need to see this: active is being set to null in the db. Is it because it should be 1 in the db instead of true?  idk
 		if (out == null) {
@@ -100,7 +100,7 @@ public class BuildingCtrl {
 		Integer location = in.getLocation();
 		location = (location != null)? in.getLocation() : 0;
 		List<Room> rooms = (in.getRooms() != null)? in.getRooms() : new ArrayList<Room>();
-		Boolean active = (in.getActive() != null)? in.getActive() : false;
+		boolean active = in.getActive();
 		Building out = new Building(id, name, rooms, active, location);
 		out = buildingService.saveItem(out);
 		if (out == null) {

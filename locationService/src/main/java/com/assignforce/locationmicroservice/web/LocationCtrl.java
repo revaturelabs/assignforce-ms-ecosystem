@@ -49,7 +49,7 @@ public class LocationCtrl {
 		String state = in.getState();
 		List<Building> buildings = in.getBuildings();
 
-		// buildings, Boolean active
+		// buildings, boolean active
 		Location out = new Location(ID, name, city, state, buildings, true);
 		out = locationService.saveItem(out);
 
@@ -100,7 +100,7 @@ public class LocationCtrl {
 		String city = in.getCity();
 		String state = in.getState();
 		List<Building> buildings = in.getBuildings();
-		Boolean active = in.getActive();
+		boolean active = in.getActive();
 
 		Location out = new Location(ID, name, city, state, buildings, active);
 		out = locationService.saveItem(out);

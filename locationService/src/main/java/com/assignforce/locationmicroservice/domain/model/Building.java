@@ -25,7 +25,7 @@ public class Building implements Activatable {
 	private int location;
 
 	@Column(name = "active", insertable = false)
-	private Boolean active;
+	private boolean active;
 
 	@OneToMany(cascade=CascadeType.ALL)
 	@JoinColumn(name = "BUILDING")
@@ -52,7 +52,7 @@ public class Building implements Activatable {
 		return active;
 	}
 
-	public void setActive(Boolean active) {
+	public void setActive(boolean active) {
 		this.active = active;
 	}
 

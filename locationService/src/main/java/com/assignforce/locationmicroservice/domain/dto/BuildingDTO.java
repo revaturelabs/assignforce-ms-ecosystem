@@ -17,8 +17,8 @@ public class BuildingDTO {
 	private int location;
 	@ApiModelProperty(notes = "A list of Rooms in the building", name = "rooms", dataType = "List<room>")
 	private List<Room> rooms;
-	@ApiModelProperty(notes = "A boolean used to mark a building active or not", name = "active", dataType = "Boolean")
-	private Boolean active;
+	@ApiModelProperty(notes = "A boolean used to mark a building active or not", name = "active", dataType = "boolean")
+	private boolean active;
 
 	public int getID() {
 		return ID;
@@ -52,11 +52,11 @@ public class BuildingDTO {
 		this.rooms = rooms;
 	}
 
-	public Boolean getActive() {
+	public boolean getActive() {
 		return active;
 	}
 
-	public void setActive(Boolean active) {
+	public void setActive(boolean active) {
 		this.active = active;
 	}
 

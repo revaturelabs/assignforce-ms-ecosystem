@@ -7,5 +7,5 @@ package com.assignforce.locationmicroservice.domain.model;
 @FunctionalInterface
 public interface Activatable {
 
-    void setActive(Boolean active);
+    void setActive(boolean active);
 }

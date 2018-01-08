@@ -49,10 +49,10 @@ public class RoomDTO {
 //		this.unavailabilities = unavailabilities;
 //	}
 
-	public Boolean getActive() {
+	public boolean getActive() {
 		return active;
 	}
-	public void setActive(Boolean active) {
+	public void setActive(boolean active) {
 		this.active = active;
 	}
 }
