@@ -17,7 +17,6 @@
 	  <relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<!--
 	<repositories>
 	  <repository>
 		<id>nexus1</id>
@@ -30,7 +29,6 @@
 		<url>http://ec2-18-216-0-70.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/releases</url>
 	  </repository>
 	</repositories>
-	-->
 
 	
 	<properties>
@@ -94,13 +92,11 @@
 		  <groupId>io.pivotal.spring.cloud</groupId>
 		  <artifactId>spring-cloud-services-starter-circuit-breaker</artifactId>
 		</dependency>
-		<!--
 		<dependency>
 			<groupId>com.revature.assignforcecommon</groupId>
 			<artifactId>assignforcecommon</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
-		-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>

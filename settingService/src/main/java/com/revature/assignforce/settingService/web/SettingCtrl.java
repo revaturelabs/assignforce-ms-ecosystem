@@ -68,7 +68,7 @@ public class SettingCtrl {
             @ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
             @ApiResponse(code=500, message ="Cannot retrieve Setting")
     })
-    public ResponseEntity< ?> retrieveSetting () {
+    public Setting retrieveSetting () {
 		Setting settings = settingService.getSettings();
 		if( settings != null)
 			return ResponseEntity.ok( settings);
@@ -113,7 +113,7 @@ public class SettingCtrl {
             @ApiResponse(code=400, message ="Bad Request, the information recieved maybe invalid"),
             @ApiResponse(code=500, message ="Cannot update Setting")
     })
-    public ResponseEntity< ?> updateSetting( @RequestBody Setting s ) {
+    public Setting updateSetting( @RequestBody Setting s ) {
 
 		return ResponseEntity.accepted().body(
 				settingService.updateOrSaveSettings( s));
