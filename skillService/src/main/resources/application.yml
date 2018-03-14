@@ -1,0 +1,47 @@
+spring:
+    application:
+        name: skillService
+    cloud:
+        services:
+          registrationMethod: route
+
+    datasource:
+      url: jdbc:postgresql://baasu.db.elephantsql.com:5432/cyaulali
+      username: cyaulali
+      password: yNw3vmJWCKzIfg9VD_hqADTr_FcsOyW0
+      driverClassName: org.postgresql.Driver
+      tomcat:
+        max-active: 2
+#        url: jdbc:oracle:thin:@assignforce.chueiwozbnfz.us-east-1.rds.amazonaws.com:1521:ORCL
+#        username: assignforce_dev
+#        password: pVCwxTn3
+#        url: ${DB_URL}
+#        username: ${DB_USER}
+#        password: ${DB_PASSWORD}
+    jpa:
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
+#        database-platform: org.hibernate.dialect.Oracle10gDialect
+
+
+server:
+  port: 9090
+
+producer:
+  ribbon:
+    ServerListRefreshInterval: 5000
+ribbon:
+  isSecure: false
+security:
+  basic:
+    enabled: false
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka
+#    lease: 5
+#    healthcheck:
+#      enabled: false
+#  instance:
+#    lease-expiration-duration-in-seconds: 2
+#    lease-renewal-interval-in-seconds: 1
+

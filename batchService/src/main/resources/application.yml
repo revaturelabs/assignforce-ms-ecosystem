@@ -1,0 +1,45 @@
+server:
+  port: 9092
+spring:
+    application:
+        name: batchService
+    cloud:
+      services:
+        registrationMethod: route
+    #DATABASE CONFIG ISSUE: CANNOT USE ENVIRONMENT VARIABLE
+    datasource:
+        url: jdbc:postgresql://baasu.db.elephantsql.com:5432/heqfqejq
+        username: heqfqejq
+        password: RpG4zxsNbYyrlfZAWTy3pNNa4KgTNu-g
+        driverClassName: org.postgresql.Driver
+        tomcat:
+          max-active: 3
+    jpa:
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+producer:          
+ ribbon:
+   ServerListRefreshInterval: 5000
+ribbon:
+ isSecure: false  
+security:
+ basic:
+   enabled: false
+#salesforce:
+#  oauth2:
+#    client:
+#      clientId: 3MVG9ahGHqp.k2_wb8eUMtoR38zX8fWod2YBcK5.4RRrWling4BGamz7JanMJTUGcXxI9qda4fQh3xU0Q9EBH
+#      clientSecret: ${OAUTH_CLIENT_SECRET}
+#      accessTokenUri: https://revature--int1.cs17.my.salesforce.com/services/oauth2/token
+#      revokeTokenUri: https://revature--int1.cs17.my.salesforce.com/services/oauth2/revoke
+#      userAuthorizationUri: https://revature--int1.cs17.my.salesforce.com/services/oauth2/authorize?prompt=login
+#      tokenName: authorization_code
+#      authenticationScheme: header
+#      clientAuthenticationScheme: form
+#      grantType: authorization_code
+#      preEstablishedRedirectUri: https://assignforcebackend.cfapps.io/login
+#    resource:
+#      userInfoUri: https://revature--int1.cs17.my.salesforce.com/services/oauth2/userinfo
+#frontEndUrl: https://assignforcefrontend.cfapps.io/
+#tokenEncryption:
+#  password: ${ENC_PASS}
+#  salt: ${ENC_SALT}
